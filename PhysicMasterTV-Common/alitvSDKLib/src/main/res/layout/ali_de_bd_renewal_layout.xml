@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ali_de_bd_consume_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/v2_ali_de_renewal_bg_focus"
+        android:layout_marginBottom="@dimen/ali_de_bd_margin_negative_60"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="@dimen/ali_de_bd_margin_740"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/ali_de_bd_min_740"
+            android:minWidth="@dimen/ali_de_bd_min_536"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ali_de_bd_consume_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ali_de_bd_margin_20"
+                android:layout_marginRight="@dimen/ali_de_bd_margin_20"
+            	android:layout_marginTop="@dimen/ali_de_bd_margin_48"
+                android:singleLine="true"
+                android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+                android:textSize="@dimen/ali_de_bd_text_size_32"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ali_de_renewal_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ali_de_bd_margin_16"
+                android:minHeight="@dimen/ali_de_bd_min_200"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ali_de_renewal_content_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <ListView android:id="@+id/ali_de_renewal_left_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        />
+				</LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ali_de_renewal_content_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/ali_de_bd_margin_14"
+                    android:orientation="vertical">
+                    <ListView android:id="@+id/ali_de_renewal_right_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        />
+                 </LinearLayout>
+            </LinearLayout>
+		<TextView
+                android:id="@+id/ali_de_bd_consume_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ali_de_bd_margin_30"
+                android:layout_marginRight="@dimen/ali_de_bd_margin_30"
+                android:layout_marginTop="@dimen/ali_de_bd_margin_20"
+                android:alpha="0.7"
+                android:gravity="left|center_vertical"
+                android:lines="3"
+                android:singleLine="false"
+                android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+                android:textSize="@dimen/ali_de_bd_text_size_20"
+                android:visibility="gone" />
+        <include
+            android:id="@+id/ali_de_bd_consume_renewal_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            layout="@layout/v2_ali_de_bd_consume_btn"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_30"
+            android:layout_marginLeft="@dimen/ali_de_bd_margin_5"
+            android:layout_marginRight="@dimen/ali_de_bd_margin_5"
+            android:layout_marginBottom="@dimen/ali_de_bd_margin_15"
+            android:visibility="gone" />
+		</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/result"
+        layout="@layout/ali_de_bd_consume"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/second_confirm"
+        layout="@layout/ali_de_bd_consume"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/consume"
+        layout="@layout/ali_de_bd_consume"
+        android:visibility="gone" />
+
+    <!-- 关闭赊销后的页面 -->
+
+    <include
+        android:id="@+id/close"
+        layout="@layout/ali_de_bd_consume_close"
+        android:visibility="gone" />
+
+    <!-- 输入开通赊销的验证码 -->
+
+    <include
+        android:id="@+id/verification"
+        layout="@layout/ali_de_bd_verification_code"
+        android:visibility="gone" />
+
+    <!-- 开通赊销过程中的错误提示，关闭通赊销后的弹窗 -->
+
+    <include
+        android:id="@+id/common_dialog"
+        layout="@layout/ali_de_bd_common_dialog"
+        android:visibility="gone" />
+    
+     <TextView
+        android:id="@+id/customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="客服电话 95188"
+        android:textColor="#77ffffff"
+        android:textSize="20sp" 
+        android:visibility="gone" /> 
+
+</RelativeLayout>

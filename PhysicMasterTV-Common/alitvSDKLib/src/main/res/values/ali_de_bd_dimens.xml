@@ -1,0 +1,120 @@
+<resources>
+    
+    <!-- ui 3.0 start -->
+    
+    <dimen name="ali_de_bd_qr_image_width">302dp</dimen>
+    
+    <dimen name="ali_de_bd_text_size_16">16sp</dimen>
+    <dimen name="ali_de_bd_text_size_18">18sp</dimen>
+    <dimen name="ali_de_bd_text_size_20">20sp</dimen>
+    <dimen name="ali_de_bd_text_size_24">24sp</dimen>
+    <dimen name="ali_de_bd_text_size_26">26sp</dimen>
+    <dimen name="ali_de_bd_text_size_28">28sp</dimen>
+    <dimen name="ali_de_bd_text_size_32">32sp</dimen>
+    <dimen name="ali_de_bd_text_size_34">34sp</dimen>
+    
+    
+    <dimen name="ali_de_bd_margin_4">4dp</dimen>
+    <dimen name="ali_de_bd_margin_5">5dp</dimen>
+    <dimen name="ali_de_bd_margin_8">8dp</dimen>
+    <dimen name="ali_de_bd_margin_10">10dp</dimen>
+    <dimen name="ali_de_bd_margin_12">12dp</dimen>
+    <dimen name="ali_de_bd_margin_14">14dp</dimen>
+    <dimen name="ali_de_bd_margin_15">15dp</dimen>
+    <dimen name="ali_de_bd_margin_16">16dp</dimen>
+    <dimen name="ali_de_bd_margin_20">20dp</dimen>
+    <dimen name="ali_de_bd_margin_24">24dp</dimen>
+    <dimen name="ali_de_bd_margin_30">30dp</dimen>
+    <dimen name="ali_de_bd_margin_32">32dp</dimen>
+    <dimen name="ali_de_bd_margin_34">34dp</dimen>
+    <dimen name="ali_de_bd_margin_36">36dp</dimen>
+    <dimen name="ali_de_bd_margin_40">40dp</dimen>
+    <dimen name="ali_de_bd_margin_42">42dp</dimen>
+    <dimen name="ali_de_bd_margin_48">48dp</dimen>
+    <dimen name="ali_de_bd_margin_60">60dp</dimen>
+    <dimen name="ali_de_bd_margin_68">68dp</dimen>
+    <dimen name="ali_de_bd_margin_74">74dp</dimen>
+    <dimen name="ali_de_bd_margin_740">740dp</dimen>
+    <dimen name="ali_de_bd_margin_negative_30">-30dp</dimen>
+    <dimen name="ali_de_bd_margin_negative_60">-60dp</dimen>
+    
+    <dimen name="ali_de_bd_text_btn_width">560dp</dimen>
+    <dimen name="ali_de_bd_text_btn_height">80dp</dimen>
+    
+    <!-- ui 3.0 end -->
+
+    <dimen name="ali_de_bd_dialog_consume_pay_text_size">28sp</dimen>
+    <!-- Progress Dialog -->
+    <dimen name="ali_de_bd_progress_title_text_size">24sp</dimen>
+    <dimen name="ali_de_bd_progress_title_margin_top">16dp</dimen>
+    <dimen name="ali_de_bd_progress_loading_view">88dp</dimen>
+
+    <!-- new version -->
+    <dimen name="ali_de_bd_dialog_width">626dp</dimen>
+    <dimen name="ali_de_bd_dialog_title_margin_top">50dp</dimen>
+    <dimen name="ali_de_bd_dialog_webview_margin_top">28dp</dimen>
+    
+    <!-- title bar -->
+    <dimen name="title_bar_childlock_title_width">420dp</dimen>
+    <dimen name="title_bar_childlock_title_height">45dp</dimen>
+    <dimen name="title_bar_childlock_title_margin_top">16dp</dimen>
+    <dimen name="title_bar_childlock_title_padding_left">460dp</dimen>
+    <dimen name="title_bar_childlock_title_textsize">20sp</dimen>
+    
+    <!-- validate Activity -->
+    <dimen name="validate_width">460dp</dimen>
+    <dimen name="validate_input_tip_text_padding_top">20dp</dimen>
+    <dimen name="validate_input_tip_text_padding_bottom">20dp</dimen>
+    <dimen name="validate_input_tip_text_textsize">24sp</dimen>
+    
+    <dimen name="validate_keyboard_margintop">115.33dp</dimen><!-- 90dp -->
+    <dimen name="validate_keyboard_marginbottom">11dp</dimen>
+    <dimen name="validate_keyboard_padding_top">36dp</dimen>
+   <dimen name="validate_keyboard_height">610dp</dimen>
+    
+    <dimen name="validate_et_key_height">73dp</dimen>
+    
+    <dimen name="validate_pswd_error_text_height">65dp</dimen>
+    <dimen name="validate_pswd_error_text_margin_left">80dp</dimen>
+    <dimen name="validate_pswd_error_text_margin_right">80dp</dimen>
+    <dimen name="validate_pswd_error_text_margin_top">5dp</dimen>
+    
+    <dimen name="validate_ime_grid_heigt">433dp</dimen>
+    <dimen name="validate_ime_grid_padding">14dp</dimen>
+    <dimen name="validate_ime_grid_padding_top">14dp</dimen>
+    <dimen name="validate_ime_grid_margin">32dp</dimen>
+    <dimen name="validate_ime_grid_margintop">11dp</dimen>
+    <dimen name="validate_ime_grid_marginbottom">4dp</dimen>
+    
+    <dimen name="validate_passwd_edittext_width">73dp</dimen>
+    <dimen name="validate_passwd_edittext_height">73dp</dimen>
+    <dimen name="validate_passwd_edittext_margin_right">6dp</dimen>
+    <dimen name="validate_passwd_edittext_textsize">38sp</dimen>
+    
+    <dimen name="validate_passwd_edit_margin_left">65.5dp</dimen>
+     <dimen name="validate_passwd_edit_margin_right">65.5dp</dimen>
+    <dimen name="validate_ime_grid_horizontal_space">30dp</dimen>
+     
+    <!-- Grid_item -->
+    <dimen name="grid_item_width">100dp</dimen>
+    <dimen name="grid_item_height">100dp</dimen>
+    <dimen name="grid_item_text_height">55dp</dimen>
+    <dimen name="grid_item_text_width">55dp</dimen>
+    <dimen name="grid_item_icon_height">62dp</dimen>
+    <dimen name="grid_item_icon_width">44dp</dimen>
+    <dimen name="grid_item_text_margin">22.5dp</dimen>
+    <dimen name="grid_item_text_margintop">19dp</dimen>
+    <dimen name="grid_item_text_marginbottom">23dp</dimen>
+    <dimen name="grid_item_text_textsize">40sp</dimen>
+    <dimen name="grid_item_text_delete_textsize">24sp</dimen>
+    <dimen name="grid_item_icon_margintop">19dp</dimen>
+    <dimen name="grid_item_icon_marginbottom">23dp</dimen>
+    <dimen name="grid_item_icon_marginleft">22.5dp</dimen>
+    <dimen name="grid_item_icon_marginright">22.5dp</dimen>
+    
+    <!-- renewal -->
+    <dimen name="ali_de_bd_min_200">200dp</dimen>
+    <dimen name="ali_de_bd_min_740">740dp</dimen>
+    <dimen name="ali_de_bd_min_536">536dp</dimen>
+
+</resources>

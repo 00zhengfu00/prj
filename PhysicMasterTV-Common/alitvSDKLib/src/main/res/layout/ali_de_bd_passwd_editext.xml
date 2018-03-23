@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/passwd_editext"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/passwd_error_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ali_de_validate_password_error"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="验证码输入错误，请重新输入"
+        android:textColor="#ff0000"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/passwd_input_editor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ali_de_bd_firstET"
+            android:layout_width="@dimen/validate_passwd_edittext_width"
+            android:layout_height="@dimen/validate_passwd_edittext_height"
+            android:layout_weight="1"
+            android:background="@drawable/ali_de_edittext_bg"
+            android:digits="1234567890*"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+            android:textSize="@dimen/validate_passwd_edittext_textsize"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/ali_de_bd_secondET"
+            android:layout_width="@dimen/validate_passwd_edittext_width"
+            android:layout_height="@dimen/validate_passwd_edittext_height"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/ali_de_edittext_bg"
+            android:digits="1234567890*"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+            android:textSize="@dimen/validate_passwd_edittext_textsize"
+            android:typeface="monospace" />
+<!-- 
+        <EditText
+            android:id="@+id/ali_de_bd_thirdET"
+            android:layout_width="@dimen/validate_passwd_edittext_width"
+            android:layout_height="@dimen/validate_passwd_edittext_height"
+            android:layout_marginLeft="@dimen/validate_passwd_edittext_margin_right"
+            android:layout_marginRight="@dimen/validate_passwd_edittext_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:digits="1234567890*"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+            android:textSize="@dimen/validate_passwd_edittext_textsize"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/ali_de_bd_fourthET"
+            android:layout_width="@dimen/validate_passwd_edittext_width"
+            android:layout_height="@dimen/validate_passwd_edittext_height"
+            android:layout_marginLeft="@dimen/validate_passwd_edittext_margin_right"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:digits="1234567890*"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="10dp"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+            android:textSize="@dimen/validate_passwd_edittext_textsize"
+            android:typeface="monospace" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

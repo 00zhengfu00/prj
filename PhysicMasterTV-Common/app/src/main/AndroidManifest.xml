@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.lswuyou.tv.pm"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_THIRDPAY"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <uses-feature
+        android:name="android.hardware.type.television"
+        android:required="true">
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true"/>
+
+    <application
+        android:name=".MyTinkerApplication"
+        android:allowBackup="true"
+        android:banner="@mipmap/pm_icon"
+        android:icon="@mipmap/pm_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Leanback">
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.SlashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SlashBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BuyRecordActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.ChapterDetailActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.CoursePackDetailActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.PlayRecordActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.VideoIntroActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.MyCollectActivity"
+            android:theme="@style/Leanback">
+        </activity>
+        <activity android:name=".activity.VideoActivity">
+        </activity>
+        <activity
+            android:name=".activity.MyCourseActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.CoursePackBoughtActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.VideoPlay2Activity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.VideoPlayV3Activity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.UnLoginActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.LoginedActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.VideoIntroForExcActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.MemberActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".activity.BuyMemberActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <!--
+            <activity
+            android:name=".channel.pay.HuanwangPayActivity"
+            android:theme="@style/translucent"/>
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="dangbei"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57df51ff67e58ec2aa001bba"/>
+        <!-- 当贝 -->
+        <activity
+            android:name="com.dangbei.dangbeipaysdknew.DangBeiPayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent">
+        </activity>
+
+        <meta-data
+            android:name="DANGBEI_APPKEY"
+            android:value="68df61a250580c6de87c1c40">
+        </meta-data>
+        <meta-data
+            android:name="APPKEY"
+            android:value="68df61a250580c6de87c1c40">
+        </meta-data>
+        <!-- 配置 AppKey & AppSecret (可选) -->
+        <meta-data
+            android:name="pay.shafa.key"
+            android:value="57fb4ab5"/>
+        <!-- 沙发 Activity -->
+        <!-- <activity android:name="com.xmxgame.pay.PayWayAct"/> -->
+        <!-- 乐视配置 -->
+        <meta-data
+            android:name="LePay_CoinEnable"
+            android:value="1"/>
+        <meta-data
+            android:name="LeOpen_AppId"
+            android:value="279503"/>
+        <meta-data
+            android:name="LeOpen_AppKey"
+            android:value="5b5b84a0b96146d680e4c423b3d13ea3"/>
+        <meta-data
+            android:name="LePay_CallbackUrl"
+            android:value="http://paynotify.lswuyou.com:8084/api/leshi/pm"/>
+
+        <activity
+            android:name=".channel.login.ChannelLoginActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <!-- 当贝广告 -->
+        <receiver android:name="com.dangbei.euthenia.receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!-- 乐视支付sdk相关,需要配置 -->
+        <!--
+        <activity
+            android:name="com.letv.tvos.paysdk.appmodule.pay.PayHomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name="com.letv.tvos.paysdk.appmodule.pay.VipChooseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name=".channel.pay.LeshiCoursePayActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        <activity
+            android:name=".channel.login.AliplayLoginActivity"
+            android:theme="@style/Theme.CommonBg">
+        </activity>
+        -->
+    </application>
+
+</manifest>

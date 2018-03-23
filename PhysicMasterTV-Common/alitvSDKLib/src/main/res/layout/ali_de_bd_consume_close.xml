@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.de.aligame.core.ui.view.BdPayCloseView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ali_de_bd_close"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <LinearLayout
+        android:id="@+id/ali_de_bd_close_confirm_layout"
+        android:layout_width="@dimen/ali_de_bd_text_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ali_de_bd_bg_payment_stock"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ali_de_bd_close_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_48"
+            android:gravity="center_horizontal"
+            android:text="@string/ali_de_bd_string_consume_close_confirm_text1"
+            android:textColor="@color/ali_de_bd_pay_title_text_color"
+            android:textSize="@dimen/ali_de_bd_text_size_32" />
+
+        <TextView
+            android:id="@+id/ali_de_bd_close_confirm_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_16"
+            android:gravity="center_horizontal"
+            android:text="@string/ali_de_bd_string_consume_close_confirm_text2"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_normal"
+            android:textSize="@dimen/ali_de_bd_text_size_20" />
+
+        <Button
+            android:id="@+id/ali_de_bd_close_confirm_button"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_40"
+            android:background="@color/ali_de_bd_pay_btn_bg_color_normal"
+            android:text="@string/ali_de_bd_string_consume_close_confirm_time"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_26"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ali_de_bd_close_confirm_success"
+        android:layout_width="@dimen/ali_de_bd_text_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/ali_de_bd_pay_btn_bg_color_normal"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/ali_de_loan_cancel_success"
+        android:gravity="center_horizontal"
+        android:padding="50dp"
+        android:text="成功关闭"
+        android:textColor="@color/ali_de_bd_pay_title_text_color"
+        android:textSize="@dimen/ali_de_bd_text_size_32"
+        android:visibility="gone" />
+
+</com.de.aligame.core.ui.view.BdPayCloseView>

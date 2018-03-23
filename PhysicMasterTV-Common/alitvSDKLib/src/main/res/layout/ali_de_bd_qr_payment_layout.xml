@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ali_de_bd_consume_account_ll"
+        android:layout_width="@dimen/ali_de_bd_text_btn_width"
+        android:layout_height="wrap_content"
+      
+        android:background="@drawable/ali_de_bd_bg_payment_stock"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ali_de_bd_consume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_48"
+            android:gravity="center_horizontal"
+            android:text="扫码支付"
+            android:textColor="@color/ali_de_bd_pay_title_text_color"
+            android:textSize="@dimen/ali_de_bd_text_size_32" />
+
+        <TextView
+            android:id="@+id/ali_de_bd_consume_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_16"
+            android:gravity="center_horizontal"
+            android:text="请使用手机应用【支付宝钱包】扫描二维码"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_normal"
+            android:textSize="@dimen/ali_de_bd_text_size_20" />
+
+        <ImageView
+            android:id="@+id/ali_de_bd_consume_qr_img"
+            android:layout_width="@dimen/ali_de_bd_qr_image_width"
+            android:layout_height="@dimen/ali_de_bd_qr_image_width"
+            android:layout_marginBottom="@dimen/ali_de_bd_margin_40"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_40"
+            android:scaleType="fitXY"
+            android:src="@drawable/ali_de_bd_qr_payment_logo" />
+
+        <!-- 
+        <Button
+            android:id="@+id/ali_de_bd_baodian_consume_loginpay"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:background="@drawable/ali_de_bd_consume_btn_bg"
+            android:text="登录支付"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_26"
+            android:visibility="visible" />
+         -->
+        
+<!--         <include -->
+<!--                 android:id="@+id/ali_de_bd_baodian_consume_loginpay" -->
+<!--                 android:layout_width="@dimen/ali_de_bd_text_btn_width" -->
+<!--                 android:layout_height="@dimen/ali_de_bd_text_btn_height" -->
+<!--                 layout="@layout/ali_de_bd_consume_btn"  -->
+<!--                 android:visibility="visible" /> -->
+     
+        
+    </LinearLayout>
+     
+ 
+    <include
+        android:id="@+id/result"
+        layout="@layout/ali_de_bd_consume"
+        android:visibility="gone" />
+ 
+</RelativeLayout>

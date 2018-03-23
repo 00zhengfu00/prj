@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunos.mc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.yunos.tv.payment.permission.PAY_RESULT"/>
+    
+    <!-- 获取任务队列 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 安全黑匣子使用权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- other权限 -->
+    <uses-permission android:name="com.taobao.statistic.permission.DEVICE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    
+    <application
+        android:allowBackup="true">
+        <activity
+            android:name="com.de.aligame.core.api.CorePayActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"  >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="pay"
+                    android:path=""
+                    android:scheme="aliTvSDKCore" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.de.aligame.core.ui.common.AuthWrapperActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard"
+            android:theme="@style/baodianPayDialog" >
+        </activity>
+        <activity
+            android:name="com.de.aligame.core.ui.common.LoadingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard"
+            android:theme="@style/baodianPayDialog" >
+        </activity>
+        <activity
+            android:name="com.de.aligame.core.ui.common.ConsumeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard" >
+        </activity>
+        
+        <activity         
+            android:name="com.de.aligame.core.ui.common.QRPaymentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard">
+        </activity>
+        <activity
+            android:launchMode="singleInstance"
+            android:name="com.de.aligame.core.ui.common.LoanActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard" >
+        </activity>
+ 		 <activity
+            android:name="com.de.aligame.core.ui.common.LotteryResultActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard" >
+        </activity>
+         <activity
+            android:name="com.de.aligame.mc.web.WebViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+  		<activity
+            android:name="com.de.aligame.core.ui.common1.AuthWrapperActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard"
+            android:theme="@style/baodianPayDialog" >
+        </activity>
+        <activity
+            android:name="com.de.aligame.core.ui.common.RenewalActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard">
+        </activity>
+        <activity
+            android:name="com.de.aligame.core.ui.common.ResultActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard">
+        </activity>
+        <service
+            android:name="com.taobao.statistic.module.data.Yolanda"
+            android:process=":utremote" >
+        </service>
+        
+        <receiver android:name="com.de.aligame.core.mc.receiver.McReceiver" >
+            <intent-filter>
+                <action android:name="com.aliyun.xiaoyunmi.action.AYUN_LOGIN_BROADCAST" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aliyun.xiaoyunmi.action.DELETE_ACCOUNT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

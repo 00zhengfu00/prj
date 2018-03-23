@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/ali_de_bd_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ali_de_bd_bg_payment_stock"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ali_de_bd_string_consume_exit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_42"
+            android:layout_marginLeft="@dimen/ali_de_bd_margin_15"
+            android:layout_marginRight="@dimen/ali_de_bd_margin_15"
+            android:text="@string/ali_de_bd_string_consume_exit_title"
+            android:textColor="@color/ali_de_bd_pay_title_text_color"
+            android:textSize="@dimen/ali_de_bd_text_size_32" />
+
+        <TextView
+            android:id="@+id/ali_de_bd_string_consume_exit_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_8"
+            android:layout_marginLeft="@dimen/ali_de_bd_margin_15"
+            android:layout_marginRight="@dimen/ali_de_bd_margin_15"
+            android:layout_marginBottom="@dimen/ali_de_bd_margin_32"
+            android:gravity="center_horizontal"
+            android:text="@string/ali_de_bd_string_consume_exit_title"
+            android:textColor="@color/ali_de_bd_pay_btn_txt_color_normal"
+            android:textSize="@dimen/ali_de_bd_text_size_20" />
+
+        <Button
+            android:id="@+id/ali_de_bd_consume_exit_continue"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:layout_marginTop="@dimen/ali_de_bd_margin_40"
+            android:text="@string/ali_de_bd_string_consume_exit_no"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_26" />
+
+        <Button
+            android:id="@+id/ali_de_bd_consume_exit_giveup"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:text="@string/ali_de_bd_string_consume_exit_confirm"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_28" />
+    </LinearLayout>
+
+    <com.de.aligame.core.ui.view.AliSmartViewFocusFrame
+        android:id="@+id/ali_de_bd_giveup_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

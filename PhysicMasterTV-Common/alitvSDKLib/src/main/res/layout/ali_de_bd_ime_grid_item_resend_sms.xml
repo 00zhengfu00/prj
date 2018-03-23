@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resend_sms_layout"
+    android:layout_width="@dimen/grid_item_width"
+    android:layout_height="@dimen/grid_item_height"
+    android:background="@drawable/ali_de_ime_keyboard_resend_sms_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ali_de_bd_ime_text_countdown"
+        android:layout_width="@dimen/grid_item_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="30秒后"
+        android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/ali_de_bd_ime_text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="重新发送验证码"
+        android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+        android:textSize="18dp" />
+
+</LinearLayout>

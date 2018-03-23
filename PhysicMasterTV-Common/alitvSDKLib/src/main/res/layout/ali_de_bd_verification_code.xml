@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.de.aligame.core.ui.view.VerificationCodeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/verification_code"
+    android:layout_width="@dimen/validate_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ali_de_bd_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="@string/validate_title"
+        android:textColor="#ffffff"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/ali_de_bd_sub_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ali_de_bd_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="@string/validate_sub_title"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    
+    <LinearLayout
+        android:id="@+id/keyboard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ali_de_bd_sub_title_tv"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ali_de_keyboard_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/validate_keyboard_marginbottom"
+        android:paddingTop="@dimen/validate_keyboard_padding_top" >
+
+        <com.de.aligame.core.ui.view.PasswdEditText
+            android:id="@+id/ali_de_bd_et_key"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/validate_et_key_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/validate_passwd_edit_margin_left"
+            android:layout_marginRight="@dimen/validate_passwd_edit_margin_right"
+            android:focusable="false"
+            android:gravity="center" />
+
+        <com.de.aligame.core.ui.view.KeyGridView
+            android:id="@+id/ali_de_bd_ime_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/validate_ime_grid_heigt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/validate_ime_grid_margin"
+            android:layout_marginRight="@dimen/validate_ime_grid_margin"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:horizontalSpacing="@dimen/validate_ime_grid_horizontal_space"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingBottom="@dimen/validate_ime_grid_padding"
+            android:paddingLeft="@dimen/validate_ime_grid_padding"
+            android:paddingRight="@dimen/validate_ime_grid_padding"
+            android:paddingTop="7dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</com.de.aligame.core.ui.view.VerificationCodeView>

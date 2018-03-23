@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 确认开通赊销 / 查看协议 -->
+
+    <LinearLayout
+        android:id="@+id/pre_open_loan_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ali_de_bd_bg_payment_stock"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:text="开启先用后付"
+            android:textColor="#000000"
+            android:textSize="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/ali_de_bd_string_consume_loan_first_tips"
+            android:textColor="#77000000"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="40dp"
+            android:background="#1e000000" />
+
+        <TextView
+            android:id="@+id/ali_de_bd_open_loan_confirme"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:background="@drawable/ali_de_bd_consume_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="立即开启"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_26" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#1e000000" />
+
+        <TextView
+            android:id="@+id/ali_de_bd_open_loan_protocol"
+            android:layout_width="@dimen/ali_de_bd_text_btn_width"
+            android:layout_height="@dimen/ali_de_bd_text_btn_height"
+            android:background="@drawable/ali_de_bd_consume_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="查看先用后付协议"
+            android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+            android:textSize="@dimen/ali_de_bd_text_size_26" />
+    </LinearLayout>
+
+    <!-- 开通赊销成功，倒计时 -->
+
+    <LinearLayout
+        android:id="@+id/open_loan_success_layout"
+        android:layout_width="@dimen/ali_de_bd_text_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ali_de_bd_bg_payment"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:text="恭喜！您已开通先用后付"
+            android:textColor="#000000"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/open_loan_success_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="可用额度: 500 M币"
+            android:textColor="#77000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/open_loan_success_countdown_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="5秒后自动返回"
+            android:textColor="#4d000000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <!-- 输入开通赊销的验证码 -->
+
+    <include
+        android:id="@+id/verification"
+        layout="@layout/ali_de_bd_verification_code"
+        android:visibility="gone" />
+
+    <!-- 开通赊销过程中的错误提示，关闭通赊销后的弹窗 -->
+
+    <include
+        android:id="@+id/common_dialog"
+        layout="@layout/ali_de_bd_common_dialog"
+        android:visibility="gone" />
+
+</RelativeLayout>

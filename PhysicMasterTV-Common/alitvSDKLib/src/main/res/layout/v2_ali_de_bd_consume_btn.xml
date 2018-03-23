@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ali_de_bd_text_btn_height"
+    android:background="@color/ali_de_bd_renewal_btn_bg_color_focus"
+    android:focusable="true"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/ali_de_bd_consume_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="立即开通"
+        android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+        android:textSize="@dimen/ali_de_bd_text_size_28" />
+	<ImageView
+        android:id="@+id/ali_de_bd_btn_reward_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/ali_de_bd_margin_14"
+        android:layout_toLeftOf="@id/ali_de_bd_consume_button_text"
+        android:src="@drawable/v2_ali_de_icon_confirm"
+        />
+</RelativeLayout>

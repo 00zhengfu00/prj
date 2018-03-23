@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ali_de_bd_text_btn_width"
+    android:layout_height="@dimen/ali_de_bd_text_btn_height"
+    android:background="@color/ali_de_bd_pay_btn_bg_color_normal"
+    android:focusable="true"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#1e000000"
+      />
+
+    <TextView
+        android:id="@+id/ali_de_bd_baodian_consume_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="登录支付"
+        android:textColor="@drawable/ali_de_bd_pay_btn_text_color_selector"
+        android:textSize="@dimen/ali_de_bd_text_size_26" />
+
+    <ImageView
+        android:id="@+id/ali_de_bd_btn_reward_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ali_de_bd_btn_reward"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_selected="true" android:drawable="@drawable/ali_de_validate_password_normal" />
+	<item android:state_selected="false" android:drawable="@drawable/ali_de_validate_password_normal"/>
+	<item android:drawable="@drawable/ali_de_validate_password_normal"/>
+	<!-- <item android:state_selected="true" android:drawable="@drawable/validate_password_error" />
+	<item android:drawable="@drawable/validate_password_normal"/> -->
+</selector>

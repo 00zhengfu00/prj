@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/channel_lay"
+    android:layout_width="@dimen/grid_item_width"
+    android:layout_height="@dimen/grid_item_height"
+    android:background="@drawable/ali_de_ime_keyboard_key_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ali_de_bd_ime_text_num"
+        android:layout_width="@dimen/grid_item_text_width"
+        android:layout_height="@dimen/grid_item_text_height"
+        android:layout_marginTop="@dimen/grid_item_text_margintop"
+        android:layout_marginBottom="@dimen/grid_item_text_marginbottom"
+        android:layout_marginLeft="@dimen/grid_item_text_margin"
+        android:layout_marginRight="@dimen/grid_item_text_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/ali_de_bd_pay_btn_txt_color_focus"
+        android:textSize="@dimen/grid_item_text_textsize" />
+    
+    <ImageView
+        android:id="@+id/ali_de_bd_ime_icon"
+        android:layout_width="@dimen/grid_item_icon_width"
+        android:layout_height="@dimen/grid_item_icon_height"
+        android:layout_marginTop="@dimen/grid_item_icon_margintop"
+        android:layout_marginBottom="@dimen/grid_item_icon_marginbottom"
+        android:layout_marginLeft="@dimen/grid_item_icon_marginleft"
+        android:layout_marginRight="@dimen/grid_item_icon_marginright"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="center"
+        android:visibility="gone" /> 
+
+</LinearLayout>

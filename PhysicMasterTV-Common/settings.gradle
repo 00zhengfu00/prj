@@ -1,0 +1,1 @@
+include ':app', ':frametv', 'player-arm64', 'player-armv5', 'player-armv7a', 'player-java', 'player-x86', 'leanback', ':jcvideoplayer-lib'

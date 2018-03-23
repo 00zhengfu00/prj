@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Progress Dialog -->
+    <string name="ali_de_bd_string_progress_paying">正在支付,请稍候</string>
+    <string name="ali_de_bd_string_check_auth_result">正在检测登录结果，请稍候</string>
+    
+    <!-- 消费宝点模块 -->
+    <string name="ali_de_bd_string_consume_item_title">宝贝名称</string>
+    <string name="ali_de_bd_string_consume_get_userinfo">正在获取用户信息，请稍候</string>
+    <string name="ali_de_bd_string_consume_ok">确认支付</string>
+    <string name="ali_de_bd_string_consume_account">订单金额 %s 元</string>
+<!--     <string name="ali_de_bd_string_consume_account_balance">M币余额： %s </string> -->
+    <string name="ali_de_bd_string_consume_account_balance"></string>
+    <string name="ali_de_bd_string_consume_exit_title">您确认要放弃支付？</string>
+    <string name="ali_de_bd_string_consume_exit_no">继续支付</string>
+    <string name="ali_de_bd_string_consume_exit_confirm">放弃支付</string>
+
+    <!-- Loan -->
+    <string name="ali_de_bd_string_consume_loan_loading">正在获取协议内容，请稍候</string>
+    <string name="ali_de_bd_string_consume_loan_protocol">先用后付协议</string>
+    <string name="ali_de_bd_string_consume_loan_agree">同意协议去开通</string>
+
+    <!-- Error -->
+    <string name="ali_de_bd_string_consume_params_error">请求参数错误</string>
+    <string name="ali_de_bd_string_consume_no_pay_method_error">没有可用的消费模式</string>
+    <string name="ali_de_bd_string_no_network_connection_title">无网络连接</string>
+    <string name="ali_de_bd_string_no_network_connection_subtitle">请设置网络或稍候重试</string>
+    <string name="ali_de_bd_string_setting_network">设置网络</string>
+
+    <!-- Result -->
+    <string name="ali_de_bd_string_consume_result_success_title">成功支付 %s 元</string>
+    <string name="ali_de_bd_string_consume_result_fail_title">购买失败</string>
+    <string name="ali_de_bd_string_consume_result_success_tips">宝贝正在空投，请稍等几秒查看</string>
+    <string name="ali_de_bd_string_consume_pay_fail">付款失败</string>
+    <string name="ali_de_bd_string_consume_result_buy_again">请重新购买</string>
+    <string name="ali_de_bd_string_comsume_get_user_info_fail">获取用户信息失败，请稍后重试!</string>
+
+    <!-- 自动还款 -->
+    <string name="ali_de_bd_string_consume_loan_first_tips">支付宝将定期帮您从账户或绑定银行卡自动还款</string>
+    <string name="ali_de_bd_string_consume_loan_title">先用后付  %s M币</string>
+    <string name="ali_de_bd_string_consume_loan_date">将在 %s 从您支付宝账户自动还款</string>
+
+    <!-- 选择支付方式btn -->
+    <string name="ali_de_bd_pay_choice_alipay_btn_title">支付宝支付 %s 元</string>
+    <string name="ali_de_bd_pay_choice_alipay_btn_sub_title">（含赊欠%sM币）</string>
+    <string name="ali_de_bd_pay_choice_credit_btn_title">先用后付  %s M币</string>
+    <string name="ali_de_bd_pay_choice_credit_btn_sub_title">（快捷，免息）</string>
+    <string name="ali_de_bd_pay_choice_deposit_btn_title">M币余额支付</string>
+    <string name="ali_de_bd_pay_choice_tao_coin_btn_title">%s淘金币支付</string>
+    <string name="ali_de_bd_string_consume_extra_pay_tao_title">系统将扣除您 %s 淘金币</string>
+    <string name="ali_de_bd_string_consume_extra_pay_tao_sucess_title">成功支付 %s 淘金币</string>
+    <string name="ali_de_bd_string_consume_extra_pay_method_tao_coin">淘金币</string>
+	<string name="ali_de_bd_string_consume_loan_before_auto_payment">感谢您使用先用后付服务\n请在%s前到手机支付宝充值还款</string>
+    <string name="ali_de_bd_string_consume_first_loan_before_auto_payment">感谢您使用先用后付服务\n请在手机支付宝充值还款</string>
+
+    <string name="ali_de_bd_string_consume_qr_other_pay_timer">其他支付方式(%ds)</string>
+    <string name="ali_de_bd_string_consume_qr_other_pay">登录支付</string>
+    
+    <string name="ali_de_bd_string_consume_is_user_credit_tips">因首贷未还或逾期，您暂不能使用先用后付</string>
+    <string name="ali_de_bd_string_consume_close">关闭先用后付</string>
+    <!-- TODO  -->
+    <string name="ali_de_bd_string_consume_close_confirm_text1">您将关闭先用后付</string>
+    <string name="ali_de_bd_string_consume_close_confirm_text2">小秘籍：设置支付安全锁，可进行密码保护哦</string>
+    <string name="ali_de_bd_string_consume_close_confirm_time">确认关闭</string>
+
+    <string name="validate_title">首次使用 需短信验证</string>
+    <string name="validate_sub_title">若无短信，请检查手机短信拦截</string>
+    <string name="delete">清空</string>
+    
+    
+</resources>

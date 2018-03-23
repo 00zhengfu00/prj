@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ali_de_bd_pay_btn_txt_color_focus">#ffffff</color>
+    <color name="ali_de_bd_pay_btn_txt_color_normal">#77000000</color>
+<!--     <color name="ali_de_bd_pay_btn_bg_color_focus">#fd7c0b</color>橙色 -->
+    <color name="ali_de_bd_pay_btn_bg_color_focus">#FF00A0E9</color><!--蓝色 -->
+    <color name="ali_de_bd_renewal_btn_bg_color_focus">#3f76d1</color><!--蓝色 -->
+    <color name="ali_de_bd_pay_btn_bg_color_normal">#00000000</color>
+    <color name="ali_de_bd_pay_title_text_color">#000000</color>
+    
+    
+   <color name="ali_de_bd_text_address_color">#88000000</color>
+   <color name="ali_de_bd_text_address_city_color">#66000000</color>
+    
+    <color name="ali_de_bd_transparent">#00000000</color><!--颜色透明 -->
+    
+</resources>

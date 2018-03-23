@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+// 依赖插件脚本
+apply from: 'tinker-support.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.lswuyou.tv.pm"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        //1.4->4
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled false
+    }
+    signingConfigs {
+        release {
+            storeFile file("physicmastertv.jks")
+            storePassword "wulidashitv"
+            keyAlias "wulidashitv"
+            keyPassword "wulidashitv"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    dexOptions {
+        jumboMode = true
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':frametv')
+//    compile project(':jcvideoplayer-lib')
+    //ijkplayer
+    compile project(':player-armv5')
+    compile project(':player-armv7a')
+    compile project(':player-java')
+    compile project(':player-x86')
+//    compile project(':leanback')
+    //damai
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/damai/commons-codec-20041127.091804.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/damai/deviceinfo_2.02.16_201603261123.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/damai/hiveviewcore_20151231.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/damai/joda-time-2.5.jar')
+    //dangbei
+    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/dangbei/paySdk_20170629-yunos.jar')
+    //huanwang
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/huanwang/huanAndroidUAInfo_V1.1.1.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/huanwang/huanSDKPay4_test.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/huanwang/huanSDKPay4_official.jar')
+    //kukai
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/kukai/CcOssApi_V5.1.jar')
+    //shafa
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/shafa/pay_sdk_android.jar')
+    //xiaomi SDK_MIBOX_2.5.2
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/xiaomi/SDK_MIBOX_2.5.2.jar')
+    //    compile files('D:/Program Files/Wujie/PhysicMaster/PhysicMaster-Tv/trunk/PayLibs/xiaomi/mitvpaysdk.jar')
+    //aliplay
+    //    compile project(':alitvSDKLib')
+    //leshi
+    //    compile(name:'le-gamesdk-tv-lib-v2.0.4',ext:'aar')
+//    compile(name:'leanback-v17-25.3.1',ext:'aar')
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile 'com.github.bumptech.glide:glide:3.4.+'
+    compile "com.android.support:support-v4:${supportLibVersion}"
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+//    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.dangbei:sdk-euthenia:3.2.0'
+    compile "com.android.support:leanback-v17:${supportLibVersion}"
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
