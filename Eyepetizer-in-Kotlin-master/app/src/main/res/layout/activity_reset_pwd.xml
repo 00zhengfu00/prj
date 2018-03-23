@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tt.lvruheng.eyepetizer.ui.InputPhoneActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title_style_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:enabled="false"
+        android:text="重设密码并登录"
+        android:textColor="@color/btn_text_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine2"
+        app:layout_constraintVertical_bias="0.127"/>
+
+    <TextView
+        android:id="@+id/tvPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:text="登录密码"
+        android:textColor="#99000000"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine1"/>
+
+    <EditText
+        android:id="@+id/etPwd"
+        style="@style/edittext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:hint="请设置新的登录密码"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toEndOf="@+id/tvPwd"/>
+
+    <TextView
+        android:id="@+id/tvLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPwd"
+        />
+
+    <TextView
+        android:id="@+id/tvOldPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="10dp"
+        android:text="验证码    "
+        android:textColor="#99000000"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+    <EditText
+        android:id="@+id/etOldPwd"
+        style="@style/edittext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:hint="短信验证码"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOldPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toEndOf="@+id/tvOldPwd"/>
+
+    <TextView
+        android:id="@+id/tvLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOldPwd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:text="密码由6位以上数字和字母组成"
+        android:textColor="#99000000"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine2"/>
+
+    <com.tt.lvruheng.eyepetizer.widget.TimerButton
+        android:id="@+id/btnGetCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:background="@color/transparent"
+        android:gravity="bottom|right"
+        android:text="获取验证码"
+        android:textColor="@color/timer_btn_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etOldPwd"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/ivEye"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/etPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/eye_close"/>
+
+    <ImageView
+        android:id="@+id/ivClear"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/etPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ivEye"
+        app:srcCompat="@drawable/clear"/>
+</android.support.constraint.ConstraintLayout>
