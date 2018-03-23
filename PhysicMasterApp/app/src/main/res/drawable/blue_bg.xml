@@ -1,0 +1,27 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="@dimen/dimen_5"/>
+
+            <gradient
+                android:angle="270"
+                android:endColor="@color/gray7"
+                android:startColor="@color/gray7"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="@dimen/dimen_5"/>
+
+            <gradient
+                android:angle="270"
+                android:endColor="#07A7FA"
+                android:startColor="#07A7FA"/>
+        </shape>
+    </item>
+
+</selector>

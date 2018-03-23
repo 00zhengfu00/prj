@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:text="分享介绍给家人，让家人帮你购买"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_6"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:text="家人不在身边？"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"/>
+
+
+        <Button
+            android:id="@+id/btn_qq"
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_below="@id/tv"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/blue_btn_bg2"
+            android:text="分享到QQ"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"/>
+
+        <Button
+            android:id="@+id/btn_weixin"
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/blue_btn_bg2"
+            android:text="分享到微信"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:src="@mipmap/fangshi1"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="@dimen/dimen_260"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:lines="2"
+            android:text="点击打开代付页面，让家人查看你的手机，为你扫码购买"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_6"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:text="家人在身边？"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"/>
+
+
+        <Button
+            android:id="@+id/btn_daifu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_below="@id/tv2"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/blue_btn_bg2"
+            android:text="打开代付页面"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:src="@mipmap/fangshi2"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

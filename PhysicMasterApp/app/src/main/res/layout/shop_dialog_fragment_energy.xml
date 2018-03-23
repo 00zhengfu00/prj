@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="购买精力瓶:"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_alignLeft="@id/tv"
+            android:layout_below="@+id/tv_energy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/blue_background1">
+
+
+            <ImageView
+                android:id="@+id/iv_energy"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_44"
+                android:src="@mipmap/jingli_jia30"/>
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_energy"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="-20金币"
+                android:textColor="@color/colorLineGray"
+                android:textSize="@dimen/size_20"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="恢复30至点精力值"
+
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_alignLeft="@+id/rl_layout"
+            android:layout_alignRight="@+id/rl_layout"
+            android:layout_below="@+id/rl_layout"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:background="@drawable/blue_btn_background"
+            android:text="支付"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+</FrameLayout>

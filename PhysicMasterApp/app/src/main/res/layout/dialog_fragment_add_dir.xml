@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_textview_blue"
+            android:gravity="center"
+            android:text="添加标签目录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20"
+            />
+
+        <EditText
+            android:id="@+id/et_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:hint="新建标签目录"
+            android:paddingBottom="@dimen/dimen_38"
+            android:paddingLeft="@dimen/dimen_10"
+            android:maxLength="16"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_38"
+            android:textColor="@color/color_black_333333"
+            android:textColorHint="@color/colorGray_d2d2d2"
+            android:textSize="@dimen/size_15"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray_d2d2d2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_20"
+                android:text="取消"
+                android:textColor="@color/colorBlack_444444"
+                android:textSize="@dimen/size_20"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:background="@color/colorGray_d2d2d2"
+                />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:paddingBottom="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_20"
+                android:text="确定"
+                android:textColor="@color/colorTitleBlue"
+                android:textSize="@dimen/size_20"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

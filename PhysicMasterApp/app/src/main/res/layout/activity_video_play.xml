@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgound"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:background="@color/colorTitleBlue">
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="策划：曹志胜 制作：Levy"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_16"/>
+
+                <ImageView
+                    android:id="@+id/iv_collect"
+                    android:layout_width="@dimen/dimen_25"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:src="@mipmap/collect"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_toLeftOf="@id/iv_collect"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/btn_cache_bg"
+                    android:enabled="false"
+                    android:maxWidth="@dimen/dimen_30"
+                    android:minWidth="@dimen/dimen_24"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_27"
+                android:layout_marginLeft="@dimen/dimen_27"
+                android:layout_marginRight="@dimen/dimen_27"
+                android:layout_marginTop="@dimen/dimen_27"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介："
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size_16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="物理大师，格物致知"
+                    android:textColor="#979797"
+                    android:textSize="@dimen/size_16"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

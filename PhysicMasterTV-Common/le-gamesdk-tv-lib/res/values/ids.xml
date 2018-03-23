@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="grid_pager_adater_tag" type="id"></item>
+    <item name="grid_pager_adater_parent" type="id"></item>
+    <item name="item_touch_helper_previous_elevation" type="id" />
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_played">#ff07a7fa</color>
+    <color name="color_normal">#4c000000</color>
+    <color name="color_cached">#ffe0e0e0</color>
+</resources>

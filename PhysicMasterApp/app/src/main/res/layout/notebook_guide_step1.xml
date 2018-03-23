@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_100"
+        android:layout_marginTop="250dp"
+        android:src="@mipmap/line4"/>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="添加标签目录\n快速找错题不再难"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_18"
+        android:typeface="sans"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_22"
+        android:src="@mipmap/iknow"/>
+</RelativeLayout>

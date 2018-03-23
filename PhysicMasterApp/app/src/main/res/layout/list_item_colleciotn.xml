@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+
+    <com.physicmaster.widget.MoreGridView
+        android:id="@+id/gv_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_6"
+        android:horizontalSpacing="@dimen/dimen_6"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_6">
+    </com.physicmaster.widget.MoreGridView>
+
+</LinearLayout>

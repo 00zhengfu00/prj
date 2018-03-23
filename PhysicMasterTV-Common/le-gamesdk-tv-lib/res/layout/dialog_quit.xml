@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_70percent_not_alpha">
+
+    <LinearLayout
+        android:layout_width="@dimen/s_454"
+        android:layout_height="@dimen/s_240"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s_195"
+        android:background="@drawable/background_color_dialog_quit"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_53"
+            android:text="@string/letv_paysdk_quit_tips"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/f_25"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_34"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_quit_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_button_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <Button
+                    android:id="@+id/btn_quit_confirm"
+                    android:layout_width="@dimen/s_136"
+                    android:layout_height="@dimen/s_46"
+                    android:background="@drawable/background_button_default"
+                    android:focusable="false"
+                    android:text="@string/letv_paysdk_confirm"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/f_22"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_quit_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/s_m_27"
+                android:background="@drawable/selector_button_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <Button
+                    android:id="@+id/btn_quit_back"
+                    android:layout_width="@dimen/s_136"
+                    android:layout_height="@dimen/s_46"
+                    android:background="@drawable/background_button_default"
+                    android:focusable="false"
+                    android:text="@string/letv_paysdk_back"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/f_22"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <com.physicmaster.widget.CustomVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_20"/>
+
+</RelativeLayout>

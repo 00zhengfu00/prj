@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="推荐购买:"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text=""
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_22"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_16"
+            android:text=""
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_22"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="(购买学期课程可观看该学期全部视频)"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_14"/>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/blue_btn_background"
+            android:text="立即购买"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_22"
+            />
+
+        <Button
+            android:id="@+id/btn_buy_parents"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginBottom="@dimen/dimen_14"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/blue_background1"
+            android:text="家长代付"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_22"
+            />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:text="@string/parents_pay"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_14"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:src="@mipmap/close"/>
+
+</RelativeLayout>

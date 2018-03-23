@@ -1,0 +1,48 @@
+<resources>
+
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#8e8f91</color>
+    <color name="gray_new">#7a7d83</color>
+    <color name="red">#FF0000</color>
+
+    <!--白色不透明-->
+    <color name="white_80percent_not_alpha">#CCffffff</color>
+    <color name="white_60percent_not_alpha">#99ffffff</color>
+    <color name="white_50percent_not_alpha">#80ffffff</color>
+    <color name="white_45percent_not_alpha">#73ffffff</color>
+
+    <!--黑色不透明-->
+    <color name="black_70percent_not_alpha">#B3000000</color>
+
+    <!--退出对话框背景色-->
+    <color name="background_color_dialog_quit">#E6183f64</color>
+
+    <!--VIP有消息颜色-->
+    <color name="vip_expires_color">#ff8010</color>
+
+    <!--VIP背景焦点背景色-->
+    <color name="background_color_vip_focus">#252934</color>
+
+    <!--乐游币支付页背景色-->
+    <color name="background_color_lecoin">#991f232c</color>
+
+    <!--乐游币支付文字颜色-->
+    <color name="text_color_lecoin">#dcdcdc</color>
+
+    <!--支付密码错误文本色-->
+    <color name="text_color_password_error">#fe4f3e</color>
+
+    <!--支付方式推荐语文本色-->
+    <color name="text_color_payment_tips">#E6f9c982</color>
+
+    <!--支付方式item背景色-->
+    <color name="color_payment_default_background">#8020232c</color>
+    <color name="color_payment_selected_background">#D920232c</color>
+
+    <!--菜单背景色-->
+    <color name="color_menu_background">#80222632</color>
+
+    <color name="text_color_recharge_card_tips">#f23d2f</color>
+
+</resources>

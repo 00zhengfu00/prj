@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/s_112"
+        android:background="@drawable/letv_dialog">
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="@dimen/s_60"
+            android:layout_height="@dimen/s_60"
+            android:background="@drawable/letv_loading_background">
+
+            <ImageView
+                android:id="@+id/iv_dialog_loading"
+                android:layout_width="@dimen/s_60"
+                android:layout_height="@dimen/s_60"
+                android:background="@drawable/letv_loading_top" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_9"
+            android:text="@string/letv_pay_sdk_loading_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/f_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

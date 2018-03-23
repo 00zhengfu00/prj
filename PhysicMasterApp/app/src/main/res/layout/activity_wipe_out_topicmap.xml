@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:drawableLeft="@mipmap/tuichu"
+        android:drawablePadding="@dimen/dimen_6"
+        android:text="退出"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_16"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_50">
+
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="错题解析已完成"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_24"/>
+
+        <com.physicmaster.widget.FinishView
+            android:id="@+id/iv_finish"
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_140"
+            android:layout_below="@+id/tv_finish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"/>
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_heads"
+            android:layout_alignRight="@+id/iv_finish"
+            android:layout_alignLeft="@+id/iv_finish"
+            android:layout_alignBottom="@+id/iv_finish"
+            android:layout_alignTop="@+id/iv_finish"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_margin="@dimen/dimen_12"
+            riv:type="circle"
+            android:layout_height="@dimen/dimen_120"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_analysis"
+            android:layout_width="@dimen/dimen_110"
+            android:text="夯实知识点，\n捍卫学霸王座"
+            android:gravity="center"
+            android:layout_alignRight="@+id/tv_finish"
+            android:layout_below="@+id/iv_finish"
+            android:textSize="@dimen/size_16"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textColor="@color/colorWhite"
+            android:background="@mipmap/topicmap_analysis"
+            android:layout_height="@dimen/dimen_60"/>
+
+
+        <Button
+            android:id="@+id/btn_wipe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_below="@+id/tv_analysis"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@mipmap/zaishiyici"
+            android:text="消灭错题"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_below="@+id/btn_wipe"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/topicmap_finish_background"
+            android:text="再看一遍"
+            android:textColor="@color/colorTitleBlue"
+            android:visibility="visible"
+            android:textSize="@dimen/size_20"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

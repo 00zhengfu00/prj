@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/s_466"
+    android:layout_height="@dimen/s_253"
+    android:background="@drawable/letv_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/s_466"
+        android:layout_height="@dimen/s_253"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_53"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/s_24"
+                android:layout_height="@dimen/s_24"
+                android:background="@drawable/letv_info" />
+
+            <TextView
+                android:id="@+id/tv_load_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_9"
+                android:includeFontPadding="false"
+                android:text="@string/letv_pay_sdk_load_failure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_23" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_12"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/bt_reload"
+                android:layout_width="@dimen/s_161"
+                android:layout_height="@dimen/s_61"
+                android:layout_centerInParent="true"
+                android:background="@drawable/letv_has_buy_focus"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/letv_pay_sdk_reload"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_23" />
+
+            <View
+                android:layout_width="@dimen/s_210"
+                android:layout_height="@dimen/s_124"
+                android:layout_centerInParent="true"
+                android:background="@drawable/letv_auto_buy_has_focus" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

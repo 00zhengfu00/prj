@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"
+        android:text=""
+        android:textColor="@color/color_grey_999999"
+        android:textSize="@dimen/size_15"/>
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"
+        android:text=""
+        android:textColor="@color/color_grey_999999"
+        android:textSize="@dimen/size_15"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_8">
+
+        <EditText
+            android:id="@+id/et_chage_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:includeFontPadding="false"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/dimen_14"
+            android:hint="收货人"
+            android:textColor="@color/colorDarkGray"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/size_18"/>
+
+        <ImageView
+            android:id="@+id/iv_clean"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:src="@mipmap/xiugaixingming_qingchu"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

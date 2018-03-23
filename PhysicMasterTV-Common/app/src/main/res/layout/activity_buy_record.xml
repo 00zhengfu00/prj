@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lswuyou.tv.pm.activity.BuyRecordActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y142"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/x181"
+        android:layout_marginRight="@dimen/x181"
+        android:layout_marginTop="@dimen/y50"
+        android:background="@color/item_bg_color1"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y20"
+        android:paddingTop="@dimen/y20"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单编号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="项目"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="金额"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="购买时间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+    </LinearLayout>
+    <!-- 此处有四个自定义参数: cursorRes指定光标图片 itemWidth为子项宽度 itemHeight为子项高度 focusOption为焦点模式(默认子控件得焦点)-->
+    <reco.frame.tv.view.TvListView
+        android:id="@+id/record_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y758"
+        android:layout_marginLeft="@dimen/x181"
+        android:layout_marginRight="@dimen/x181"
+        android:layout_marginTop="@dimen/y322"
+        tv:cursorRes="@drawable/cursor_1920"
+        tv:focusOption="PARENT_ONLY"
+        tv:itemH="@dimen/y142"
+        tv:itemW="@dimen/x1558"
+        tv:scalable="false">
+    </reco.frame.tv.view.TvListView>
+</RelativeLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reco.frame.tv.view.TvRelativeLayoutAsGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tv="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clipChildren="false"
+                                            android:clipToPadding="false"
+                                            android:paddingLeft="@dimen/x114"
+                                            android:paddingRight="@dimen/x114"
+                                            android:paddingTop="@dimen/x70"
+                                            tv:boarderBottom="@dimen/boader_width"
+                                            tv:boarderLeft="@dimen/boader_width"
+                                            tv:boarderRight="@dimen/boader_width"
+                                            tv:boarderTop="@dimen/boader_width"
+                                            tv:cursorRes="@drawable/cursor_1920"
+                                            tv:scale="1.1">
+
+    <RelativeLayout
+        android:id="@+id/play_record_lay"
+        android:layout_width="@dimen/x420"
+        android:layout_height="@dimen/y640"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/play_record"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="播放记录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_play_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/x20"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/collect_lay"
+        android:layout_width="@dimen/x420"
+        android:layout_height="@dimen/y640"
+        android:layout_marginLeft="@dimen/user_item_margin_right"
+        android:layout_toRightOf="@id/play_record_lay"
+        android:focusable="true"
+        android:nextFocusRight="@+id/my_member_lay"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/my_collect"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="我的收藏"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/x20"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_member_lay"
+        android:layout_width="@dimen/user_item_width"
+        android:layout_height="@dimen/user_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/user_item_margin_right"
+        android:layout_toRightOf="@id/collect_lay"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/my_course"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="我的会员"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_course_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/x20"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- recyclerview测试DEMO -->
+
+    <RelativeLayout
+        android:id="@+id/set_lay"
+        android:layout_width="@dimen/user_item_width"
+        android:layout_height="@dimen/user_item_height"
+        android:layout_below="@id/my_member_lay"
+        android:layout_marginLeft="@dimen/user_item_margin_right"
+        android:layout_marginTop="@dimen/user_item_margin_right"
+        android:layout_toRightOf="@id/collect_lay"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/set"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="设置相关"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buy_record_lay"
+        android:layout_width="@dimen/user_item_width"
+        android:layout_height="@dimen/user_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/user_item_margin_right"
+        android:layout_toRightOf="@id/my_member_lay"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/buy_record"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="购买记录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:id="@+id/tv_buy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/x20"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- recyclerview测试DEMO -->
+
+    <RelativeLayout
+        android:id="@+id/about_us_lay"
+        android:layout_width="@dimen/user_item_width"
+        android:layout_height="@dimen/user_item_height"
+        android:layout_below="@id/buy_record_lay"
+        android:layout_marginLeft="@dimen/user_item_margin_right"
+        android:layout_marginTop="@dimen/user_item_margin_right"
+        android:layout_toRightOf="@id/set_lay"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/about_us"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="关于我们"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"/>
+        </LinearLayout>
+    </RelativeLayout>
+</reco.frame.tv.view.TvRelativeLayoutAsGroup>

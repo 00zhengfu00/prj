@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackgound">
+
+    <ListView
+        android:id="@+id/lv_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorBackgound"
+        android:dividerHeight="@dimen/list_divider_height">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_login_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="登录后即可查看自己的排名情况哦"
+        android:textColor="@color/color_grey_999999"
+        android:textSize="@dimen/size_15"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/title_bar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@color/colorTitleBlue">
+
+    <ImageView
+        android:id="@+id/title_left_imageview"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:src="@mipmap/fanhui"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/title_left_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_minus_3"
+        android:layout_toRightOf="@id/title_left_imageview"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_15"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/title_middle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:lines="1"
+        android:maxWidth="@dimen/dimen_224"
+        android:text="设置"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_18"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title_right_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20"
+        android:text="完成"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_16"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/title_right_imageview"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:src="@mipmap/xinzeng"
+        android:visibility="gone"/>
+
+</RelativeLayout>

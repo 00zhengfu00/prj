@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/collection_item_background">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4">
+
+        <ImageView
+            android:id="@+id/iv_topicmaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:adjustViewBounds="true"
+            android:minHeight="@dimen/dimen_100"
+            android:scaleType="fitXY"
+            android:src="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_topicmaps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:text="机械运动"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_12"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_topicmaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_layout"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:gravity="center"
+        android:text="共10题"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,313 @@
+apply plugin: 'com.android.application'
+// 依赖插件脚本
+apply from: 'tinker-support.gradle'
+
+// 默认release apk输出路径
+ext.wuliDir = "D:/Users/Documents/wuli"
+ext.shuxueDir = "D:/Users/Documents/shuxue"
+ext.huaxueDir = "D:/Users/Documents/huaxue"
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
+
+    defaultConfig {
+        if (PACKAGE == "1") {
+            applicationId "com.physicmaster"
+            manifestPlaceholders = [
+                    app_name       : "物理大师",
+                    app_icon       : "@mipmap/icon_physic",
+                    scheme         : "physicmaster",
+                    packagename    : "com.physicmaster",
+                    slashBackground: "@style/Theme.SlashBackground",
+                    umengKey       : "5714904767e58efce60000a9",
+                    AMAP_KEY       : ""
+            ]
+        } else if (PACKAGE == "2") {
+            applicationId "com.lswuyou.chymistmaster"
+            manifestPlaceholders = [
+                    app_name       : "化学大师",
+                    app_icon       : "@mipmap/icon_chemistory",
+                    scheme         : "chemistory",
+                    packagename    : "com.lswuyou.chymistmaster",
+                    slashBackground: "@style/Theme.SlashActivity_chemistry",
+                    umengKey       : "57df51e1e0f55adfce002535",
+                    AMAP_KEY       : ""
+            ]
+        } else if (PACKAGE == "3") {
+            applicationId "com.lswuyou.mathmaster"
+            manifestPlaceholders = [
+                    app_name       : "数学大师",
+                    app_icon       : "@mipmap/icon_math",
+                    scheme         : "math",
+                    packagename    : "com.lswuyou.mathmaster",
+                    slashBackground: "@style/Theme.SlashActivity_math",
+                    umengKey       : "58e4614ae88bad2ce3001799",
+                    AMAP_KEY       : ""
+            ]
+        }
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        flavorDimensions "${rootProject.ext.versionName}"
+        multiDexEnabled = true
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+    signingConfigs {
+        if (PACKAGE == "1") {
+            release {
+                storeFile file("PhysicMaster.jks")
+                storePassword "wulidashi"
+                keyAlias "wulidashi"
+                keyPassword "wulidashi"
+            }
+        } else if (PACKAGE == "2") {
+            release {
+                storeFile file("chemistry-key")
+                storePassword "huaxuedashi"
+                keyAlias "huaxuedashi"
+                keyPassword "huaxuedashi"
+            }
+        } else if (PACKAGE == "3") {
+            release {
+                storeFile file("mathmaster.jks")
+                storePassword "shuxuedashi"
+                keyAlias "shuxuedashi"
+                keyPassword "shuxuedashi"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            // 自定义输出配置
+//            applicationVariants.all { variant ->
+//                variant.outputs.all { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为mm-1.0_wandoujia.apk
+//                        def appName = ""
+//                        def dirName = ""
+//                        if (PACKAGE.equals("1")) {
+//                            appName = "pm"
+//                            dirName = wuliDir
+//                        } else if (PACKAGE.equals("2")) {
+//                            appName = "cm"
+//                            dirName = huaxueDir
+//                        } else if (PACKAGE.equals("3")) {
+//                            appName = "mm"
+//                            dirName = shuxueDir
+//                        }
+//                        def fileName = "${appName}-${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+//                        outputFileName = new File(fileName)
+//                    }
+//                }
+//            }
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+//        anzhi {
+//            manifestPlaceholders = [umengChannelValue: "anzhi"]
+//        }
+//        chuizi {
+//            manifestPlaceholders = [umengChannelValue: "chuizi"]
+//        }
+//        meizu {
+//            manifestPlaceholders = [umengChannelValue: "meizu"]
+//        }
+//        baidu {
+//            manifestPlaceholders = [umengChannelValue: "baidu"]
+//        }
+//        yingyongbao {
+//            manifestPlaceholders = [umengChannelValue: "yingyongbao"]
+//        }
+//        m360 {
+//            manifestPlaceholders = [umengChannelValue: "m360"]
+//        }
+//        jinli {
+//            manifestPlaceholders = [umengChannelValue: "jinli"]
+//        }
+//        huawei {
+//            manifestPlaceholders = [umengChannelValue: "huawei"]
+//        }
+//        lianxiang {
+//            manifestPlaceholders = [umengChannelValue: "lianxiang"]
+//        }
+//        vivo {
+//            manifestPlaceholders = [umengChannelValue: "vivo"]
+//        }
+//        ali {
+//            manifestPlaceholders = [umengChannelValue: "ali"]
+//        }
+//        official {
+//            manifestPlaceholders = [umengChannelValue: "official"]
+//        }
+//        leshi {
+//            manifestPlaceholders = [umengChannelValue: "leshi"]
+//        }
+//        android {
+//            manifestPlaceholders = [umengChannelValue: "android"]
+//        }
+//        bbk {
+//            manifestPlaceholders = [umengChannelValue: "bbk"]
+//        }
+//        xueguanjia {
+//            manifestPlaceholders = [umengChannelValue: "xueguanjia"]
+//        }
+//        sougou {
+//            manifestPlaceholders = [umengChannelValue: "sougou"]
+//        }
+//        xiaomi {
+//            if (PACKAGE == "1") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "物理大师-初中版"
+//                ]
+//            } else if (PACKAGE == "2") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "化学大师-初中版"
+//                ]
+//            } else if (PACKAGE == "3") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "初中数学大师"
+//                ]
+//            }
+//        }
+//        oppo {
+//            if (PACKAGE == "1") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "物理大师"
+//                ]
+//            } else if (PACKAGE == "2") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "化学大师"
+//                ]
+//            } else if (PACKAGE == "3") {
+//                manifestPlaceholders = [
+//                        umengChannelValue: "xiaomi",
+//                        app_name         : "数学大师-初中版"
+//                ]
+//            }
+//        }
+    }
+    aaptOptions { cruncherEnabled = false }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    google()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':recyclerViewlibrary')
+    implementation project(':pickerview')
+    implementation project(':jcvideoplayer-lib')
+
+    //    implementation project(':imagepicker')
+    implementation project(':PhotoPicker')
+
+    //阿里百川反馈
+    implementation(name: 'alisdk-feedback-release', ext: 'aar')
+    implementation(name: 'securityguardaar3-5.1.81', ext: 'aar')
+
+    //jsBridge
+    implementation project(':jsbridge-lib')
+
+    //implementation project(':FileDownloader')
+    implementation project(':magicindicator')
+    implementation files('libs/open_sdk_r5781.jar')
+    implementation files('libs/SocialSDK_WeChat_Simplify.jar')
+
+    //implementation 'com.contrarywind:Android-PickerView:3.2.5'
+
+    // 网易云信
+
+    // 基础功能 (必需)
+
+    //    implementation 'com.netease.nimlib:basesdk:3.6.0'
+
+    // 实时会话服务需要
+
+    //    implementation 'com.netease.nimlib:rts:3.3.0'
+    implementation project(':uikit')
+
+    //implementation 'com.android.support:design:25.1.0'
+
+    //implementation 'com.github.bumptech.glide:glide:3.4.0'
+
+    //implementation 'com.android.support:appcompat-v7:25.1.0'
+
+    //内存泄露监控
+
+    //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    implementation 'cn.pedant.safewebviewbridge:library:1.4'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:percent:$supportLibVersion"
+
+    //banner第三方
+    implementation 'cn.bingoogolapple:bga-banner:2.1.8@aar'
+    testCompile 'junit:junit:4.12'
+
+    //阿里云反馈
+
+    //    implementation 'com.aliyun.ams:alicloud-android-feedback:3.1.0@aar'
+
+    //    implementation 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
+
+    //    implementation 'com.aliyun.ams:alicloud-android-ut:5.1.0'
+
+    //    implementation 'com.aliyun.ams:alicloud-android-utils:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile project(path: ':cameralib')
+}

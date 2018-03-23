@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgound">
+
+    <include layout="@layout/top_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iviv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/dingdan1"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rlrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iviv"
+                android:background="@mipmap/dingdan2"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="数学大师半年会员"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_24"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_subject"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text=" ￥: 299 "
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_24"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="到期时间：2017/12/12"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_16"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_alignLeft="@id/tv_time"
+                    android:layout_alignRight="@id/tv_time"
+                    android:layout_below="@id/tv_price"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:background="@color/colorrank"></View>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_time"
+                    android:layout_marginLeft="@dimen/dimen_44"
+                    android:layout_marginTop="@dimen/dimen_26"
+                    android:text="选择必练题:"
+                    android:textColor="@color/colorBindGray"
+                    android:textSize="@dimen/size_15"
+                    android:visibility="visible"/>
+
+                <com.physicmaster.widget.MoreGridView
+                    android:id="@+id/rv_topic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginLeft="@dimen/dimen_44"
+                    android:layout_marginRight="@dimen/dimen_34"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:numColumns="3"
+                    android:visibility="visible">
+                </com.physicmaster.widget.MoreGridView>
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_topic2"
+                    android:layout_marginBottom="@dimen/dimen_30"
+                    android:layout_marginLeft="@dimen/dimen_44"
+                    android:layout_marginRight="@dimen/dimen_44"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/white_background1"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_8">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_marginRight="@dimen/dimen_6"
+                        android:src="@mipmap/dizhi"/>
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_toRightOf="@id/iv"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="不需要收货地址"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_16"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_22"
+                        android:layout_height="@dimen/dimen_22"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dimen_4"
+                        android:src="@mipmap/xuan"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_topic2"
+                    android:layout_marginBottom="@dimen/dimen_40"
+                    android:layout_marginLeft="@dimen/dimen_44"
+                    android:layout_marginRight="@dimen/dimen_44"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:background="@drawable/white_background1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_dizhi"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_marginRight="@dimen/dimen_6"
+                        android:src="@mipmap/dizhi"/>
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv_dizhi"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:layout_toRightOf="@id/iv_dizhi"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="姓名："
+                        android:textColor="@color/colorLineGray"
+                        android:textSize="@dimen/size_16"/>
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:layout_toRightOf="@id/iv_dizhi"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="电话："
+                        android:textColor="@color/colorLineGray"
+                        android:textSize="@dimen/size_16"/>
+
+                    <TextView
+                        android:id="@+id/tv_location2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_phone"
+                        android:layout_marginBottom="@dimen/dimen_6"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:layout_toRightOf="@id/iv_dizhi"
+                        android:text="地址："
+                        android:textColor="@color/colorLineGray"
+                        android:textSize="@dimen/size_16"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll"
+                    android:layout_marginLeft="@dimen/dimen_36"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="享受权益:"
+                    android:textColor="@color/colorBindGray"
+                    android:textSize="@dimen/size_15"
+                    android:visibility="gone"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/ll"
+                    android:layout_alignRight="@id/ll"
+                    android:layout_below="@id/tv"
+                    android:layout_marginBottom="@dimen/dimen_50"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/white_background2"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="@dimen/dimen_9"
+                        android:layout_height="@dimen/dimen_9"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:src="@drawable/shape_circle"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="@dimen/dimen_9"
+                        android:layout_height="@dimen/dimen_9"
+                        android:layout_alignLeft="@id/iv1"
+                        android:layout_below="@id/iv1"
+                        android:layout_marginTop="@dimen/dimen_50"
+                        android:src="@drawable/shape_circle"/>
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="@dimen/dimen_9"
+                        android:layout_height="@dimen/dimen_9"
+                        android:layout_alignLeft="@id/iv1"
+                        android:layout_below="@id/iv2"
+                        android:layout_marginTop="@dimen/dimen_50"
+                        android:src="@drawable/shape_circle"/>
+
+                    <ImageView
+                        android:id="@+id/iv4"
+                        android:layout_width="@dimen/dimen_9"
+                        android:layout_height="@dimen/dimen_9"
+                        android:layout_alignLeft="@id/iv1"
+                        android:layout_below="@id/iv3"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:src="@drawable/shape_circle"/>
+
+                    <ImageView
+                        android:id="@+id/iv5"
+                        android:layout_width="@dimen/dimen_9"
+                        android:layout_height="@dimen/dimen_9"
+                        android:layout_alignLeft="@id/iv1"
+                        android:layout_below="@id/iv4"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:src="@drawable/shape_circle"/>
+
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/iv5"
+                        android:layout_alignLeft="@id/iv1"
+                        android:layout_alignTop="@id/iv1"
+                        android:layout_marginLeft="@dimen/dimen_4"
+                        android:background="@color/colorrank"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv1"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_minus_4"
+                        android:layout_toRightOf="@id/iv1"
+                        android:lineSpacingExtra="@dimen/dimen_10"
+                        android:text="干货内容持续更新(紧跟大纲,高效提分)"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv2"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_minus_4"
+                        android:layout_toRightOf="@id/iv2"
+                        android:lineSpacingExtra="@dimen/dimen_10"
+                        android:text="核心考点必练题讲解(随时巩固，帮你高效提分)"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv3"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_minus_4"
+                        android:layout_toRightOf="@id/iv3"
+                        android:text="解锁所有讲解课程(知识点全掌握)"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv4"
+                        android:layout_marginBottom="@dimen/dimen_20"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_minus_4"
+                        android:layout_toRightOf="@id/iv4"
+                        android:text="缓存课程(缓存后不在担心无网络)"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/iv5"
+                        android:layout_marginBottom="@dimen/dimen_30"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:layout_marginTop="@dimen/dimen_minus_4"
+                        android:layout_toRightOf="@id/iv5"
+                        android:text="赠送金币翻倍"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/size_14"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlrl"
+                android:background="@mipmap/dingdan3"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTitleBlue"
+        android:text="立即支付"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_16"
+        />
+
+
+</RelativeLayout>

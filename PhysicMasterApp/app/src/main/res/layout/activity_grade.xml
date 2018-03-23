@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgound"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="完善基本信息"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="七年级:"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"
+                />
+
+            <TextView
+                android:id="@+id/tv_grade_seven_up"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignLeft="@id/tv_seven"
+                android:layout_below="@id/tv_seven"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="七年级上"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+
+            <TextView
+                android:id="@+id/tv_grade_seven_down"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_seven"
+                android:layout_marginRight="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="七年级下"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_6"
+            android:background="@color/colorBackgound"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="八年级:"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"
+                />
+
+            <TextView
+                android:id="@+id/tv_grade_eight_up"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignLeft="@id/tv_eight"
+                android:layout_below="@id/tv_eight"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="八年级上"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+
+            <TextView
+                android:id="@+id/tv_grade_eight_down"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_eight"
+                android:layout_marginRight="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="八年级下"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_6"
+            android:background="@color/colorBackgound"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="九年级:"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"
+                />
+
+            <TextView
+                android:id="@+id/tv_grade_nine_up"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignLeft="@id/tv_nine"
+                android:layout_below="@id/tv_nine"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="九年级上"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+
+            <TextView
+                android:id="@+id/tv_grade_nine_down"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_nine"
+                android:layout_marginRight="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/grade_backgound_selector"
+                android:gravity="center"
+                android:text="九年级下"
+                android:textColor="@drawable/ranking_text_selector"
+                android:textSize="@dimen/size_16"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_4"
+            android:background="@color/colorBackgound"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="@dimen/dimen_160"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_centerInParent="true"
+                android:background="@drawable/blue_bg"
+                android:text="下一步"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_18"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

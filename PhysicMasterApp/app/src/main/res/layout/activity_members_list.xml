@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_title"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@color/colorTitleBlue"
+        >
+
+
+        <Button
+            android:id="@+id/btn_daifu"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_24"
+            android:background="@drawable/white_btn_background"
+            android:gravity="center"
+            android:text="让家人帮我代付"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_15"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="@dimen/dimen_240"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_daifu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:gravity="center"
+            android:lines="2"
+            android:text="爸妈担心你的学习？化学大师帮你告诉家人如何快速提高成绩"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="@dimen/dimen_220"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_content"
+            android:drawableRight="@mipmap/vip"
+            android:drawablePadding="@dimen/dimen_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:gravity="center"
+            android:lines="1"
+            android:text="加入化学大师 (初中)"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30"
+            android:layout_above="@id/tv_title"
+            android:layout_marginBottom="@dimen/dimen_minus_10"
+            android:src="@mipmap/zuo"
+            android:layout_toLeftOf="@id/tv_title"
+            android:layout_height="@dimen/dimen_60"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30"
+            android:layout_above="@id/btn_daifu"
+            android:src="@mipmap/you"
+            android:layout_marginLeft="@dimen/dimen_minus_10"
+            android:layout_toRightOf="@id/tv_content"
+            android:layout_height="@dimen/dimen_60"/>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:divider="@color/colorBackgound"
+        android:dividerHeight="@dimen/dimen_10"
+        android:scrollbars="none"></ListView>
+
+
+</RelativeLayout>

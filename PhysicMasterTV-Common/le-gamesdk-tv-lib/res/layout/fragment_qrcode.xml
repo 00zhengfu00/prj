@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/s_126"
+    android:paddingTop="@dimen/s_67">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/current_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24" />
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_9"
+                android:singleLine="true"
+                android:text="@string/order_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_415"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/letv_paysdk_product_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24" />
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_9"
+                android:singleLine="true"
+                android:text="@string/product_price_yuan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s_113"
+        android:layout_marginTop="@dimen/s_37"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wx_tips"
+            android:textColor="@color/white_80percent_not_alpha"
+            android:textSize="@dimen/f_21" />
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="@dimen/s_411"
+            android:layout_height="@dimen/s_411"
+            android:layout_marginTop="@dimen/s_8"
+            android:background="@drawable/letv_qr_init" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s_8"
+            android:gravity="center"
+            android:text="@string/qrcode_order_valid_tips"
+            android:textColor="@color/gray_new"
+            android:textSize="@dimen/f_17" />
+    </LinearLayout>
+
+</LinearLayout>

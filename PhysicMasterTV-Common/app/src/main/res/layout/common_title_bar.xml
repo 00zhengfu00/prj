@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/title_bar_bg"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+        <Button
+            android:id="@+id/title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"/>
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"
+            />
+
+        <com.lswuyou.tv.pm.view.DigitalClock
+            android:id="@+id/title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/title_btn_right"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/user_head_icon"
+                android:layout_width="@dimen/x52"
+                android:layout_height="@dimen/x52"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="@dimen/x18"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/common_constact"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_top_bg"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/constact_group"
+                style="@style/top_group"
+                android:focusable="false"
+                android:text="@string/group"/>
+
+            <Button
+                android:id="@+id/constact_all"
+                style="@style/top_all"
+                android:focusable="false"
+                android:text="@string/all"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

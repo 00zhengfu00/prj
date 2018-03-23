@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s_107"
+                android:background="@color/color_payment_default_background"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true">
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/cb_indicator"-->
+    <!--android:layout_width="@dimen/s_2"-->
+    <!--android:layout_height="@dimen/s_107"-->
+    <!--android:background="@drawable/selector_checkbox_payment"-->
+    <!--android:focusable="false"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/s_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/s_67"
+            android:layout_height="@dimen/s_67"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_19"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/f_24"/>
+
+            <TextView
+                android:id="@+id/tv_payment_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_3"
+                android:text="@string/scan_qrcode_pay"
+                android:textColor="@color/white_60percent_not_alpha"
+                android:textSize="@dimen/f_17"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_mark"
+        android:layout_width="@dimen/s_107"
+        android:layout_height="@dimen/s_107"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

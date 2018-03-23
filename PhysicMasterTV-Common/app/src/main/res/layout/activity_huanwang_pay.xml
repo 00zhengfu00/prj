@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+        android:background="@drawable/trans_window">
+
+
+    <tv.huan.huanpay4.HuanPayView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hardwareAccelerated="true"
+            android:scrollbars="none"
+            android:scrollbarSize="0dip"
+            android:background="@android:color/transparent">
+    </tv.huan.huanpay4.HuanPayView>
+</LinearLayout>
+

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f6f7">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.physicmaster.widget.OptionWebview
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/transparent"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_options_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/exercise_selector">
+
+                <TextView
+                    android:id="@+id/tv_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="A"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_20"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:layout_toRightOf="@id/tv_A"
+                    android:background="@color/colorLineGray"/>
+
+                <com.physicmaster.widget.OptionWebview
+                    android:id="@+id/tv_options_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_18"
+                    android:layout_toRightOf="@+id/line1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_right_A"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_A"
+                android:layout_alignLeft="@id/rl_options_A"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/zhengque"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_wrong_A"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_A"
+                android:layout_alignLeft="@id/rl_options_A"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/cuowu"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_options_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_options_A"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/exercise_selector">
+
+                <TextView
+                    android:id="@+id/tv_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="B"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_20"/>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:layout_toRightOf="@id/tv_B"
+                    android:background="@color/colorLineGray"/>
+
+                <com.physicmaster.widget.OptionWebview
+                    android:id="@+id/tv_options_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_18"
+                    android:layout_toRightOf="@+id/line2"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_right_B"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_B"
+                android:layout_alignLeft="@id/rl_options_B"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/zhengque"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_wrong_B"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_B"
+                android:layout_alignLeft="@id/rl_options_B"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/cuowu"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_options_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_options_B"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/exercise_selector">
+
+                <TextView
+                    android:id="@+id/tv_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="C"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_20"/>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:layout_toRightOf="@id/tv_C"
+                    android:background="@color/colorLineGray"/>
+
+                <com.physicmaster.widget.OptionWebview
+                    android:id="@+id/tv_options_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_18"
+                    android:layout_toRightOf="@+id/line3"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_right_C"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_C"
+                android:layout_alignLeft="@id/rl_options_C"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/zhengque"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_wrong_C"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_C"
+                android:layout_alignLeft="@id/rl_options_C"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/cuowu"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_options_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_options_C"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/exercise_selector">
+
+                <TextView
+                    android:id="@+id/tv_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:text="D"
+                    android:textColor="@color/colorLineGray"
+                    android:textSize="@dimen/size_20"/>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:layout_toRightOf="@id/tv_D"
+                    android:background="@color/colorLineGray"/>
+
+                <com.physicmaster.widget.OptionWebview
+                    android:id="@+id/tv_options_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_18"
+                    android:layout_toRightOf="@+id/line4"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_right_D"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_D"
+                android:layout_alignLeft="@id/rl_options_D"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/zhengque"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_wrong_D"
+                android:layout_width="@dimen/dimen_44"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_alignBottom="@id/rl_options_D"
+                android:layout_alignLeft="@id/rl_options_D"
+                android:layout_marginBottom="@dimen/dimen_3"
+                android:layout_marginLeft="@dimen/dimen_minus_12"
+                android:src="@mipmap/cuowu"
+                android:visibility="gone"/>
+
+            <com.physicmaster.widget.OptionWebview
+                android:id="@+id/tv_resolve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_options_D"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_10"
+                android:background="@color/transparent"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

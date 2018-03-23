@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+    >
+
+    <ImageView
+        android:id="@+id/iv_course_poster"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_toRightOf="@id/iv_course_poster"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/colorCache"/>
+
+        <TextView
+            android:id="@+id/cached_video_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_15"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_22"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimen_4"
+        android:src="@mipmap/xuan"/>
+</RelativeLayout>

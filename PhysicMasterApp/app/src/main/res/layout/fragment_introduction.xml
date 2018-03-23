@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_2"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="中考冲刺"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_18"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="￥ 18"
+        android:textColor="#f67027"
+        android:textSize="@dimen/size_18"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        >
+
+        <TextView
+            android:id="@+id/tv_play_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="352.2万次播放"
+            android:textColor="#999999"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/tv_play_number"
+            android:text="13.4万人在学"
+            android:textColor="#999999"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:drawableLeft="@mipmap/zanyixia"
+            android:drawablePadding="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="赞一下"
+            android:textColor="#999999"
+            android:textSize="@dimen/size_14"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8"
+        android:background="@color/colorBackgound"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="#f67027"
+        android:paddingLeft="@dimen/dimen_20"
+        android:text="课程简介"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_18"/>
+
+
+</LinearLayout>

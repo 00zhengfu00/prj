@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+    </style>
+    <!-- 标题栏group风格 -->
+    <style name="top_group">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@drawable/constact_font</item>
+        <item name="android:background">@drawable/constact_group</item>
+    </style>
+    <!-- 标题栏风格 -->
+    <style name="top_all">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/constact_font</item>
+        <item name="android:background">@drawable/constact_all</item>
+    </style>
+
+    <style name="Theme.CommonBg" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/common_bg_background</item>
+    </style>
+
+    <style name="Theme.SlashBackground" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/slash_background</item>
+    </style>
+
+    <style name="Theme.Dangbei.SlashBackground" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/dangbei_slash_background</item>
+    </style>
+
+    <!-- 自定义格式对话框 -->
+    <style name="CustomStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Leanback" parent="@style/Theme.Leanback">
+        <item name="browseRowsMarginTop">@dimen/y100</item>
+        <item name="android:windowBackground">@drawable/common_bg_background</item>
+        <item name="rowHorizontalGridStyle">@style/rowHorizontalGridStyle</item>
+        <item name="rowHeaderDescriptionStyle">@style/rowHeaderDescriptionStyle</item>
+        <item name="browseTitleTextStyle">@style/LeanbackTitleText</item>
+        <item name="imageCardViewContentStyle">@style/LeanbackImageCardViewContentStyle</item>
+        <item name="imageCardViewTitleStyle">@style/LeanbackImageCardViewTitleStyle</item>
+        <item name="overlayDimMaskColor">@color/transparent</item>
+        <item name="overlayDimDimmedLevel">@fraction/lb_view_active_level</item>
+    </style>
+
+    <style name="LeanbackImageCardViewContentStyle" parent="Widget.Leanback.ImageCardView.ContentStyle">
+        <item name="android:textAppearance">@style/TextAppearanceLeanbackImageCardViewContent</item>
+    </style>
+
+    <style name="LeanbackImageCardViewTitleStyle" parent="Widget.Leanback.ImageCardView.TitleStyle">
+        <item name="android:textAppearance">@style/TextAppearanceLeanbackImageCardViewTitle</item>
+    </style>
+
+    <style name="TextAppearanceLeanbackImageCardViewTitle" parent="TextAppearance.Leanback.ImageCardView.Title">
+        <item name="android:textColor">@color/lb_basic_card_title_text_color</item>
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+
+    <style name="TextAppearanceLeanbackImageCardViewContent" parent="TextAppearance.Leanback.ImageCardView.Content">
+        <item name="android:textColor">@color/lb_basic_card_content_text_color</item>
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+
+    <style name="rowHorizontalGridStyle" parent="Widget.Leanback.Row.HorizontalGridView">
+        <item name="android:horizontalSpacing">@dimen/x10</item>
+        <item name="focusOutFront">false</item>
+    </style>
+
+    <style name="LeanbackTitleText">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">end</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAppearance">@style/TextAppearanceLeanbackTitle</item>
+    </style>
+
+    <style name="TextAppearanceLeanbackTitle" parent="TextAppearance.Leanback">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/lb_browse_title_color</item>
+    </style>
+
+    <style name="rowHeaderDescriptionStyle" parent="Widget.Leanback.Header">
+        <item name="android:textAppearance">@style/Header.TextAppearance</item>
+    </style>
+
+    <style name="Header.TextAppearance" parent="TextAppearance.Leanback.Header">
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/lb_browse_header_description_color</item>
+    </style>
+
+    <!-- 自定义格式对话框 -->
+    <style name="myDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+    <style name="AnimationPushOutIn">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+</resources>

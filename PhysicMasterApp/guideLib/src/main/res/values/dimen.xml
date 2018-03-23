@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="stroke_padding">2dp</dimen>
+</resources>

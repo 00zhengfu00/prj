@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_title"></include>
+
+    <ListView
+        android:id="@+id/lv_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTitleBlue"
+        android:text="开通会员"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_17"/>
+
+
+</RelativeLayout>

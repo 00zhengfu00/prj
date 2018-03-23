@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VideoIntroActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <FrameLayout
+        android:id="@+id/fl_image"
+        android:layout_width="@dimen/x608"
+        android:layout_height="@dimen/y342"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x176"
+        android:layout_marginTop="@dimen/y274">
+
+        <ImageView
+            android:id="@+id/iv_course_icon"
+            android:layout_width="@dimen/x608"
+            android:layout_height="@dimen/y342"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/loading"
+            />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@drawable/shape_vip"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="VIP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/y87"
+        android:layout_below="@id/fl_image"
+        android:layout_marginLeft="@dimen/x165"
+        android:layout_marginTop="@dimen/y84"
+        android:background="@drawable/selector_common_btn_bg"
+        android:focusable="true"
+        android:text="立即播放"
+        android:textColor="@color/text_color_bg"
+        android:textSize="@dimen/x50"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_collect"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/y87"
+        android:layout_below="@id/fl_image"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/y84"
+        android:layout_toRightOf="@id/btn_play"
+        android:background="@drawable/selector_common_btn_bg"
+        android:focusable="true"
+        android:text="加入收藏"
+        android:textColor="@color/text_color_bg"
+        android:textSize="@dimen/x50"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x122"
+        android:layout_marginTop="@dimen/y300"
+        android:layout_toRightOf="@id/fl_image"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_design_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="策划："
+                android:textColor="@color/white"
+                android:textSize="@dimen/x42"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tv_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/money_color"
+                android:textSize="@dimen/x42"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y40"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_make_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制作："
+                android:textColor="@color/white"
+                android:textSize="@dimen/x42"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tv_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/money_color"
+                android:textSize="@dimen/x42"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="@dimen/x892"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y50"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+    </LinearLayout>
+</RelativeLayout>

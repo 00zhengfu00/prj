@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center"
+            android:text="免费精力:"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"/>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginBottom="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="请选择好友"
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold"/>
+
+        <GridView
+            android:id="@+id/gv_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_220"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@+id/tv2"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/blue_background1"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/dimen_6"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:padding="@dimen/dimen_6"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dimen_6">
+
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_friend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="每天最多可收10份礼物"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"/>
+
+        <Button
+            android:id="@+id/btn_request"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignLeft="@id/gv_friend"
+            android:layout_alignRight="@id/gv_friend"
+            android:layout_below="@id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:background="@drawable/blue_btn_background"
+            android:text="发送请求"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+
+</FrameLayout>

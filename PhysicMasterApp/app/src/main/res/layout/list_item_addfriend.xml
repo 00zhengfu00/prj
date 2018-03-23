@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:background="@color/colorWhite">
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_54"
+            android:layout_height="@dimen/dimen_54"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@mipmap/wulidashi"
+            riv:type="circle"/>
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignBottom="@id/iv_header"
+            android:layout_marginLeft="@dimen/dimen_minus_15"
+            android:layout_toRightOf="@id/iv_header"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/iv_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="用户名"
+                android:textColor="#333333"
+                android:textSize="@dimen/size_18"/>
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="@dimen/size_16"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@drawable/blue_btn_background"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_added"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="等待验证"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

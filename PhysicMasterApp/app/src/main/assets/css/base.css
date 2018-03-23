@@ -1,0 +1,119 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    background-color: transparent;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wFull {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.katex .reset-textstyle.scriptstyle .cjk-char,
+.katex .reset-textstyle.scriptstyle .cjk_fallback {
+    font-size: 0.7em;
+}
+
+.errorMessage {
+    color: #F6383A;
+}
+
+.auto_br, p {
+    width: 100%;
+}
+
+.auto_br, .katex, p {
+    display: inline-block;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+p {
+    display: block;
+    margin: 0 0 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+body, .katex {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.auto_dian {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block
+}
+
+@media screen and (min-device-width: 765px) {
+    body, .katex {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-device-width: 365px) {
+    body, .katex {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+#hide_img_div {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*
+在IOS下，input 和textarea表单默认会有个内阴影，一定程度上影响视觉一致，可通过设置下面代码去掉：
+*/
+input {
+    -webkit-appearance: none;
+}
+
+#load_end .weui-loadmore__tips {
+    background-color: #F0F0F0;
+}

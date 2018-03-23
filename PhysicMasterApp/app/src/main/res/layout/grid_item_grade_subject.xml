@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_backgound_selector"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_16"
+        android:gravity="center"
+        android:paddingRight="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_8"
+        android:text="八年级"
+        android:textColor="@drawable/select_text_selector"
+        android:textSize="@dimen/size_14"/>
+
+
+</LinearLayout>

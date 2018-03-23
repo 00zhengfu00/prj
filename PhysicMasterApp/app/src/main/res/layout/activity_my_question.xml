@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgound"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.physicmaster.widget.PagerTab
+            android:id="@+id/pt_qusetion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/infromation_white_background"
+            app:dividerColor="@color/colorDarkGray4"
+            app:dividerWidth="@dimen/dimen_1"
+            app:mIndicatorPadding="@dimen/dimen_5"
+            app:tabTextSize="@dimen/size_16">
+        </com.physicmaster.widget.PagerTab>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_question"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@color/colorBackgound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>

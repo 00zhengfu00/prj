@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_marginLeft="@dimen/dimen_14"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@mipmap/wulidashi"
+            riv:type="circle"/>
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_toRightOf="@id/iv_header"
+            android:text="用户名"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_header"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="回复了我的回答:"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text"
+            android:paddingRight="@dimen/dimen_2"
+            android:paddingLeft="@dimen/dimen_2"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="评论66666"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_15"/>
+
+        <ImageView
+            android:id="@+id/iv_praise"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_below="@id/iv_header"
+            android:src="@mipmap/msg_dianzan"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_8"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_user_name"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text="两个小时前"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_14"
+            />
+    </RelativeLayout>
+</RelativeLayout>

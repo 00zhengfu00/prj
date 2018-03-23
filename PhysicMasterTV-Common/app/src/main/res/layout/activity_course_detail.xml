@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.lswuyou.tv.pm.activity.ChapterDetailActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <com.lswuyou.tv.pm.view.TvVerticalTabHost2
+        android:id="@+id/tth_container"
+        android:layout_width="@dimen/x1920"
+        android:layout_height="@dimen/y1080"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/y150"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tv:cursorHeight="@dimen/y60"
+        tv:cursorMarginTop="@dimen/y30"
+        tv:cursorRes="@drawable/cursor_shine"
+        tv:cursorWidth="@dimen/x300"
+        tv:dividerHeight="@dimen/y10"
+        tv:durationScroll="400"
+        tv:textColorDefault="@color/text_unselect_color"
+        tv:textColorSelected="@color/white"
+        tv:textSize="@dimen/common_text_size"
+        tv:titleHeight="@dimen/y142"
+        tv:titleSpace="@dimen/x30"
+        tv:titleWidth="@dimen/x428"
+        tv:scalable="true"
+        />
+</RelativeLayout>

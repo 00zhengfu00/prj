@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.letv.tvos.paysdk.widget.RelativeLayoutTV android:id="@+id/rtv_item_root"
+                                              xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              android:layout_width="@dimen/s_138"
+                                              android:layout_height="@dimen/s_48"
+                                              android:background="@drawable/selector_rechargecard"
+                                              android:focusable="true"
+                                              app:animEnable="false"
+                                              app:borderShadowSrc="@drawable/background_shadow_round"
+                                              app:shadowSpace="@dimen/s_42">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/recharge_card_ctcc"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/f_20"/>
+
+    <CheckBox
+        android:id="@+id/cb_checked"
+        android:layout_width="@dimen/s_31"
+        android:layout_height="@dimen/s_31"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/selector_checkbox_rechargecard"
+        android:focusable="false"/>
+</com.letv.tvos.paysdk.widget.RelativeLayoutTV>

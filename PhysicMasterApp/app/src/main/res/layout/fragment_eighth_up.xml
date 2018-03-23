@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBackgound"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="#a8e2e5"
+        android:gravity="center"
+        android:text="本月已学习56个"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="章节课程"
+        android:drawableLeft="@mipmap/kecheng_text"
+        android:drawablePadding="@dimen/dimen_10"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="@dimen/size_18"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@color/colorGray"/>
+
+    <GridView
+        android:id="@+id/gv_course"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:horizontalSpacing="@dimen/dimen_6"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_6">
+
+    </GridView>
+
+
+</LinearLayout>

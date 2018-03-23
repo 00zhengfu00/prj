@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:paddingTop="@dimen/dimen_50"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="努力值:"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="速度"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+
+            <ProgressBar
+                android:id="@+id/pb_speed"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="2.5"
+                android:progress="0"
+                android:progressDrawable="@drawable/endeavor_progress_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0/252"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <Button
+                android:id="@+id/btn_speed_use"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:text="使用"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:lines="1"
+                android:text="攻击"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+
+            <ProgressBar
+                android:id="@+id/pb_attack"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="2.5"
+                android:progress="0"
+                android:progressDrawable="@drawable/endeavor_progress_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_attack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0/252"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <Button
+                android:id="@+id/btn_attack_use"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:text="使用"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:lines="1"
+                android:text="特攻"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+
+            <ProgressBar
+                android:id="@+id/pb_specail_attack"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="2.5"
+                android:progress="0"
+                android:progressDrawable="@drawable/endeavor_progress_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_specail_attack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0/252"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <Button
+                android:id="@+id/btn_specail_attack_use"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:text="使用"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:lines="1"
+                android:text="防御"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+
+            <ProgressBar
+                android:id="@+id/pb_defense"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="2.5"
+                android:progress="0"
+                android:progressDrawable="@drawable/endeavor_progress_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_defense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0/252"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <Button
+                android:id="@+id/btn_defense_use"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:text="使用"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:lines="1"
+                android:text="特防"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+
+            <ProgressBar
+                android:id="@+id/pb_specail_defense"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="2.5"
+                android:progress="0"
+                android:progressDrawable="@drawable/endeavor_progress_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_specail_defense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0/252"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <Button
+                android:id="@+id/btn_specail_defense_use"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:text="使用"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_14"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:lines="2"
+                android:text="增加努力值会一定程度上提高相应属性值"
+                android:textColor="@color/colorBindGray"
+                android:textSize="@dimen/size_12"/>
+
+
+            <ImageView
+                android:id="@+id/iv_endeavor"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dimen_26"
+                android:src="@mipmap/endeavor"
+                />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_endeavor"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:text="10"
+                android:textColor="@color/colorTitleBlue"
+                android:textSize="@dimen/size_14"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+
+    <include
+        android:id="@+id/iv_pet"
+        layout="@layout/gif_progress_group"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_minus_100"
+        android:minHeight="@dimen/dimen_150"
+        android:minWidth="@dimen/dimen_150">
+    </include>
+
+</FrameLayout>

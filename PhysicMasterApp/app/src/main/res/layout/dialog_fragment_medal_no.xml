@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background">
+
+
+        <ImageView
+            android:id="@+id/iv_medal"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_50"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_medal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:text="勋章"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_18"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="如何获得此勋章"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_16"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 顶层控件属性 -->
+    <declare-styleable name="MainUpView">
+        <attr name="upImageRes" format="reference" />
+        <attr name="shadowImageRes" format="reference" />
+    </declare-styleable>
+
+    <attr name="spanCount" format="integer" />
+
+    <declare-styleable name="RecyclerView">
+        <attr name="layoutManager" format="string" />
+        <attr name="android:orientation" />
+        <attr name="spanCount" />
+        <attr name="android:descendantFocusability" />
+        <attr name="reverseLayout" format="boolean" />
+        <attr name="stackFromEnd" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GridViewTV">
+        <attr name="spanCount" />
+        <attr name="rangeOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemCount" format="integer" />
+    </declare-styleable>
+
+    <!--边框属性-->
+    <attr name="borderColor" format="color" />
+    <attr name="borderCornerShape" format="enum">
+        <enum name="square" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="borderWidth" format="dimension" />
+    <attr name="borderCornerRadius" format="float" />
+    <attr name="borderShadowSrc" format="reference" />
+    <attr name="shadowSpace" format="dimension" />
+    <attr name="shadow_spaceTop" format="dimension" />
+    <attr name="shadow_spaceBottom" format="dimension" />
+    <attr name="shadow_spaceLeft" format="dimension" />
+    <attr name="shadow_spaceRight" format="dimension" />
+    <attr name="animEnable" format="boolean" />
+    <attr name="bringToFrontEnable" format="boolean" />
+
+    <declare-styleable name="RelativeLayoutTV">
+        <attr name="borderColor" />
+        <attr name="borderCornerShape" />
+        <attr name="borderWidth" />
+        <attr name="borderCornerRadius" />
+        <attr name="borderShadowSrc" />
+        <attr name="shadowSpace" />
+        <attr name="shadow_spaceTop" />
+        <attr name="shadow_spaceBottom" />
+        <attr name="shadow_spaceLeft" />
+        <attr name="shadow_spaceRight" />
+        <attr name="animEnable" />
+        <attr name="bringToFrontEnable" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonTV">
+        <attr name="borderColor" />
+        <attr name="borderCornerShape" />
+        <attr name="borderWidth" />
+        <attr name="borderCornerRadius" />
+        <attr name="borderShadowSrc" />
+        <attr name="shadowSpace" />
+        <attr name="shadow_spaceTop" />
+        <attr name="shadow_spaceBottom" />
+        <attr name="shadow_spaceLeft" />
+        <attr name="shadow_spaceRight" />
+        <attr name="animEnable" />
+    </declare-styleable>
+
+</resources>

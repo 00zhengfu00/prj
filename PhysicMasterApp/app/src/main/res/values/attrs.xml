@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义半圆形加载进度条-->
+    <declare-styleable name="HalfProgressBar">
+        <attr name="roundColor1" format="color"/>
+        <attr name="roundProgressColor1" format="color"/>
+        <attr name="circularDotColor1" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerTab">
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="indicatorHeight" format="dimension" />
+    <attr name="indicatorWidth" format="dimension" />
+    <attr name="mIndicatorPadding" format="dimension" />
+    <attr name="mIndicatorMargin" format="dimension" />
+    <attr name="dividerColor" format="reference" />
+    <attr name="tabBackground" format="reference"/>
+    <attr name="tabTxtColor" format="reference"/>
+    <attr name="tabTextSize" format="dimension"/>
+    </declare-styleable>
+    <!--<declare-styleable name="CircularImage">-->
+        <!--<attr name="border_width" format="dimension" />-->
+        <!--<attr name="border_color" format="color" />-->
+    <!--</declare-styleable>-->
+
+     <!--流行布局-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="TimerButton">
+        <attr name="timecount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Lucas">
+        <attr name="pathInsideWidth" format="dimension" />
+        <attr name="pathOutsideWidth" format="dimension" />
+        <attr name="pointSize" format="dimension" />
+        <attr name="boxHeight" format="dimension" />
+        <attr name="boxWidth" format="dimension" />
+        <attr name="portraitPadding" format="dimension" />
+        <attr name="portraitPaddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth2" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color"/>
+        <attr name="blow_wave_color" format="color"/>
+        <attr name="progress" format="integer"/>
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+        <attr name="pathColor" format="color"/>
+        <attr name="segmentWidth" format="dimension"/>
+        <attr name="segmentLength" format="dimension"/>
+    </declare-styleable>
+</resources>

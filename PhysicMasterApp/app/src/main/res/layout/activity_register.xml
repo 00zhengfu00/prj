@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_40">
+
+            <EditText
+                android:id="@+id/et_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/register_zhanghao"
+                android:drawablePadding="@dimen/dimen_24"
+                android:hint="请输入手机号码"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/dimen_14"
+                />
+
+
+            <com.physicmaster.widget.TimerButton
+                android:id="@+id/btn_get_testing"
+                android:layout_width="@dimen/dimen_110"
+                android:layout_height="@dimen/dimen_36"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/blue_btn_background"
+                android:text="获取验证码"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_14"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@color/colorDarkGray"/>
+
+
+        <EditText
+            android:id="@+id/et_testing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/register_testing"
+            android:drawablePadding="@dimen/dimen_24"
+            android:hint="请填写手机验证码"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dimen_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@color/colorDarkGray"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_50"
+            android:layout_marginRight="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:background="@drawable/blue_btn_background"
+            android:text="下一步"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_22"/>
+    </LinearLayout>
+
+</LinearLayout>
+

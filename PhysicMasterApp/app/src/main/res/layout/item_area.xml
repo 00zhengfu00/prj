@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_select_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"
+        android:text="地区"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_18"/>
+
+
+</RelativeLayout>

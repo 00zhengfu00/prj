@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_20"
+        android:paddingTop="@dimen/dimen_20"
+        >
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="您还不是该科目会员"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="@dimen/size_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="开通会员即可消除海草"
+            android:textColor="@color/color_black_333333"
+            android:textSize="@dimen/size_20"
+            />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:layout_marginTop="@dimen/dimen_34"
+            android:background="@drawable/blue_btn_bg2"
+            android:text="开通会员"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20"
+            />
+
+        <TextView
+            android:id="@+id/tv_trial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/dimen_22"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="点击使用试看码"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+</FrameLayout>

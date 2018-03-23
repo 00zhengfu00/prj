@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@color/colorTitleBlue">
+
+        <ImageView
+            android:id="@+id/title_left_imageview"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:src="@mipmap/fanhui"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/title_left_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_minus_3"
+            android:layout_toRightOf="@id/title_left_imageview"
+            android:text="返回"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_15"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/title_middle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="@dimen/dimen_224"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="全部问题"
+            android:drawablePadding="@dimen/dimen_2"
+            android:drawableRight="@drawable/subject_textview_selector"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_17"
+            />
+
+        <TextView
+            android:id="@+id/title_right_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dimen_12"
+            android:drawableLeft="@mipmap/tiwen"
+            android:drawablePadding="@dimen/dimen_2"
+            android:gravity="center"
+            android:text="提问"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_15"/>
+
+
+
+    </RelativeLayout>
+
+    <com.physicmaster.widget.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </com.physicmaster.widget.PullToRefreshLayout>
+
+</LinearLayout>

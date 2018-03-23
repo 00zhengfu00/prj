@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<com.physicmaster.widget.ImageCycleView-->
+        <!--android:id="@+id/icv_ads"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_200"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--/>-->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:minHeight="@dimen/dimen_180"
+        android:scaleType="fitXY"
+        />
+
+</RelativeLayout>

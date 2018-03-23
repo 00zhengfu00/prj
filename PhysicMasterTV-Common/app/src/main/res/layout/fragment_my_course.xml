@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+    <!-- 此处有四个自定义参数: cursorRes指定光标图片 itemWidth为子项宽度 itemHeight为子项高度 focusOption为焦点模式(默认子控件得焦点)-->
+    <reco.frame.tv.view.TvListView
+        android:id="@+id/my_course_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y758"
+        android:layout_marginLeft="@dimen/x181"
+        android:layout_marginRight="@dimen/x181"
+        tv:cursorRes="@drawable/cursor_rectangle_boarder_orange"
+        tv:focusOption="PARENT_ONLY"
+        tv:itemH="@dimen/y100"
+        tv:itemW="@dimen/x1000"
+        tv:scalable="false"
+        tv:paddingStart="@dimen/x20"
+        />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.physicmaster.modules.videoplay.cache.VideoDownloadingActivity">
+
+    <include layout="@layout/top_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_downloading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:divider="@color/colorBackgound"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_10"
+            android:scrollbars="none"
+            >
+        </ListView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_150"
+            android:src="@mipmap/zanwushuju"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/colorGray"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btn_select_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:padding="@dimen/dimen_10"
+            android:text="全选"
+            android:textColor="@color/colorCache"
+            />
+
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_5"
+            android:background="@color/colorGray"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:padding="@dimen/dimen_10"
+            android:text="删除"
+            android:textColor="#e14d18"
+            />
+    </LinearLayout>
+</LinearLayout>

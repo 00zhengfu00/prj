@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipChildren="false"
+              android:clipToPadding="false"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/s_126"
+              android:paddingTop="@dimen/s_67">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/current_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24"/>
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_9"
+                android:singleLine="true"
+                android:text="@string/order_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_415"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/letv_paysdk_product_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24"/>
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s_9"
+                android:singleLine="true"
+                android:text="@string/product_price_yuan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_24"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s_55"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_card_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s_4"
+                android:text="@string/recharge_card_type"
+                android:textColor="@color/white_45percent_not_alpha"
+                android:textSize="@dimen/f_24"/>
+
+            <com.letv.tvos.paysdk.recycler.RecyclerViewTV
+                android:id="@+id/rv_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_24"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="false">
+
+            </com.letv.tvos.paysdk.recycler.RecyclerViewTV>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_card_type_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_144"
+            android:layout_marginTop="@dimen/s_8"
+            android:drawableLeft="@drawable/icon_password_error"
+            android:drawablePadding="@dimen/s_10"
+            android:text="@string/select_correct_card_type"
+            android:textColor="@color/white_45percent_not_alpha"
+            android:textSize="@dimen/f_17"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s_22"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_card_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_card_number"
+                android:textColor="@color/white_45percent_not_alpha"
+                android:textSize="@dimen/f_24"/>
+
+            <EditText
+                android:id="@+id/et_card_number"
+                android:layout_width="@dimen/s_453"
+                android:layout_height="@dimen/s_52"
+                android:layout_marginLeft="@dimen/s_24"
+                android:background="@drawable/selector_edittext"
+                android:focusable="true"
+                android:hint="@string/enter_card_number"
+                android:maxLength="25"
+                android:nextFocusRight="@id/et_card_number"
+                android:paddingLeft="@dimen/s_20"
+                android:paddingRight="@dimen/s_20"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white_45percent_not_alpha"
+                android:textSize="@dimen/f_24"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_card_number_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s_144"
+            android:layout_marginTop="@dimen/s_8"
+            android:drawableLeft="@drawable/icon_password_error"
+            android:drawablePadding="@dimen/s_10"
+            android:text="@string/enter_correct_card_number"
+            android:textColor="@color/white_45percent_not_alpha"
+            android:textSize="@dimen/f_17"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s_22"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_card_password_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_card_password"
+                android:textColor="@color/white_45percent_not_alpha"
+                android:textSize="@dimen/f_24"/>
+
+            <EditText
+                android:id="@+id/et_card_password"
+                android:layout_width="@dimen/s_453"
+                android:layout_height="@dimen/s_52"
+                android:layout_marginLeft="@dimen/s_24"
+                android:background="@drawable/selector_edittext"
+                android:focusable="true"
+                android:hint="@string/enter_card_password"
+                android:inputType="numberPassword"
+                android:maxLength="25"
+                android:nextFocusRight="@id/et_card_password"
+                android:paddingLeft="@dimen/s_20"
+                android:paddingRight="@dimen/s_20"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white_45percent_not_alpha"
+                android:textSize="@dimen/f_24"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_recharge_card_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s_42"
+            android:drawableLeft="@drawable/icon_recharge_card_tips"
+            android:drawablePadding="@dimen/s_10"
+            android:text="@string/recharge_card_tips"
+            android:textColor="@color/text_color_recharge_card_tips"
+            android:textSize="@dimen/f_17"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/s_180"
+            android:layout_height="@dimen/s_53"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s_22"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:nextFocusRight="@id/button"
+            android:text="@string/letv_paysdk_confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/f_24"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_have"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_energy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/dimen_40"
+            android:divider="@color/colorGray"
+            android:dividerHeight="@dimen/list_divider_height">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorTitleBlue"
+            android:text="全部同意"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_16"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_180"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_80"
+            android:text="目前没有人送您精力瓶哦~ "
+            android:textColor="#666666"
+            android:textSize="@dimen/size_18"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="您每天最多可以收取10个好友赠送点精力瓶 "
+            android:textColor="#999999"
+            android:textSize="@dimen/size_16"
+            />
+
+        <Button
+            android:id="@+id/btn_demand"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_80"
+            android:background="@drawable/blue_btn_background"
+            android:text="索要精力"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_16"
+            />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

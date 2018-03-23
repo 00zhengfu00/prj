@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/letv_dialog">
+
+    <RelativeLayout
+        android:id="@+id/rl_auto_buy_by_hand"
+        android:layout_width="@dimen/s_480"
+        android:layout_height="@dimen/s_253"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/autopay_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s_53"
+            android:text="@string/letv_pay_sdk_is_continue_pay"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/f_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autopay_textView1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/button_retry"
+                android:layout_width="@dimen/s_160"
+                android:layout_height="@dimen/s_67"
+                android:layout_marginBottom="@dimen/s_61"
+                android:layout_marginTop="@dimen/s_40"
+                android:layout_marginLeft="@dimen/s_61"
+                android:background="@drawable/has_buy"
+                android:button="@null"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/letv_pay_sdk_retry_pay"
+                android:textSize="@dimen/f_22" />
+
+            <RadioButton
+                android:id="@+id/button_poll"
+                android:layout_width="@dimen/s_160"
+                android:layout_height="@dimen/s_67"
+                android:layout_marginTop="@dimen/s_40"
+                android:layout_marginBottom="@dimen/s_61"
+                android:layout_marginLeft="@dimen/s_33"
+                android:background="@drawable/has_buy"
+                android:button="@null"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/letv_pay_sdk_continue_pay"
+                android:textSize="@dimen/f_22" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="@dimen/s_178"
+            android:layout_height="@dimen/s_90"
+            android:layout_below="@id/autopay_textView1"
+            android:layout_marginBottom="@dimen/s_53"
+            android:layout_marginLeft="@dimen/s_53"
+            android:layout_marginTop="@dimen/s_33"
+            android:background="@drawable/letv_payment_focus" />
+    </RelativeLayout>
+
+</LinearLayout>

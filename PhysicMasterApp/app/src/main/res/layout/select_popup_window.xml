@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/colorWhite"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="年级"
+        android:textColor="@color/colorBindGray"
+        android:textSize="@dimen/size_14"/>
+
+
+    <com.physicmaster.widget.MoreGridView
+        android:id="@+id/gv_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:horizontalSpacing="@dimen/dimen_10"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_20">
+    </com.physicmaster.widget.MoreGridView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="学科"
+        android:textColor="@color/colorBindGray"
+        android:textSize="@dimen/size_14"/>
+
+    <com.physicmaster.widget.MoreGridView
+        android:id="@+id/gv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:horizontalSpacing="@dimen/dimen_10"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/dimen_20">
+    </com.physicmaster.widget.MoreGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider_height"
+        android:background="@color/colorBtnGray"></View>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lswuyou.tv.pm.activity.AboutUsActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x181"
+            android:layout_marginRight="@dimen/x181"
+            android:layout_marginTop="@dimen/y10"
+            android:text="杭州无届网络科技有限公司"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/x46"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/x181"
+            android:layout_marginRight="@dimen/x181"
+            android:layout_marginTop="@dimen/y40"
+            android:lineSpacingExtra="@dimen/x20"
+            android:text="真正优秀的教育,理应让每个孩子拥有。\n真正优秀的教育是一场发现之旅，求知之旅，梦想之旅\n真正优秀教育是梦想与现实的融合，是求知与实践的协作。\n有创新，有感恩，有幽默，有对生命的赞美，对真理严格而优美的阐述!\n这一切，就在物理大师!\n\n物理大师-------艺术，教育，科技跨界融合，旨在帮助老师高效，有趣的传递知识，教学相长。是\n腾讯V+原创计划，优酷扶持PGC，网易云课堂，百度爱奇艺等战略合作方，数百万学员和老师日常教学使用。"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x36"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_content"
+            android:layout_marginRight="@dimen/x181"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="@dimen/x236"
+                    android:layout_height="@dimen/x124"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/qrcode"
+                    />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信扫一扫，获取更多资源！"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x24"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/x180"
+                android:layout_height="@dimen/x170"
+                android:layout_toRightOf="@id/layout"
+                android:scaleType="fitXY"
+                android:src="@mipmap/qrcode"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

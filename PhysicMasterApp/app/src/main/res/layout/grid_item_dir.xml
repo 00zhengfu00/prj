@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_why_name"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="@dimen/dimen_10"
+    android:layout_marginLeft="@dimen/dimen_6"
+    android:layout_marginRight="@dimen/dimen_6"
+    android:background="@drawable/errors_backgound_selector"
+    android:gravity="center"
+    android:lines="1"
+    android:paddingBottom="@dimen/dimen_6"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_6"
+    android:text="错误原因"
+    android:textColor="@color/text_color"
+    android:textSize="@dimen/size_13"
+    />

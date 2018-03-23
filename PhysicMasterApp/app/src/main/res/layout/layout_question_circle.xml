@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10">
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@color/color_grey_999999"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/line_divider"
+            android:text="问答圈"
+            android:textColor="@color/color_blue_3a9efb"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tv_question_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text="全部问答>"
+            android:textColor="@color/color_blue_3a9efb"
+            android:textSize="@dimen/size_16"/>
+    </RelativeLayout>
+
+    <com.physicmaster.modules.discuss.fragment.QuestionCycleView
+        android:id="@+id/icv_qu_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        >
+
+        <View
+            android:id="@+id/line_divider2"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@color/color_grey_999999"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/line_divider2"
+            android:text="聊天"
+            android:textColor="@color/color_blue_3a9efb"
+            android:textSize="@dimen/size_16"/>
+    </RelativeLayout>
+</LinearLayout>

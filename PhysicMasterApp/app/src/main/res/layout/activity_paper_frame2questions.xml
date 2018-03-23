@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="match_parent"
+        android:background="@color/half_transparent"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cancel"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/dimen_75"
+            android:layout_height="@dimen/dimen_75"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/take_pic"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_album"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/album"
+            />
+    </RelativeLayout>
+
+    <com.physicmaster.modules.mine.activity.notebook.image.CropFrameParentView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.physicmaster.modules.mine.activity.notebook.image.CropImageView
+            android:id="@+id/cropImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.physicmaster.modules.mine.activity.notebook.image.CropFrameView
+            android:id="@+id/cropFrame"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:id="@+id/btn_lefttop"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top|left"
+                android:background="@color/transparent"
+                />
+
+            <Button
+                android:id="@+id/btn_leftbottom"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|left"
+                android:background="@color/transparent"
+                />
+
+            <Button
+                android:id="@+id/btn_righttop"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|right"
+                android:background="@color/transparent"
+                />
+
+            <Button
+                android:id="@+id/btn_rightbottom"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:background="@color/transparent"
+                />
+        </com.physicmaster.modules.mine.activity.notebook.image.CropFrameView>
+        <!--  LinearLayout 
+            android:id="@+id/crop_confirm_lt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            >
+            <Button 
+                android:id="@+id/btn_crop_bypass"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:text="@string/homework_crop_bypass"
+                android:background="@drawable/common_btn_picbg_selector"
+                />
+            <Button 
+                android:id="@+id/btn_crop_add"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="@string/homework_crop_add"
+                android:background="@drawable/common_btn_picbg_selector"
+                />
+        </LinearLayout>-->
+    </com.physicmaster.modules.mine.activity.notebook.image.CropFrameParentView>
+
+</LinearLayout>

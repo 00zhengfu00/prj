@@ -1,0 +1,11 @@
+v0.7.1
+
+从App v2.2.2开始
+手动修改：为了支持：①②③④⑤⑥⑦⑧⑨⑩
+var cjkRegex =
+    /[\u3040-\u309F]|[\u30A0-\u30FF]|[\u4E00-\u9FAF]|[\uAC00-\uD7AF]/;
+--->
+    var cjkRegex =
+        window["redefine_katex_cjkRegex"]||/[\u3040-\u309F]|[\u30A0-\u30FF]|[\u4E00-\u9FAF]|[\uAC00-\uD7AF]/;
+
+    window["redefine_katex_cjkRegex"] = /[\u3040-\u309F]|[\u30A0-\u30FF]|[\u4E00-\u9FAF]|[\uAC00-\uD7AF]|[\u2460-\u2469]/;

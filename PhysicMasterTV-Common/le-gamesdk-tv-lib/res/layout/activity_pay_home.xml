@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s_62"
+        android:layout_marginTop="@dimen/s_35"
+        android:text="@string/letv_paysdk_pay_center"
+        android:textColor="@color/white_80percent_not_alpha"
+        android:textSize="@dimen/f_27"/>
+
+    <FrameLayout
+        android:id="@+id/fl_pay_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

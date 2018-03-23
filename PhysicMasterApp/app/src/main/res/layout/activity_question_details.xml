@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <com.physicmaster.widget.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </com.physicmaster.widget.PullToRefreshLayout>
+
+
+    <Button
+        android:id="@+id/btn_answer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTitleBlue"
+        android:text="参与回答"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_16"/>
+
+</LinearLayout>

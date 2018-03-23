@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/activity_breakthough_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:drawableLeft="@mipmap/tuichu"
+            android:drawablePadding="@dimen/dimen_6"
+            android:text="退出"
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_16"/>
+
+
+        <ImageView
+            android:id="@+id/iv_succeed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_210"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_98"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/jin_chenggong"/>
+
+
+        <com.physicmaster.widget.GifView
+            android:id="@+id/iv_succeed_gif"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_210"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_98"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:adjustViewBounds="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_succeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_succeed"
+            android:layout_centerHorizontal="true"
+            android:text="闯关成功"
+            android:textColor="#99ff0000"
+            android:textSize="@dimen/size_24"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_below="@+id/tv_succeed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_86"
+            android:layout_marginTop="@dimen/dimen_14">
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/colorDarkGray"/>
+
+
+            <ImageView
+                android:id="@+id/iv_gold_explian"
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_toLeftOf="@+id/view"
+                android:src="@mipmap/shuoming"/>
+
+            <TextView
+                android:id="@+id/tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_toLeftOf="@+id/iv_gold_explian"
+                android:text="+5"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_18"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/jinbi_finish"
+                android:drawablePadding="@dimen/dimen_4"
+                android:gravity="center"
+                android:text="金币"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_14"/>
+
+
+            <TextView
+                android:id="@+id/tvintegral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/view"
+                android:drawableLeft="@mipmap/jifen_finish"
+                android:drawablePadding="@dimen/dimen_4"
+                android:gravity="center"
+                android:text="积分"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_14"/>
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_toRightOf="@+id/tvintegral"
+                android:text="+18"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_18"/>
+
+            <ImageView
+                android:id="@+id/iv_integral_explian"
+                android:layout_width="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_16"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shuoming"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_below="@+id/rl_layout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_130"
+            android:layout_marginTop="@dimen/dimen_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/daduitishu"
+                android:drawablePadding="@dimen/dimen_4"
+                android:text="答对题数"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_14"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_weight="1"
+                android:background="@drawable/dash_line"
+                android:layerType="software"
+                />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5/5"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_18"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_below="@+id/rl_layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_130"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/yongshi"
+                android:drawablePadding="@dimen/dimen_4"
+                android:lines="1"
+                android:text="用    时"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_14"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_weight="1"
+                android:background="@drawable/dash_line"
+                android:layerType="software"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:lines="1"
+                android:text="00''00''48"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_18"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_below="@+id/rl_layout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_86"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@mipmap/jixu"
+            android:text="继续闯关"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_46"
+            android:layout_below="@+id/btn_continue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_86"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@mipmap/chongxin"
+            android:text="重新闯关"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_20"/>
+
+
+        <TextView
+            android:id="@+id/tv_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_again"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="查看解析 >"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_14"/>
+
+
+    </RelativeLayout>
+</ScrollView>

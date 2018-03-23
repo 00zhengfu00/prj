@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/half_transparent"
+              android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/list_divider_height">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_grey_999999"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_20"
+        >
+
+        <TextView
+            android:id="@+id/tv_grade_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_10"
+            android:text=""
+            android:textColor="@color/color_grey_999999"
+            android:textSize="@dimen/size_15"/>
+
+        <TextView
+            android:id="@+id/tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_20"
+            android:text="切换"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

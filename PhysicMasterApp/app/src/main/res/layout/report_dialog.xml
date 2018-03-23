@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:text="举报这个问题"
+        android:textColor="@color/colorBindGray"
+        android:textSize="@dimen/size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray" />
+    <Button
+        android:id="@+id/btn_delete_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:text="举报"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_6"
+        android:background="@color/colorBackgound" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_16" />
+
+</LinearLayout>

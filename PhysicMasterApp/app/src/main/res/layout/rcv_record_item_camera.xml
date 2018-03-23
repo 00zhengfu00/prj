@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_90"
+              android:layout_margin="@dimen/dimen_10"
+              android:background="@color/colorBackgound"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/camera"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相机/相册"
+        android:textColor="@color/colorGray_d2d2d2"
+        android:textSize="@dimen/size_11"
+        />
+</LinearLayout>

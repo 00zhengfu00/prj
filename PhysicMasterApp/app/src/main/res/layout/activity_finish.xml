@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:drawableLeft="@mipmap/tuichu"
+        android:drawablePadding="@dimen/dimen_6"
+        android:text="退出"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_16"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@mipmap/beijingxingxing">
+
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="习题完成"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_24"/>
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_140"
+            android:layout_below="@+id/tv_finish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            />
+
+        <ImageView
+            android:id="@+id/iv_reward"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignLeft="@+id/tv_finish"
+            android:layout_below="@+id/iv_finish"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:src="@mipmap/jianglitili"/>
+
+        <TextView
+            android:id="@+id/tv_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_finish"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_toRightOf="@+id/iv_reward"
+            android:text="+20"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_18"/>
+
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@+id/iv_reward"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@mipmap/zaishiyici"
+            android:text="休息一下"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+        <Button
+            android:id="@+id/btn_rest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@+id/btn_again"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@mipmap/xiuxi"
+            android:text="休息一下"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"
+            android:textSize="@dimen/size_20"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

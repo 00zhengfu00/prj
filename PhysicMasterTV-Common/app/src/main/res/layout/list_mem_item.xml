@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#19ffffff"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/y20"
+              android:paddingLeft="@dimen/x40"
+              android:paddingTop="@dimen/y20"
+    >
+
+    <TextView
+        android:id="@+id/tv_deadline"
+        android:layout_width="@dimen/x200"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="1个月"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x40"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="@dimen/x200"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x100"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="￥100"
+        android:textColor="@color/color_money"
+        android:textSize="@dimen/x40"
+        />
+
+    <TextView
+        android:id="@+id/tv_price_orin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x10"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="原价￥200"
+        android:textColor="@color/half_white"
+        android:textSize="@dimen/x40"
+        />
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UnLoginActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <ImageView
+        android:id="@+id/iv_ads"
+        android:layout_width="@dimen/x710"
+        android:layout_height="@dimen/y184"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/x905"
+        android:src="@mipmap/login_ads"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_ads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x12">
+
+        <FrameLayout
+            android:id="@+id/lay_qrcode"
+            android:layout_width="@dimen/x600"
+            android:layout_height="@dimen/y600">
+
+            <ImageView
+                android:id="@+id/iv_qrCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/loading"
+                />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y600"
+            android:layout_toRightOf="@id/lay_qrcode"
+            android:background="@color/half_white_10"
+            android:paddingLeft="@dimen/x80"
+            android:paddingRight="@dimen/x80">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x120"
+                android:drawableLeft="@drawable/shape_circle"
+                android:drawablePadding="@dimen/x26"
+                android:gravity="center"
+                android:text="同步好学会员特权"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x40"
+                />
+
+            <TextView
+                android:id="@+id/tv_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_1"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginTop="@dimen/x26"
+                android:gravity="center"
+                android:text="开通观看所有学习内容"
+                android:textColor="@color/half_white_70"
+                android:textSize="@dimen/x36"
+                />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x120"
+                android:layout_toRightOf="@id/tv_1"
+                android:drawableLeft="@drawable/shape_circle"
+                android:drawablePadding="@dimen/x26"
+                android:gravity="center"
+                android:text="同步观看历史和收藏"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x40"
+                />
+
+            <TextView
+                android:id="@+id/tv_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_2"
+                android:layout_below="@id/tv_2"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginTop="@dimen/x26"
+                android:gravity="center"
+                android:text="多终端学习不间断"
+                android:textColor="@color/half_white_70"
+                android:textSize="@dimen/x36"
+                />
+
+            <!--第二行-->
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_2_1"
+                android:layout_marginTop="@dimen/x120"
+                android:drawableLeft="@drawable/shape_circle"
+                android:drawablePadding="@dimen/x26"
+                android:gravity="center"
+                android:text="数理化三科全面提高"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x40"
+                />
+
+            <TextView
+                android:id="@+id/tv_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_3"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginTop="@dimen/x26"
+                android:gravity="center"
+                android:text="一屏看尽三科学习内容"
+                android:textColor="@color/half_white_70"
+                android:textSize="@dimen/x36"
+                />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_2_1"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/x120"
+                android:layout_toRightOf="@id/tv_3"
+                android:drawableLeft="@drawable/shape_circle"
+                android:drawablePadding="@dimen/x26"
+                android:gravity="center"
+                android:text="大屏沉浸式学习更高效"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x40"
+                />
+
+            <TextView
+                android:id="@+id/tv_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_4"
+                android:layout_below="@id/tv_4"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginTop="@dimen/x26"
+                android:gravity="center"
+                android:text="三到五分钟收获学习乐趣"
+                android:textColor="@color/half_white_70"
+                android:textSize="@dimen/x36"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

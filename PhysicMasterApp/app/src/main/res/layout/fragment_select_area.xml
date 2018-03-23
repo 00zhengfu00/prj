@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:id="@+id/tv_select_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_46"
+        android:background="@color/colorBackgound"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_20"
+        android:text="当前选择地区"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_16" />
+
+    <ListView
+        android:id="@+id/lv_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:divider="@color/colorBackgound"
+        android:background="@color/colorWhite"
+        android:scrollbars="none" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/dimen_16"
+        android:text=""
+        android:textSize="@dimen/size_22"
+        android:visibility="gone" />
+
+</LinearLayout>

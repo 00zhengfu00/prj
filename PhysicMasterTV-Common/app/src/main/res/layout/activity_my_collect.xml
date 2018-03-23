@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <reco.frame.tv.view.TvTabHost
+        android:id="@+id/tth_container"
+        android:layout_width="@dimen/x1920"
+        android:layout_height="@dimen/y900"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/y150"
+        tv:cursorHeight="@dimen/y50"
+        tv:cursorMarginTop="@dimen/y50"
+        tv:cursorRes="@drawable/cursor_index"
+        tv:cursorWidth="@dimen/x250"
+        tv:dividerHeight="@dimen/y10"
+        tv:durationScroll="400"
+        tv:scale="1.2"
+        tv:textColorDefault="@color/text_unselect_color"
+        tv:textColorSelected="@color/white"
+        tv:textSize="@dimen/common_text_size"
+        tv:titleHeight="@dimen/y70"
+        tv:titleSpace="@dimen/x30"
+        tv:titleWidth="@dimen/x250"
+        />
+</RelativeLayout>

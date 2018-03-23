@@ -1,0 +1,166 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    background-color: transparent;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.auto_dian {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block
+}
+
+.wFull {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.katex .reset-textstyle.scriptstyle .cjk-char,
+.katex .reset-textstyle.scriptstyle .cjk_fallback {
+    font-size: 0.7em;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.auto_br, .katex, p {
+    display: inline-block;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+p {
+    display: block;
+    margin: 0 0 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+body, .katex {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (min-device-width: 765px) {
+    body, .katex {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-device-width: 365px) {
+    body, .katex {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+/*习题闯关复习题展示-start*/
+.review_body {
+    padding: 2px;
+}
+
+.review_body .qu_item_list {
+    margin-top: 10pt;
+}
+
+.review_body .qu_item_list .qu_item {
+    display: inline-block;
+}
+
+.review_body .qu_item_list.one_row .qu_item {
+    margin-left: 6px;
+}
+
+.review_body .qu_item_list.one_row .qu_item:first-child {
+    margin-left: 0;
+}
+
+.review_body .qu_item_list.two_row .qu_item {
+    display: inline-block;
+    width: 48%;
+}
+
+.review_body .qu_item_list.qu_item_block .qu_item {
+    display: block;
+}
+
+.review_body .qu_item_list.qu_item_block .qu_item,
+.review_body .qu_item_list.two_row .qu_item_3,
+.review_body .qu_item_list.two_row .qu_item_4 {
+    margin-top: 10pt;
+}
+
+.review_body .qu_item_list.two_row .qu_item_2,
+.review_body .qu_item_list.two_row .qu_item_4 {
+    margin-left: 2%;
+}
+
+.review_body .qu_item_list .row_1,
+.review_body .qu_item_list .row_2 {
+    float: left;
+    width: 100%;
+}
+
+.review_body .qu_item_list.two_row .qu_item > div > p > img:nth-last-child(1) {
+    vertical-align: middle;
+}
+
+.review_body .qu_item_list.qu_item_block .qu_item:first-child {
+    margin-top: 0;
+}
+
+.review_body .qu_item ._item_code_block {
+    float: left;
+    display: inline-block;
+}
+
+.review_body .qu_item ._item_content {
+    /*TODO 此处使用的px单位，如果更换(A./B./C./D.)字体／或字号，应该调整此值*/
+    margin-left: 21.48px;
+    word-break: break-all;
+}
+
+.review_body .qu_content,
+.review_body .qu_content > div > p,
+.review_body .qu_content > p {
+    word-break: break-all;
+}
+
+.review_body .qu_underline {
+    letter-spacing: 0;
+}
+
+/*习题闯关复习题展示-end*/

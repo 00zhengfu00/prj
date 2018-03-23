@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.physicmaster.widget.CustomVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@mipmap/close3"/>
+
+        <include
+            android:id="@+id/layout_input_area"
+            layout="@layout/login_input_area"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_qq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_45"
+            android:layout_marginRight="@dimen/dimen_45"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/half_white">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:text="快捷登录"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_14"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/half_white"
+                >
+            </View>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_tourist"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_minus_16"
+            android:layout_toLeftOf="@+id/iv_weixin"
+            android:src="@mipmap/login_qq"/>
+
+        <ImageView
+            android:id="@+id/iv_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_tourist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:src="@mipmap/login_weixin"/>
+
+        <ImageView
+            android:id="@+id/iv_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_tourist"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_minus_16"
+            android:layout_toRightOf="@+id/iv_weixin"
+            android:src="@mipmap/login_weibo"/>
+
+        <LinearLayout
+            android:id="@+id/ll_tourist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:id="@+id/tv_tourist_login"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="随便看看"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_14"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/half_white"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_margin="@dimen/dimen_10"
+            android:src="@mipmap/haoyou_fanhui"/>
+
+        <EditText
+            android:id="@+id/et_find_friend"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_weight="3"
+            android:background="@drawable/addfriend_edittext_background"
+            android:drawableLeft="@mipmap/haoyou_sousuo"
+            android:drawablePadding="@dimen/dimen_6"
+            android:focusable="true"
+            android:hint="昵称/手机号"
+            android:lines="1"
+            android:paddingLeft="@dimen/dimen_6"
+            android:textColor="@color/colorLineGray"
+            android:textColorHint="@color/colorDarkGray"
+            android:textSize="@dimen/size_16">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_find_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_find_address_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="搜索通讯录好友"
+        android:textColor="@color/colorTitleBlue"
+        android:textSize="@dimen/size_16"/>
+
+    <com.physicmaster.widget.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </com.physicmaster.widget.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/dimen_2"
+              android:background="@color/colorWhite"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_20"
+        android:text="习题讲解"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_video"
+        android:layout_width="match_parent"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:scrollbars="none"
+        android:divider="@color/colorDarkGray"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>

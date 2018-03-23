@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:background="@drawable/white_background"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/energy_title_background"
+        android:gravity="center"
+        android:padding="@dimen/dimen_12"
+        android:text="选择年级"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_20"/>
+
+
+    <com.physicmaster.widget.PickerView
+        android:id="@+id/pv_grade"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:background="@color/colorLineGray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="取消"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_20"/>
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/colorLineGray"
+            />
+
+        <TextView
+            android:id="@+id/tv_ensure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="确定"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_20"/>
+    </LinearLayout>
+
+
+</LinearLayout>

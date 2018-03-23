@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--app:qrcv_barcodeRectHeight条码扫描框的宽度
+       qrcv_borderSize扫描框的宽度
+       qrcv_cornerColor扫描框的颜色
+       qrcv_cornerLength扫描框边角线的长度
+       qrcv_cornerSize扫描框边角线的宽度
+       qrcv_customScanLineDrawable扫描线的图片资源「默认的扫描线图片样式不能满足你的需求时使用，设置该属性后 qrcv_isShowDefaultScanLineDrawable、qrcv_scanLineSize、qrcv_scanLineColor 将失效」
+       qrcv_isBarcode是否是扫条形码
+       qrcv_isCenterVertical扫描框是否垂直居中，该属性为true时会忽略 qrcv_topOffset 属性
+       qrcv_isOnlyDecodeScanBoxArea    是否只识别扫描框区域的二维码
+       qrcv_isScanLineReverse扫描线是否来回移动
+       qrcv_isShowDefaultGridScanLineDrawable是否显示默认的网格图片扫描线
+       qrcv_isShowTipBackground是否显示提示文案的背景
+       qrcv_isShowTipTextAsSingleLine是否把提示文案作为单行显示
+       qrcv_isTipTextBelowRect提示文案是否在扫描框的底部
+       qrcv_maskColor除去扫描框，其余部分阴影颜色
+       qrcv_qrCodeTipText
+       qrcv_rectWidth  扫描框的宽度
+       qrcv_scanLineColor扫描线的颜色「扫描线和默认的扫描线图片的颜色」
+       qrcv_scanLineMargin扫描线距离上下或者左右边框的间距
+       qrcv_scanLineSize扫描线的宽度
+       qrcv_toolbarHeight   Toolbar 的高度，通过该属性来修正由 Toolbar 导致扫描框在垂直方向上的偏差
+       qrcv_topOffset扫描框距离 toolbar 底部的距离-->
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+        app:qrcv_barcodeRectHeight="140dp"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorTitleBlue"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="5dp"
+        app:qrcv_customScanLineDrawable="@mipmap/saomiao"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isCenterVertical="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowTipBackground="false"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_maskColor="@color/half_transparent3"
+        app:qrcv_qrCodeTipText="将取景框对准二维码，可自动扫描"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorTitleBlue"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_toolbarHeight="70dp"
+        app:qrcv_topOffset="90dp"/>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@mipmap/fanhui"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="扫码"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_18"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_erweima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_80"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:src="@drawable/erweima_backgound_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:gravity="center"
+            android:text="二维码"
+            android:textColor="@drawable/ranking_text_selector2"
+            android:textSize="@dimen/size_14"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_xiangce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_80"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:src="@drawable/xiangce_backgound_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@drawable/ranking_text_selector2"
+            android:textSize="@dimen/size_14"/>
+
+    </LinearLayout>
+</RelativeLayout>

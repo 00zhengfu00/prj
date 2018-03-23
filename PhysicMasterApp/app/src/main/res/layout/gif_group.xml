@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_gif"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_pet_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/pet_pad"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_photo_view"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="@dimen/dimen_300"
+        android:layout_above="@+id/iv_pet_pad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_minus_40"
+        />
+
+</RelativeLayout>

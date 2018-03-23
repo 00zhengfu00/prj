@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/wulidashi"/>
+
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:layout_alignRight="@id/iv_content"
+        android:layout_below="@id/iv_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:gravity="center"
+        android:text="七年级数学"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_12"/>
+
+    <RadioButton
+        android:id="@+id/rb_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_content"
+        android:layout_alignTop="@id/iv_content"
+        android:layout_marginRight="@dimen/dimen_minus_10"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:background="@drawable/payment_selector"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+
+</RelativeLayout>

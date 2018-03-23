@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_16"
+        android:text="分享此付款链接"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorBindGray"/>
+
+    <ImageView
+        android:id="@+id/iv_QR_code"
+        android:layout_width="@dimen/dimen_160"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="扫一扫即可付款"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_16"/>
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/pay_cancel_background"
+        android:text="点击复制链接"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_18"/>
+
+
+</LinearLayout>

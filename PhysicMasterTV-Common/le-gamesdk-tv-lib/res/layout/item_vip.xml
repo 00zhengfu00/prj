@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.letv.tvos.paysdk.widget.RelativeLayoutTV xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/s_496"
+    android:layout_height="@dimen/s_158"
+    android:background="@color/color_payment_selected_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:animEnable="false"
+    app:borderShadowSrc="@drawable/background_shadow_round"
+    app:shadowSpace="@dimen/s_42">
+
+    <LinearLayout
+        android:layout_width="@dimen/s_496"
+        android:layout_height="@dimen/s_158"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_checked"
+                android:layout_width="@dimen/s_37"
+                android:layout_height="@dimen/s_37"
+                android:layout_gravity="bottom"
+                android:button="@drawable/selector_checkbox_vip"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_expires"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_17"
+                android:text="@string/letv_paysdk_vip_expires"
+                android:textColor="@color/vip_expires_color"
+                android:textSize="@dimen/f_68" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_17"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/s_63"
+                    android:layout_height="@dimen/s_44"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/promote"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/letv_paysdk_vip_price"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/f_29" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.letv.tvos.paysdk.widget.RelativeLayoutTV>

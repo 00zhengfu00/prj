@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_10"
+        android:text="这道题请机智的小伙伴回答"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_6"
+        android:background="@color/colorBackgound"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@mipmap/wulidashi"
+            riv:type="circle"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/iv_header"
+            android:padding="@dimen/dimen_10"
+            android:text="用户名"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/colorBackgound"></View>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_10"
+        android:text="aaaa "
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_15"/>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_content_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

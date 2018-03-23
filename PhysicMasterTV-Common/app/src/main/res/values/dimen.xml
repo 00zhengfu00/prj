@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_item_width">@dimen/x381</dimen>
+    <dimen name="user_item_height">@dimen/y306</dimen>
+    <dimen name="user_item_margin_right">@dimen/x30</dimen>
+    <dimen name="title_bar_height">@dimen/x45</dimen>
+    <dimen name="common_text_size">@dimen/x36</dimen>
+    <dimen name="boader_width">15dp</dimen>
+</resources>

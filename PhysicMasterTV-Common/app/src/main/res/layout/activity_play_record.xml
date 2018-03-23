@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <reco.frame.tv.view.TvGridView
+        android:id="@+id/tgv_imagelist"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y1080"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x100"
+        android:layout_marginTop="@dimen/y150"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tv:animationType="DEFAULT"
+        tv:boarderBottom="30dp"
+        tv:boarderLeft="@dimen/boader_width"
+        tv:boarderRight="30dp"
+        tv:boarderTop="@dimen/boader_width"
+        tv:columns="3"
+        tv:cursorRes="@drawable/cursor_1920"
+        tv:itemH="@dimen/y306"
+        tv:itemW="@dimen/x544"
+        tv:spaceHori="@dimen/x50"
+        tv:spaceVert="@dimen/y50">
+    </reco.frame.tv.view.TvGridView>
+
+</RelativeLayout>

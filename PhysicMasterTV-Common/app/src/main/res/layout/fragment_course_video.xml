@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+    <!-- 此处有五个自定义参数:
+            cursorRes指定光标图片
+            itemWidth为子项宽度
+            itemHeight为子项高度
+            columns为列数
+            animationType 动画类型 默认效果为跃迁 也可设为 TRANSLATE 平移-->
+    <reco.frame.tv.view.TvGridView
+        android:id="@+id/tgv_imagelist"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x130"
+        android:layout_marginTop="@dimen/x30"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tv:animationType="DEFAULT"
+        tv:boarderBottom="30dp"
+        tv:boarderLeft="@dimen/boader_width"
+        tv:boarderRight="30dp"
+        tv:boarderTop="@dimen/boader_width"
+        tv:columns="2"
+        tv:cursorRes="@drawable/cursor_1920"
+        tv:initFocus="false"
+        tv:itemH="@dimen/y306"
+        tv:itemW="@dimen/x544"
+        tv:spaceHori="@dimen/x40"
+        tv:spaceVert="@dimen/y20">
+    </reco.frame.tv.view.TvGridView>
+</RelativeLayout>

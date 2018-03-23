@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="letv_pay_sdk_app_name">QRcodeDemo</string>
+    <string name="letv_pay_sdk_menu_settings">Settings</string>
+    <string name="letv_pay_sdk_hello_world">Hello world!</string>
+    <string name="letv_pay_sdk_loading_text">加载中</string>
+
+    <string name="letv_pay_sdk_tv_pay_sucess">支付完成</string>
+    <string name="letv_pay_sdk_tv_pay_failure">支付未完成</string>
+    <string name="letv_pay_sdk_continue_pay">没,继续支付</string>
+    <string name="letv_pay_sdk_is_continue_pay">您是否已经支付完成?</string>
+    <string name="letv_pay_sdk_load_failure">加载失败</string>
+    <string name="letv_pay_sdk_reload">重新加载</string>
+    <string name="letv_pay_sdk_sure">确定</string>
+    <string name="letv_pay_sdk_retry_pay">是,支付完成</string>
+
+    <!--新版-->
+    <string name="letv_paysdk_pay_center">支付中心</string>
+    <string name="letv_paysdk_username">用户名：%1$s</string>
+    <string name="letv_paysdk_quit_tips">亲，确定要退出了么？</string>
+    <string name="letv_paysdk_confirm">确认</string>
+    <string name="letv_paysdk_back">返回</string>
+    <string name="letv_paysdk_vip_expires">%1$s%2$s</string>
+    <string name="letv_paysdk_vip_price">%1$s%2$s(原价%3$s)</string>
+
+    <!--虚拟币消费-->
+    <string name="letv_paysdk_product_name">商品名称：%1$s</string>
+    <string name="letv_paysdk_balance">账户余额：%1$s乐钻</string>
+    <string name="letv_paysdk_balance_cibn">账户余额：%1$s金钻</string>
+    <string name="letv_paysdk_pay">支付</string>
+    <string name="letv_paysdk_lecoin_recharge">乐钻充值</string>
+    <string name="letv_paysdk_lecoin_recharge_cibn">金钻充值</string>
+    <string name="letv_paysdk_password_tips">请输入您的乐钻支付密码</string>
+    <string name="letv_paysdk_password_tips_cibn">请输入您的金钻支付密码</string>
+    <string name="letv_paysdk_password_lecoin">本次支付乐钻：%1$s个</string>
+    <string name="letv_paysdk_password_lecoin_cibn">本次支付金钻：%1$s个</string>
+    <string name="letv_paysdk_password_error">支付密码错误，请重新输入。</string>
+    <string name="letv_paysdk_network_error">网络错误，请检查网络</string>
+
+    <string name="scan_qrcode_pay"> 扫码支付</string>
+    <string name="product_price_yuan">商品价格：%1$s元</string>
+    <string name="product_price_coin">商品价格：%1$s乐钻</string>
+    <string name="product_price_coin_cibn">商品价格：%1$s金钻</string>
+    <string name="current_account">当前账号：%1$s</string>
+    <string name="order_number">订单编号：%1$s</string>
+    <string name="wx_tips">请使用微信5.0以上版本扫码支付</string>
+    <string name="alipay_tips">请使用支付宝钱包扫码支付</string>
+    <string name="qrcode_order_valid_tips">该订单10分钟内有效，请及时支付！\n如遇问题 请联系客服10109000</string>
+
+    <string name="recharge_card_number">充值卡卡号</string>
+    <string name="enter_card_number">请输入充值卡号</string>
+    <string name="enter_correct_card_number">请输入正确的充值卡号</string>
+    <string name="recharge_card_password">充值卡密码</string>
+    <string name="enter_card_password">请输入充值卡密码</string>
+    <string name="recharge_card_tips">手机充值卡支付不参与任何活动，获得乐钻数量与充值面值相等</string>
+    <string name="recharge_card_tips_cibn">手机充值卡支付不参与任何活动，获得金钻数量与充值面值相等</string>
+    <string name="recharge_card_type">充值卡类型</string>
+    <string name="select_correct_card_type">请选择正确充值卡类型</string>
+    <string name="recharge_card_ctcc">电信充值卡</string>
+    <string name="recharge_card_cmcc">移动充值卡</string>
+    <string name="recharge_card_cucc">联通充值卡</string>
+
+</resources>

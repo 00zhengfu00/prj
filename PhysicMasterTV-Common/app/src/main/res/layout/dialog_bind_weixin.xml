@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/x953"
+              android:layout_height="@dimen/y634"
+              android:background="@mipmap/login_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/x953"
+        android:layout_height="@dimen/y430"
+        android:orientation="vertical"
+        >
+
+        <WebView
+            android:id="@+id/wb_login"
+            android:layout_width="@dimen/x342"
+            android:layout_height="@dimen/x342"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y44"
+            android:visibility="invisible"
+            >
+        </WebView>
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="@dimen/x342"
+            android:layout_height="@dimen/x342"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y44"
+            android:scaleType="fitXY"
+            android:src="@mipmap/loading"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="@dimen/x953"
+        android:layout_height="@dimen/y204"
+        android:gravity="center"
+        android:text="打开微信，扫一扫，可以在手机上观看哦"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/x42"
+        android:textStyle="bold"
+        />
+</LinearLayout>

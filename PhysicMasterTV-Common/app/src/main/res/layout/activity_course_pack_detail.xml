@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lswuyou.tv.pm.activity.ChapterDetailActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="@dimen/x330"
+        android:layout_height="@dimen/x330"
+        android:layout_marginLeft="@dimen/x212"
+        android:layout_marginTop="@dimen/y210"
+        android:focusable="false"
+        android:src="@mipmap/course_pack_place_holder"
+        />
+
+    <TextView
+        android:id="@+id/tv_pay_type"
+        android:layout_width="@dimen/x330"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_qrcode"
+        android:layout_marginLeft="@dimen/x212"
+        android:layout_marginTop="@dimen/x20"
+        android:gravity="center_horizontal"
+        android:text="支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x42"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="@dimen/x330"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pay_type"
+        android:layout_marginLeft="@dimen/x212"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/money_color"
+        android:textSize="@dimen/x42"
+        />
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/btn_weixin_pay"
+        android:layout_width="@dimen/x330"
+        android:layout_height="@dimen/y87"
+        android:layout_below="@id/tv_price"
+        android:layout_marginLeft="@dimen/x212"
+        android:layout_marginTop="@dimen/y77"
+        android:background="@drawable/selector_pay_btn_bg"
+        android:focusable="true"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x50"
+        tv:scalable="false"
+        />
+
+    <reco.frame.tv.view.TvButton
+        android:id="@+id/btn_zhifubao_pay"
+        android:layout_width="@dimen/x330"
+        android:layout_height="@dimen/y87"
+        android:layout_below="@id/btn_weixin_pay"
+        android:layout_marginLeft="@dimen/x212"
+        android:layout_marginTop="@dimen/y34"
+        android:background="@drawable/selector_pay_btn_bg"
+        android:focusable="true"
+        android:text="支付宝支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x50"
+        android:visibility="gone"
+        tv:scalable="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lay_course_pack_info"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y144"
+        android:layout_marginLeft="@dimen/x310"
+        android:layout_marginTop="@dimen/y210"
+        android:layout_toRightOf="@id/iv_qrcode"
+        >
+
+        <ImageView
+            android:id="@+id/iv_course_icon"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y144"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/course_pack"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/iv_course_icon"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/money_color"
+                android:textSize="@dimen/x42"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="促销价："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x42"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/money_color"
+                    android:textSize="@dimen/x42"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <reco.frame.tv.view.TvListView
+        android:id="@+id/lv_course_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y500"
+        android:layout_marginLeft="@dimen/x852"
+        android:layout_marginRight="@dimen/x100"
+        android:layout_marginTop="@dimen/y400"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tv:cursorRes="@drawable/cursor_rectangle_boarder_orange"
+        tv:focusOption="PARENT_ONLY"
+        tv:itemH="@dimen/x90"
+        tv:itemW="@dimen/x950"
+        tv:scalable="false"
+        >
+    </reco.frame.tv.view.TvListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lv_course_chapter"
+        android:layout_marginRight="@dimen/x100"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价值合计："
+            android:textColor="@color/white"
+            android:textSize="@dimen/x42"
+            />
+
+        <TextView
+            android:id="@+id/tv_ori_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/money_color"
+            android:textSize="@dimen/x42"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flow="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/top_title"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_marginBottom="@dimen/dimen_50"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="错误原因:"
+                android:textColor="#444444"
+                android:textSize="@dimen/size_15"/>
+
+           
+
+            <com.physicmaster.widget.myFlowLayout.TagFlowLayout
+                android:id="@+id/flowlayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:layout_below="@id/tv"
+                android:layout_marginTop="@dimen/dimen_10"
+                flow:max_select="-1">
+
+            </com.physicmaster.widget.myFlowLayout.TagFlowLayout>
+
+            <EditText
+                android:id="@+id/et_why"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/tv"
+                android:layout_alignRight="@id/tv"
+                android:visibility="gone"
+                android:layout_below="@id/flowlayout1"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="#f8f8f8"
+                android:hint="|其它原因"
+                android:includeFontPadding="false"
+                android:maxLength="8"
+                android:padding="@dimen/dimen_10"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHint="#d2d2d2"
+                android:textSize="@dimen/size_15"/>
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv"
+                android:layout_below="@id/et_why"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="难易程度:"
+                android:textColor="#444444"
+                android:textSize="@dimen/size_15"/>
+
+
+            <ImageView
+                android:id="@+id/iv_hong5"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignRight="@id/tv"
+                android:layout_alignTop="@id/tv2"
+                android:background="@drawable/hongxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_hong4"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignTop="@id/tv2"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_hong5"
+                android:background="@drawable/hongxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_hong3"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignTop="@id/tv2"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_hong4"
+                android:background="@drawable/hongxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_hong2"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignTop="@id/tv2"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_hong3"
+                android:background="@drawable/hongxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_hong1"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignTop="@id/tv2"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_hong2"
+                android:background="@drawable/hongxing_selector"/>
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv"
+                android:layout_below="@id/tv2"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="掌握程度:"
+                android:textColor="#444444"
+                android:textSize="@dimen/size_15"/>
+
+
+            <ImageView
+                android:id="@+id/iv_huang5"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignBottom="@id/tv3"
+                android:layout_alignRight="@id/tv"
+                android:background="@drawable/huangxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_huang4"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignBottom="@id/tv3"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_huang5"
+                android:background="@drawable/huangxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_huang3"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignBottom="@id/tv3"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_huang4"
+                android:background="@drawable/huangxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_huang2"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignBottom="@id/tv3"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_huang3"
+                android:background="@drawable/huangxing_selector"/>
+
+            <ImageView
+                android:id="@+id/iv_huang1"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_22"
+                android:layout_alignBottom="@id/tv3"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@id/iv_huang2"
+                android:background="@drawable/huangxing_selector"/>
+
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv"
+                android:layout_below="@id/tv3"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="选择科目:"
+                android:textColor="#444444"
+                android:textSize="@dimen/size_15"/>
+
+
+            <com.physicmaster.widget.myFlowLayout.TagFlowLayout
+                android:id="@+id/flowlayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:layout_below="@id/tv4"
+                android:layout_marginTop="@dimen/dimen_10"
+                flow:max_select="1">
+
+            </com.physicmaster.widget.myFlowLayout.TagFlowLayout>
+
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv"
+                android:layout_below="@id/flowlayout2"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="标签目录:"
+                android:textColor="#444444"
+                android:textSize="@dimen/size_15"/>
+
+            <com.physicmaster.widget.myFlowLayout.TagFlowLayout
+                android:id="@+id/flowlayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:layout_below="@id/tv5"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                flow:max_select="1">
+
+            </com.physicmaster.widget.myFlowLayout.TagFlowLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/tianjia_nulu"
+                android:layout_alignLeft="@id/tv"
+                android:layout_below="@id/flowlayout3"
+                android:layout_marginBottom="@dimen/dimen_50"/>
+
+            <EditText
+                android:id="@+id/et_tab"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/tv"
+                android:layout_alignRight="@id/tv"
+                android:layout_below="@id/flowlayout3"
+                android:layout_marginBottom="@dimen/dimen_50"
+                android:background="#f8f8f8"
+                android:hint="|新建标签目录"
+                android:includeFontPadding="false"
+                android:visibility="gone"
+                android:maxLength="16"
+                android:padding="@dimen/dimen_10"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHint="#d2d2d2"
+                android:textSize="@dimen/size_15"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTitleBlue"
+        android:text="提交"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_18"
+        />
+</RelativeLayout>

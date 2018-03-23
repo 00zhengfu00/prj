@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="32dp"
+              android:background="@color/colorBackgound"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:drawableLeft="@mipmap/kecheng_text"
+        android:drawablePadding="@dimen/dimen_10"
+        android:text="新手任务"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="@dimen/size_16"
+        />
+</LinearLayout>

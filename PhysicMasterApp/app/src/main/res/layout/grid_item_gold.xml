@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_energy"-->
+    <!--android:layout_width="@dimen/dimen_170"-->
+    <!--android:layout_height="@dimen/dimen_110"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/gray_background"-->
+    <!--/>-->
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#D8F0FF">
+
+
+        <ImageView
+            android:id="@+id/iv_energy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_energy"
+            android:layout_marginTop="@dimen/dimen_minus_10"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:layout_toRightOf="@+id/iv_energy"
+            android:gravity="center"
+            android:text="精力瓶"
+            android:textColor="#2B5968"
+            android:textSize="@dimen/size_14"
+            />
+
+        <TextView
+            android:id="@+id/tv_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_info"
+            android:layout_below="@+id/tv_info"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:text="(恢复1点精力值)"
+            android:textColor="#2B5968"
+            android:textSize="@dimen/size_10"/>
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignLeft="@id/tv_info"
+            android:layout_below="@id/tv_exchange"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:src="@mipmap/shouye_jinbi"/>
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_2"
+            android:layout_toRightOf="@id/iv"
+            android:layout_alignTop="@id/iv"
+            android:gravity="top"
+            android:text="20"
+            android:textColor="#FAD143"
+            android:textSize="@dimen/size_14"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

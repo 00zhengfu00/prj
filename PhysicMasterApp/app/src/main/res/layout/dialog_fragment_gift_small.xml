@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/white_background">
+
+
+        <ImageView
+            android:id="@+id/iv_award"
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:src="@mipmap/jiangli"/>
+
+
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="@dimen/dimen_220"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@id/iv_award"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:background="@drawable/blue_btn_background"
+            android:text="立即收取"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_18"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:src="@mipmap/close"/>
+
+
+</RelativeLayout>

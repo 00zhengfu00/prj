@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/x222"
+        android:layout_height="match_parent"
+        android:background="#b2000000"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_sublist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="选集"
+            android:textColor="@color/text_unselect_color"
+            android:textSize="@dimen/x38"
+            />
+
+        <FrameLayout
+            android:id="@+id/scv_sublist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/sub_focus_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_gravity="center"
+                android:background="@color/selected_bg_color"/>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_sublist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x222"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="菜单"
+            android:textColor="@color/text_unselect_color"
+            android:textSize="@dimen/x38"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/focus_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_gravity="center"
+                android:background="@color/selected_bg_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_xuanji"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y100"
+                    android:background="@color/transparent"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="选集"
+                    android:textColor="@color/text_color_bg"
+                    android:textSize="@dimen/x38"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y100"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="清晰度"
+                    android:textColor="@color/text_color_bg"
+                    android:textSize="@dimen/x38"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

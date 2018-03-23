@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgound"
+        android:padding="@dimen/dimen_6"
+        android:text="最新评论 (4条)"
+        android:textColor="@color/colorBindGray"
+        android:textSize="@dimen/size_14"/>
+
+
+</LinearLayout>

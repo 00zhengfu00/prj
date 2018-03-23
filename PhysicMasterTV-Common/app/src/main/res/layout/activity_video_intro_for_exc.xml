@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lswuyou.tv.pm.activity.VideoIntroForExcActivity">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="@dimen/x1254"
+            android:layout_height="@dimen/y706"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/loading"
+            />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_poster"
+            android:layout_alignTop="@id/iv_poster"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y120"
+            android:background="@drawable/shape_vip"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="VIP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_poster"
+            android:layout_marginRight="@dimen/x333"
+            android:layout_marginTop="@dimen/y40"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="@dimen/x236"
+                android:layout_height="@dimen/y64"
+                android:layout_below="@id/iv_course_icon"
+                android:layout_marginLeft="@dimen/x165"
+                android:layout_marginTop="@dimen/y84"
+                android:background="@drawable/selector_common_btn_bg"
+                android:focusable="true"
+                android:text="立即播放"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/common_text_size"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_width="@dimen/x236"
+                android:layout_height="@dimen/y64"
+                android:layout_below="@id/iv_course_icon"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y84"
+                android:layout_toRightOf="@id/btn_play"
+                android:background="@drawable/selector_common_btn_bg"
+                android:focusable="true"
+                android:text="加入收藏"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/common_text_size"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

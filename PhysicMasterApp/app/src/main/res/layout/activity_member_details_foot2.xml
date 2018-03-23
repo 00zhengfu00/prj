@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_280"
+        android:background="@mipmap/xiangqing_jianzheng">
+
+        <!--<com.physicmaster.widget.CustomVideoView
+            android:id="@+id/videoView"
+            android:layout_width="@dimen/dimen_320"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_35"/>-->
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoView"
+            android:layout_width="@dimen/dimen_320"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_35"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_content"-->
+            <!--android:layout_width="@dimen/dimen_320"-->
+            <!--android:layout_height="@dimen/dimen_180"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="@dimen/dimen_35"-->
+            <!--android:background="@mipmap/wulidashi"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

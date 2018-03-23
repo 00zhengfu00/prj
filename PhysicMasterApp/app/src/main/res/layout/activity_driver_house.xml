@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/driver_house"
+    >
+
+    <ImageView
+        android:id="@+id/title_left_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@mipmap/fanhui"/>
+
+    <LinearLayout
+        android:id="@+id/ll_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:orientation="horizontal"
+        >
+
+        <include
+            android:id="@+id/layout_task"
+            layout="@layout/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <include
+            android:id="@+id/layout_coin"
+            layout="@layout/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <include
+            android:id="@+id/layout_backpack"
+            layout="@layout/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <include
+            android:id="@+id/layout_message"
+            layout="@layout/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/rl_gif"
+        layout="@layout/gif_group"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="@dimen/dimen_300"
+        android:layout_above="@id/ll_functions"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/pet_margin_bottom"
+        android:layout_marginRight="@dimen/pet_margin_right"
+        >
+    </include>
+
+    <ImageView
+        android:id="@+id/iv_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_gif"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_minus_40"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:src="@mipmap/upgrade"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pet_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_gif"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="#03344d"
+            android:textSize="@dimen/size_18"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/points_progress_background"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_joke"
+        android:layout_width="@dimen/dimen_240"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_left_imageview"
+        android:background="@drawable/dialog_box"
+        android:lineSpacingMultiplier="1.2"
+        android:text=""
+        android:textColor="#03344d"
+        android:textSize="@dimen/size_15"
+        />
+
+</RelativeLayout>

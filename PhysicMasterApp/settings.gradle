@@ -1,0 +1,1 @@
+include ':app', ':recyclerViewlibrary', 'jcvideoplayer-lib', ':pickerview', ':jsbridge-lib', ':uikit', ':PhotoPicker', 'magicindicator', 'BGABanner', ':cameralib', ':guideLib'

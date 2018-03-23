@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dimen_6"
+              android:paddingLeft="@dimen/dimen_10"
+              android:paddingRight="@dimen/dimen_10"
+              android:paddingTop="@dimen/dimen_6"
+    >
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="@dimen/dimen_22"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:clickable="false"
+        />
+
+    <ImageView
+        android:id="@+id/iv_course_poster"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单机械"
+            android:textColor="@color/colorCache"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_video_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_15"/>
+    </LinearLayout>
+
+</LinearLayout>

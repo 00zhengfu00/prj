@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y112"
+        android:background="@drawable/bg_textview_recommend"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="获取数据中……"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"/>
+</LinearLayout>

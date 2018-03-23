@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10"
+    >
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_22"
+            android:text="精力:"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="@dimen/size_16"/>
+
+        <ProgressBar
+            android:id="@+id/pb_energy"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/dimen_74"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_below="@+id/iv_energy"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:progress="50"
+            android:progressDrawable="@drawable/shape_energy_progress"/>
+
+        <ImageView
+            android:id="@+id/iv_energy"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignLeft="@id/pb_energy"
+            android:layout_alignRight="@id/pb_energy"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:src="@mipmap/jingli2"/>
+
+        <TextView
+            android:id="@+id/tv_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pb_energy"
+            android:layout_alignLeft="@id/pb_energy"
+            android:layout_alignRight="@id/pb_energy"
+            android:layout_alignTop="@id/pb_energy"
+            android:gravity="center"
+            android:text="0/0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_energy"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_toRightOf="@id/tv_energy"
+            android:gravity="center"
+            android:text="精力已满"
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_energy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_alignLeft="@id/tv_energy"
+            android:layout_alignRight="@id/tv_time"
+            android:layout_below="@id/tv_energy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/blue_btn_background"
+            android:gravity="center"
+            android:text="补充精力"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_alignLeft="@id/btn_energy"
+            android:layout_alignRight="@id/btn_energy"
+            android:layout_below="@id/btn_energy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:background="@drawable/blue_background1">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:gravity="center_horizontal"
+                android:text="用精力药水补充"
+                android:textColor="@color/colorBindGray"
+                android:textSize="@dimen/size_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv_add"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:background="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_free_energy"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:src="@mipmap/jingli_jia1"/>
+
+
+            <ImageView
+                android:id="@+id/iv_show_5"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/jingli_jia5"/>
+
+
+            <ImageView
+                android:id="@+id/iv_show_30"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_25"
+                android:src="@mipmap/jingli_jia30"/>
+
+            <Button
+                android:id="@+id/btn_shop_5"
+                android:layout_width="@dimen/dimen_54"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:background="@drawable/blue_btn_background"
+                android:text="购买"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"
+                />
+
+            <Button
+                android:id="@+id/btn_shop_30"
+                android:layout_width="@dimen/dimen_54"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_18"
+                android:background="@drawable/blue_btn_background"
+                android:text="购买"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"
+                />
+
+            <Button
+                android:id="@+id/btn_free"
+                android:layout_width="@dimen/dimen_54"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:background="@drawable/blue_btn_background"
+                android:text="获取"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+</FrameLayout>

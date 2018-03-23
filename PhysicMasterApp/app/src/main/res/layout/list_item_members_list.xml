@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_60"
+        android:text="59元 /1个月"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_17"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_alignLeft="@id/tv_price"
+        android:layout_alignRight="@id/tv_price"
+        android:layout_below="@id/tv_price"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@color/colorrank"
+        android:id="@+id/view4"></View>
+
+    <TextView
+        android:id="@+id/tv_price_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一个月尝鲜"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_14"
+        android:layout_below="@+id/view4"
+        android:layout_alignLeft="@+id/view4"
+        android:layout_alignStart="@+id/view4"/>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/tv_price_yue"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:src="@drawable/shape_circle"/>
+
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/iv1"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:src="@drawable/shape_circle"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/iv2"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:src="@drawable/shape_circle"/>
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/iv3"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:src="@drawable/shape_circle"/>
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/iv4"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:src="@drawable/shape_circle"/>
+
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="@dimen/dimen_9"
+        android:layout_height="@dimen/dimen_9"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_below="@id/iv5"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:src="@drawable/shape_circle"/>
+
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv6"
+        android:layout_alignLeft="@id/tv_price_yue"
+        android:layout_alignTop="@id/iv1"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:background="@color/colorrank"></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv1"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv1"
+        android:text="干货内容持续更新"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv2"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv2"
+        android:text="核心考点必练题讲解,考的全会"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv3"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv3"
+        android:text="解锁所有讲解视频"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv4"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv4"
+        android:text="缓存视频"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+    <TextView
+        android:id="@+id/tv_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv6"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv6"
+        android:text="赠送100金币，20积分"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+    <TextView
+        android:id="@+id/tv_gold2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv5"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_minus_4"
+        android:layout_toRightOf="@id/iv5"
+        android:text="闯关金币翻倍"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_14"/>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_below="@id/tv_gold"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toRightOf="@id/iv6"
+        android:text="赠送该学科必练题"
+        android:visibility="visible"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_18"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toRightOf="@id/iv6"
+        android:text="(仅限购买年会员)"
+        android:visibility="visible"
+        android:textColor="@color/colorTitleBlue"
+        android:textSize="@dimen/size_14"/>
+
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_alignBottom="@id/tv_price_yue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:background="@drawable/blue_btn_bg2"
+        android:text="开通"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_15"/>
+
+
+    <ImageView
+        android:id="@+id/iv_tuijian"
+        android:layout_width="@dimen/dimen_90"
+        android:layout_height="@dimen/dimen_90"
+        android:src="@mipmap/tuijian"
+        android:visibility="gone"/>
+
+    <RadioButton
+        android:id="@+id/id_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv2"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

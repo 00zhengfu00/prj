@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:background="@color/colorWhite">
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_54"
+            android:layout_height="@dimen/dimen_54"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@mipmap/wulidashi"
+            riv:type="circle"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/iv_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:text="用户名"
+                android:textColor="#333333"
+                android:textSize="@dimen/size_16"/>
+
+            <TextView
+                android:id="@+id/tv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="22名"
+                android:textColor="#999999"
+                android:textSize="@dimen/size_13"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/ll"
+            android:text="Lv4"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_13"
+            />
+        <ImageView
+            android:id="@+id/iv_members"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_alignTop="@id/ll"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:src="@mipmap/huiyuan1"
+            android:layout_toRightOf="@id/ll"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="3733"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="@dimen/size_22"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_6"
+        android:layout_below="@id/rl"
+        android:background="@color/colorBackgound"></View>
+</RelativeLayout>

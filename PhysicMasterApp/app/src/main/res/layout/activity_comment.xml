@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackgound">
+
+    <include layout="@layout/top_title"/>
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:divider="@color/colorBackgound"
+        android:dividerHeight="@dimen/dimen_1"
+        android:scrollbars="none">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBackgound"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_weight="6"
+            android:background="@drawable/gray_comment_background"
+            android:hint="说点什么吧"
+            android:paddingLeft="@dimen/dimen_8"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_15"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider_height"
+        android:layout_above="@id/ll"
+        android:background="@color/colorBindGray"></View>
+</RelativeLayout>

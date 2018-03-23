@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgound"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_chaged_headers"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="用户名"
+            android:textColor="#555555"
+            android:textSize="@dimen/size_16"/>
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_chaged_headers"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:src="@mipmap/wulidashi"
+            riv:type="circle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGray"
+            ></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="账号绑定"
+            android:textColor="@drawable/mine_text_selector"
+            android:textSize="@dimen/size_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:src="@mipmap/xuan"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGray"
+            >
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chage_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:id="@+id/tv_change_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+
+            android:text="修改密码"
+            android:textColor="@drawable/mine_text_selector"
+            android:textSize="@dimen/size_16"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:src="@mipmap/xuan"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGray"
+            ></View>
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_ramind"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_48"-->
+    <!--android:background="@drawable/mine_item_selector">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20"-->
+    <!--android:text="提醒"-->
+    <!--android:textColor="#555555"-->
+    <!--android:textSize="@dimen/size_18"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_ramind"-->
+    <!--android:layout_width="@dimen/dimen_40"-->
+    <!--android:layout_height="@dimen/dimen_18"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="@dimen/dimen_10"-->
+    <!--android:src="@mipmap/shezhi_kai"/>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.3dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/colorGray"-->
+    <!--&gt;</View>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_sound_switch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="音效开关"
+            android:textColor="#555555"
+            android:textSize="@dimen/size_16"/>
+
+        <ImageView
+            android:id="@+id/iv_sound_switch"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dimen_10"
+            android:src="@mipmap/shezhi_kai"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGray"
+            ></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_46"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="清除缓存"
+            android:textColor="#555555"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tv_clear_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="@dimen/size_16"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="@color/colorBackgound"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:background="@drawable/mine_item_selector">
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="关于物理大师"
+            android:textColor="#555555"
+            android:textSize="@dimen/size_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:src="@mipmap/xuan"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:background="@drawable/exit_background"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/colorTitleBlue"
+        android:textSize="@dimen/size_16"
+        />
+</LinearLayout>
+

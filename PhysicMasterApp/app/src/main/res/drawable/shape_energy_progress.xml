@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 这个是背景颜色 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dp"/>
+            <stroke
+                android:width="1px"
+                android:color="#ffffff"></stroke>
+            <solid android:color="#BDB59A"/>
+        </shape>
+
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+
+                <!-- 这个也是设置时圆角还是直角，左边的 -->
+                <corners android:radius="5dp"/>
+                <stroke
+                    android:width="1px"
+                    android:color="#ffffff"></stroke>
+                <solid android:color="@color/colorTitleBlue"/>
+            </shape>
+        </clip>
+    </item>
+
+
+</layer-list>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>错题池</title>
+    <link rel="stylesheet" href="katex/katex.min.css" charset="iso-8859-1">
+    <link rel="stylesheet" href="glyphicon/glyphicon.css" charset="iso-8859-1">
+    <link rel="stylesheet" href="css/base.css" charset="iso-8859-1">
+    <link rel="stylesheet" href="css/components.css" charset="iso-8859-1">
+    <link rel="stylesheet" href="css/wrong_pool.css" charset="iso-8859-1">
+</head>
+<body class="wrong_pool_bd" data-active-id="qu_list_box">
+<div id="top_bar" class="top_bar">
+    <div class="go_back_box"><span id="back_btn" class="back_btn"><i class="glyphicon glyphicon-menu-left"></i></span></div>
+    <div id="page_title" class="page_title auto_dian">错题池</div>
+</div>
+<div id="page_carousel" class="carousel page_carousel slide main">
+    <div class="carousel-inner">
+        <div id="qu_list_box" class="qu_list_box item active" data-title="错题池">
+            <div id="filter_bar" class="filter_bar main_padding_lr">
+                <ul class="filter_ul scroll_bar hidden">
+                    <li><div class="filter_btn active" data-id="1"><span class="subject_name">初中物理</span><span class="qu_count_box" data-count="99">(99+)</span></div></li><li><div class="filter_btn" data-id="2"><span class="subject_name">初中化学</span><span class="qu_count_box" data-count="99">(99+)</span></div></li><li><div class="filter_btn" data-id="4"><span class="subject_name">初中数学</span><span class="qu_count_box" data-count="99">(99+)</span></div></li>
+                </ul>
+            </div>
+            <ul id="qu_list" class="qu_list first_loading">
+                <li class="qu_list_item main_padding_lr" data-id="0">
+                    <div class="qu_content">&nbsp;</div>
+                    <div class="qu_info">
+                        <div class="qu_wrong_times_box">做错<span class="wrong_times">1</span>次</div><div class="qu_time">&nbsp;</div>
+                    </div>
+                </li>
+            </ul>
+            <div id="load_more" class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+            <div id="load_end" class="weui-loadmore load_end" style="display:none;">
+                <span class="weui-loadmore__tips">我们是有底线的</span>
+                <span class="weui-loadend__cross_line"></span>
+            </div>
+        </div>
+        <div id="qu_detail" class="qu_detail item" data-title="错题详情" data-id="0">
+            <div class="qu_box main_padding_lr">
+                <div class="qu_title">&nbsp;</div>
+                <div class="qu_item_list">
+                    <div class="input-group qu_item" data-code="A">
+                        <span class="input-group-addon item_code">A</span>
+                        <div class="form-control qu_item_val qu_item1"><div class="qu_item_inner">&nbsp;</div></div><img class="answer_mark answer_mark_correct temp_img" src="img/icon_correct_v2.png"><img class="answer_mark answer_mark_wrong temp_img" src="img/icon_wrong_v2.png">
+                    </div>
+                    <div class="input-group qu_item" data-code="B">
+                        <span class="input-group-addon item_code">B</span>
+                        <div class="form-control qu_item_val qu_item2"><div class="qu_item_inner">&nbsp;</div></div><img class="answer_mark answer_mark_correct temp_img" src="img/icon_correct_v2.png"><img class="answer_mark answer_mark_wrong temp_img" src="img/icon_wrong_v2.png">
+                    </div>
+                    <div class="input-group qu_item" data-code="C">
+                        <span class="input-group-addon item_code">C</span>
+                        <div class="form-control qu_item_val qu_item3"><div class="qu_item_inner">&nbsp;</div></div><img class="answer_mark answer_mark_correct temp_img" src="img/icon_correct_v2.png"><img class="answer_mark answer_mark_wrong temp_img" src="img/icon_wrong_v2.png">
+                    </div>
+                    <div class="input-group qu_item" data-code="D">
+                        <span class="input-group-addon item_code">D</span>
+                        <div class="form-control qu_item_val qu_item4"><div class="qu_item_inner">&nbsp;</div></div><img class="answer_mark answer_mark_correct temp_img" src="img/icon_correct_v2.png"><img class="answer_mark answer_mark_wrong temp_img" src="img/icon_wrong_v2.png">
+                    </div>
+                </div>
+                <div class="qu_explain">&nbsp;</div>
+            </div>
+        </div>
+        <div id="qu_add" class="qu_add main_padding_lr item" data-title="录入错题" data-id="0">
+            <div class="qu_add_box">
+                <div class="error_reason form_label">错误原因：</div>
+                <ul class="error_reason_box">
+                    <li><div class="reason_item active" data-id="0">概念模糊</div></li>
+                </ul>
+                <div class="difficulty_level_box">
+                    <span class="form_label">难易程度：</span><div class="star_box"><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i></div>
+                </div>
+                <div class="master_level_box">
+                    <span class="form_label">掌握程度：</span><div class="star_box"><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i><i class="star glyphicon glyphicon-star"></i></div>
+                </div>
+                <div class="qu_dir form_label">标签目录：</div>
+                <ul class="qu_dir_box">
+                    <li><div class="qu_dir_item" data-id="0">八上疑难点</div></li>
+                </ul>
+                <div class="qu_dir_add_box">
+                    <input id="add_dir_btn" class="ds-btn" type="image" src="./img/icon_add.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="qu_detail_bottom_bar" class="bottom_bar"><span id="remove_btn" class="ds-btn ds-btn-orange ds-btn-font-bold">移除错题</span><span id="add_btn" class="ds-btn ds-btn-primary ds-btn-font-bold">录入错题</span></div>
+<div id="qu_add_bottom_bar" class="bottom_bar"><span id="add_submit_btn" class="ds-btn ds-btn-primary ds-btn-font-bold">提　交</span></div>
+<div id="add_dir_dialog" class="weui_dialog_confirm ds-dialog" style="display:none;">
+    <div class="weui_mask"></div>
+    <div class="weui_dialog">
+        <div class="dialog-close-box">
+            <i class="ds-dialog-close"></i>
+        </div>
+        <div class="weui_dialog_bd">
+            <p class="ds-dialog-bd-text tc"><input type="text" class="qu_dir_add_input" placeholder="新建标签目录"></p>
+            <p><span id="do_add_dir_btn" class="ds-btn ds-btn-primary ds-btn-block ds-btn-font-medium">确　定</span></p>
+        </div>
+    </div>
+</div>
+<div id="confirm_remove_dialog" class="weui_dialog_confirm ds-dialog" style="display:none;">
+    <div class="weui_mask"></div>
+    <div class="weui_dialog">
+        <div class="dialog-close-box">
+            <i class="ds-dialog-close"></i>
+        </div>
+        <div class="weui_dialog_bd">
+            <p class="ds-dialog-bd-text tc">确定要移除此错题吗？</p>
+            <p><span id="do_remove_btn" class="ds-btn ds-btn-primary ds-btn-block ds-btn-font-medium">移　除</span></p>
+        </div>
+    </div>
+</div>
+<div id="loading_toast" class="weui_loading_toast" style="display:none;">
+    <div class="weui_mask_transparent"></div>
+    <div class="weui_toast">
+        <div class="weui_loading">
+            <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+            <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+        </div>
+        <p class="weui_toast_content">处理中</p>
+    </div>
+</div>
+<script type="text/javascript">window["redefine_katex_cjkRegex"] = /[\u3040-\u309F]|[\u30A0-\u30FF]|[\u4E00-\u9FAF]|[\uAC00-\uD7AF]|[\u2460-\u2469]/;</script>
+###REPLACEMENT1###
+<script src="katex/katex.min.js" charset="iso-8859-1"></script>
+<script src="js/jquery.all.min.js" charset="iso-8859-1"></script>
+<script src="js/local-js-bridge.js" charset="iso-8859-1"></script>
+<script src="js/carousel.js" charset="iso-8859-1"></script>
+<script src="js/base.js" charset="iso-8859-1"></script>
+<script src="js/wrong_pool.js" charset="utf-8"></script>
+###REPLACEMENT2###
+</body>
+</html>

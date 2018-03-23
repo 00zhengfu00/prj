@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.physicmaster.modules.mine.activity.notebook.RecordQuActivity">
+
+    <include
+        layout="@layout/top_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="题目描述"
+                android:textColor="@color/colorBlack_444444"
+                android:textSize="@dimen/size_15"/>
+
+            <EditText
+                android:id="@+id/et_question"
+                style="@style/edittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="用文字录入..."
+                android:maxLength="256"
+                android:minHeight="@dimen/dimen_80"/>
+
+            <com.physicmaster.widget.MyRecyclerView
+                android:id="@+id/rcl_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray_f8f8f8"
+                android:padding="@dimen/dimen_10">
+            </com.physicmaster.widget.MyRecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="你的答案"
+                android:textColor="@color/colorBlack_444444"
+                android:textSize="@dimen/size_15"/>
+
+            <EditText
+                android:id="@+id/et_my_answer"
+                style="@style/edittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="（选填）"
+                android:maxLength="256"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="正确答案"
+                android:textColor="@color/colorBlack_444444"
+                android:textSize="@dimen/size_15"/>
+
+            <EditText
+                android:id="@+id/et_right_answer"
+                style="@style/edittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="（选填）"
+                android:maxLength="256"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="题目解析"
+                android:textColor="@color/colorBlack_444444"
+                android:textSize="@dimen/size_15"/>
+
+            <EditText
+                android:id="@+id/et_analysis"
+                style="@style/edittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="输入文字解析..."
+                android:maxLength="256"
+                android:minHeight="@dimen/dimen_80"/>
+
+            <com.physicmaster.widget.MyRecyclerView
+                android:id="@+id/rcl_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:background="@color/colorGray_f8f8f8"
+                android:padding="@dimen/dimen_10">
+            </com.physicmaster.widget.MyRecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTitleBlue"
+        android:text="下一步"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_16"
+        />
+</LinearLayout>

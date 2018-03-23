@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.cameraview.CameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/black"/>
+
+        <com.physicmaster.modules.mine.activity.notebook.cameratool.ReferenceLine
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/half_half_transparent"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cancel"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/dimen_75"
+            android:layout_height="@dimen/dimen_75"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/take_pic"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_album"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/album"
+            />
+    </RelativeLayout>
+</FrameLayout>

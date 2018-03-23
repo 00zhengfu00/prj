@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_download_fileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:divider="@color/colorBackgound"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"/>
+
+        <Button
+            android:id="@+id/btnRename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:text="重命名"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:padding="@dimen/dimen_5">
+
+    <EditText
+        android:id="@+id/et_find_friend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@drawable/addfriend_edittext_background"
+        android:focusable="true"
+        android:padding="@dimen/dimen_5"
+        android:gravity="center"
+        android:hint="搜索"
+        android:lines="1"
+        android:paddingLeft="@dimen/dimen_6"
+        android:textColor="@color/colorLineGray"
+        android:textColorHint="@color/colorDarkGray"
+        android:textSize="@dimen/size_16">
+    </EditText>
+
+</LinearLayout>

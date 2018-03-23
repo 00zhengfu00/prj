@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s_62"
+        android:layout_marginTop="@dimen/s_35"
+        android:text="@string/letv_paysdk_pay_center"
+        android:textColor="@color/white_80percent_not_alpha"
+        android:textSize="@dimen/f_27" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s_77"
+        android:layout_marginTop="@dimen/s_114"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false" />
+
+    <com.letv.tvos.paysdk.widget.ButtonTV
+        android:id="@+id/btn_confirm"
+        android:layout_width="@dimen/s_183"
+        android:layout_height="@dimen/s_55"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/s_76"
+        android:background="@drawable/selector_button"
+        android:gravity="center"
+        android:text="@string/letv_paysdk_confirm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/f_29"
+        app:animEnable="false"
+        app:borderShadowSrc="@drawable/background_shadow_round"
+        app:shadowSpace="@dimen/s_44" />
+</RelativeLayout>

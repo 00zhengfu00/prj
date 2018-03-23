@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitleBlue">
+
+        <ImageView
+            android:id="@+id/title_left_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/dimen_12"
+            android:paddingLeft="@dimen/dimen_2"
+            android:paddingRight="@dimen/dimen_40"
+            android:paddingTop="@dimen/dimen_12"
+            android:src="@mipmap/fanhui"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/title_left_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_minus_45"
+            android:layout_toRightOf="@id/title_left_imageview"
+            android:text="返回"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_18"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/web_loading_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/progressbar_webview"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </WebView>
+</LinearLayout>

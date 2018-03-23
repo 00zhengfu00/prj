@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:riv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rank_background"
+                android:padding="@dimen/dimen_2">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="@dimen/size_16"
+        />
+
+    <com.physicmaster.widget.RoundImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/dimen_26"
+        android:layout_height="@dimen/dimen_26"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_toRightOf="@id/tv_number"
+        android:src="@drawable/placeholder_gray"
+        riv:type="circle"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="范迪塞尔"
+        android:textColor="#333333"
+        android:textSize="@dimen/size_14"
+        />
+
+    <ImageView
+        android:id="@+id/iv_integral_gold"
+        android:layout_width="@dimen/dimen_18"
+        android:layout_height="@dimen/dimen_18"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:src="@mipmap/jifen_"
+        />
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_14"
+        android:layout_toLeftOf="@+id/iv_integral_gold"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="3733"
+        android:textColor="@color/colorTitleBlue"
+        android:textSize="@dimen/size_14"/>
+
+</RelativeLayout>

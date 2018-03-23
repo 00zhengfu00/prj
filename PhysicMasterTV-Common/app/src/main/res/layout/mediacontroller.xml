@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mediacontroller_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageButton
+            android:id="@+id/mediacontroller_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:src="@mipmap/mediacontroller_pause"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/mediacontroller_time_current"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mediacontroller_progress"
+            />
+
+        <TextView
+            android:id="@+id/mediacontroller_time_total"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mediacontroller_progress"
+            />
+
+        <SeekBar
+            android:id="@+id/mediacontroller_progress"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:max="1000"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mediacontroller_file_name"
+        style="@style/MediaController_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="marquee"
+        android:visibility="invisible"
+        android:singleLine="true"/>
+
+</RelativeLayout>

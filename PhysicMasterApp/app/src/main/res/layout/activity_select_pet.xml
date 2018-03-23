@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_select_pet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@color/half_half_white"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_5"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="“征程凶险，你可选择一只宠物陪同，"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@color/half_half_white"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_5"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="不断升级，协助你顺利找到鲸大师。”"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20"
+        />
+
+    <com.view.jameson.library.SpeedRecyclerView
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:clipChildren="false">
+    </com.view.jameson.library.SpeedRecyclerView>
+
+    <Button
+        android:id="@+id/btn_pet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/bg_confirm_pet"
+        android:text="OK"
+        android:textColor="#608FF9"
+        android:textSize="@dimen/size_36"/>
+
+</LinearLayout>

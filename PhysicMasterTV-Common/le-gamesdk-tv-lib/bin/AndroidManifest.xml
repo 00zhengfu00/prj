@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.le.gamesdk.tv.lib"
+    android:versionCode="204"
+    android:versionName="2.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme" >
+    </application>
+
+</manifest>

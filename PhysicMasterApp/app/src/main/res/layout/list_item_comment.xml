@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+
+        <com.physicmaster.widget.RoundImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_12"
+            riv:type="circle"/>
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_toRightOf="@id/iv_header"
+            android:text=""
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_toRightOf="@id/tv_user_name"
+            android:text=""
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_15"/>
+
+        <TextView
+            android:id="@+id/tv_user_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_toRightOf="@id/tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_15"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_header"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text=""
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_15"/>
+
+        <ImageView
+            android:id="@+id/iv_praise"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_below="@id/iv_header"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_comment"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text=""
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_12"
+            />
+    </RelativeLayout>
+</RelativeLayout>

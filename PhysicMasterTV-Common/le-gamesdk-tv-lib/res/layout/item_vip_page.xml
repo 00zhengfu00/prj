@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.letv.tvos.paysdk.widget.GridViewTV
+        android:id="@+id/gridViewTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:horizontalSpacing="@dimen/s_65"
+        app:itemCount="4"
+        app:itemHeight="@dimen/s_158"
+        app:itemWidth="@dimen/s_496"
+        app:rangeOrientation="horizontal"
+        app:spanCount="2"
+        app:verticalSpacing="@dimen/s_43" />
+
+</RelativeLayout>

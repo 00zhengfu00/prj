@@ -1,0 +1,362 @@
+.wrong_bd {
+    background-color: #FFF;
+}
+
+.body_loading .page_carousel {
+    visibility: hidden;
+}
+
+.body_loading .top_bar {
+    display: none;
+}
+
+.body_loading .weui_loading_toast {
+    display: block;
+}
+
+.body_loading .page_carousel .carousel-inner > .item:not(.active) {
+    display: block;
+    visibility: hidden;
+}
+
+.main {
+    margin-top: 45px;
+}
+
+.main_padding_lr {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.top_bar {
+    line-height: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #07A7FA;
+    color: #FFF;
+    padding-left: 0;
+}
+
+.top_bar .go_back_box {
+    float: left;
+    height: 45px;
+}
+
+.top_bar .go_back_box .back_btn {
+    display: block;
+    color: #FFF;
+    height: 100%;
+    font-weight: normal;
+    padding: 12px 15px;
+}
+
+.top_bar .page_title {
+    width: calc(100% - 92px);
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.qu_list_box {
+    background-color: #F0F0F0;
+}
+
+.filter_bar {
+    color: #666;
+    background-color: #FFF;
+}
+
+.filter_ul > li {
+    font-size: 15px;
+    line-height: 1;
+    display: inline-block;
+    list-style-type: none;
+    width: 33.33333333%;
+    text-align: center;
+}
+
+.filter_ul > li .filter_btn {
+    border-bottom: 1.5px solid transparent;
+    padding-top: 18px;
+    padding-bottom: 16.5px;
+    color: #666;
+    display: block;
+}
+
+.filter_ul > li .filter_btn.active {
+    border-bottom-color: #07A7FA;
+    color: #07A7FA;
+}
+
+.qu_list.first_loading {
+    visibility: hidden;
+    height: 0;
+}
+
+.qu_list .no_data_div {
+    margin: 100px auto 0 auto;
+    width: 60%;
+}
+
+.qu_list.first_loading .qu_list_item {
+    margin-top: 0;
+}
+
+.sort_title {
+    margin-right: 10px;
+    color: #666;
+}
+
+.sort_box {
+    width: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.sort_box .sort_asc:before {
+    position: absolute;
+    top: -18px;
+    left: -7px;
+    color: #D2D2D2;
+}
+
+.sort_box .sort_desc:before {
+    position: absolute;
+    bottom: -6px;
+    left: -7px;
+    color: #D2D2D2;
+}
+
+.filter_btn.active .sort_title {
+    color: #07A7FA;
+}
+
+.sort_asc_active .sort_box .sort_asc:before {
+    color: #07A7FA;
+}
+
+.sort_desc_active .sort_box .sort_desc:before {
+    color: #07A7FA;
+}
+
+/*从wrong_pool复制*/
+
+.qu_list .qu_list_item {
+    margin-top: 10px;
+    background-color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.qu_list_item .qu_content {
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    max-height: 159px;
+    overflow: hidden;
+}
+
+.qu_content .qu_img {
+    width: 100%;
+}
+
+.qu_info {
+    line-height: 1;
+}
+
+.qu_info .qu_time {
+    color: #07A7FA;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.qu_info .difficulty_level_box,
+.qu_info .master_level_box {
+    width: 50%;
+    display: inline-block;
+}
+
+.qu_info .level_label {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    color: #999;
+    display: inline-block;
+}
+
+.qu_info .star_box,
+.difficulty_level_star_box,
+.master_level_star_box {
+    display: inline-block;
+}
+
+.qu_info .star_box .star {
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.wrong_item_box {
+    visibility: hidden;
+    height: 1px;
+    overflow: hidden;
+}
+
+body.show_wrong_item_box .wrong_item_box {
+    visibility: visible;
+    height: auto;
+    overflow: auto;
+}
+
+.wrong_item_box .star {
+    font-size: 22px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.qu_info .difficulty_level_box .star_box .star.active,
+.difficulty_level_star_box .star.active {
+    color: #F83632;
+}
+
+.qu_info .master_level_box .star_box .star.active,
+.master_level_star_box .star.active {
+    color: #FDD500;
+}
+
+/*tmp end*/
+
+.qu_detail {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.qu_detail .qu_title {
+    margin-bottom: 15px;
+}
+
+.qu_detail .qu_item_list .qu_item {
+    margin-top: 15px;
+}
+
+.qu_detail .qu_item {
+    position: relative;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.qu_detail .qu_item .item_code {
+    border-radius: 0;
+    font-weight: bold;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.qu_detail .qu_item .qu_item_val {
+    padding: 12px 12px 12px 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.qu_detail .qu_item .qu_item_val .qu_item_inner {
+    padding-left: 12px;
+    border-left: 1px solid #D2D2D2;
+    color: #444;
+}
+
+.qu_detail .qu_item.active {
+    background-color: #F0F0F0;
+}
+
+.qu_detail .qu_item.active .qu_item_val {
+    border-color: #BBB;
+}
+
+.bottom_bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom_bar .ds-btn {
+    display: inline-block;
+    width: 50%;
+    border-radius: 0;
+    padding: 12px;
+}
+
+body[data-active-id="qu_detail"]:not(.show_wrong_item_box) #qu_detail_bottom_bar {
+    display: block;
+}
+
+body.show_wrong_item_box[data-active-id="qu_detail"] #wrong_bottom_bar {
+    display: block;
+}
+
+body.in_archival_dir #wrong_bottom_bar #archive_btn {
+    display: none;
+}
+
+body.in_archival_dir #wrong_bottom_bar #remove_btn {
+    width: 100%;
+}
+
+body.in_archival_dir .filter_ul > li {
+    width: 50%;
+}
+
+body.in_archival_dir .filter_ul > li.filter_li_master {
+    display: none;
+}
+
+#confirm_remove_dialog .ds-dialog-bd-text {
+    margin-bottom: 20px;
+}
+
+#show_wrong_btn {
+    width: 100%;
+}
+
+.wrong_item {
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.wrong_item_label {
+    display: inline-block;
+    float: left;
+    color: #07A7FA;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.wrong_item_content {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+    font-weight: 500;
+    max-width: 70%;
+    border-bottom: 1px solid #DDD;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.difficulty_item .wrong_item_label,
+.difficulty_item .wrong_item_content,
+.master_item .wrong_item_label,
+.master_item .wrong_item_content {
+    line-height: 22px;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lswuyou.tv.pm.activity.LoginedActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/lay_weixin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_weixin_head"
+                android:layout_width="@dimen/x214"
+                android:layout_height="@dimen/x214"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="@dimen/x71"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x28"
+                android:gravity="center_horizontal"
+                android:text="微信名称"
+                android:textColor="@color/text_unselect_color"
+                android:textSize="@dimen/x48"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y264"
+            android:layout_marginLeft="@dimen/x132"
+            android:layout_toRightOf="@id/lay_weixin_info"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x248"
+            android:layout_toRightOf="@id/divide_line"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="@dimen/x530"
+                android:layout_height="@dimen/y118"
+                android:background="@drawable/selector_btn_rectangle"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="清除缓存"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/x42"
+                />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="@dimen/x530"
+                android:layout_height="@dimen/y118"
+                android:layout_marginTop="@dimen/y52"
+                android:background="@drawable/selector_btn_rectangle"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/x42"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

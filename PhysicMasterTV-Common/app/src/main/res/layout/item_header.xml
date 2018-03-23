@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <!-- 加载图片只需一句话  -->
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/x544"
+        android:layout_height="@dimen/y742"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        />
+</RelativeLayout>

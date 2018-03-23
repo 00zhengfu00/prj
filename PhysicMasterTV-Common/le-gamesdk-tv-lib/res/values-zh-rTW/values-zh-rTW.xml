@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recommend_download_apk">【樂視軟體推薦】下載 </string>
+    <string name="update_asynctask_downloading">正在下載</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/emptyBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:gravity="center"
+            android:text="您暂时没有聊天信息哦"/>
+
+        <TextView
+            android:id="@+id/message_list_empty_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="发起会话"
+            android:textColor="@color/color_blue_3a9efb"/>
+    </LinearLayout>
+</LinearLayout>

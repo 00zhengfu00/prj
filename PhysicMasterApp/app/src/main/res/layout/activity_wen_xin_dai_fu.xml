@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgound"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+
+            <com.physicmaster.widget.RoundImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/wulidashi"
+                riv:borderRadius="@dimen/dimen_6"
+                riv:type="round"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:text="名称"
+                android:textColor="@color/colorTitleBlue"
+                android:textSize="@dimen/size_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:text="请求您支付一笔物理大师课程订单"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_14"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/iv_QR_code"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_40"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_QR_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_60"
+                android:text="微信支付"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#0cffffff"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/y20"
+              android:paddingTop="@dimen/y20">
+
+    <TextView
+        android:id="@+id/tv_order_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="订单编号"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x36"
+        />
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lines="1"
+        android:text="课程包名称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x36"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:lines="1"
+        android:text="价格"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x36"
+        />
+
+    <TextView
+        android:id="@+id/tv_buy_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:lines="1"
+        android:text="购买时间"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x36"
+        />
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reco.frame.tv.view.TvRelativeLayoutAsGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tv="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:clipChildren="false"
+                                            android:clipToPadding="false"
+                                            android:paddingLeft="@dimen/x40"
+                                            android:paddingRight="@dimen/x40"
+                                            android:paddingTop="@dimen/y40"
+                                            tv:boarderBottom="@dimen/boader_width"
+                                            tv:boarderLeft="@dimen/boader_width"
+                                            tv:boarderRight="@dimen/boader_width"
+                                            tv:boarderTop="@dimen/boader_width"
+                                            tv:cursorRes="@drawable/cursor_1920"
+                                            tv:scale="1.0">
+
+    <com.lswuyou.tv.pm.view.TitleBarView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:focusable="false">
+    </com.lswuyou.tv.pm.view.TitleBarView>
+
+    <RelativeLayout
+        android:id="@+id/all_member_lay"
+        android:layout_width="@dimen/x1729"
+        android:layout_height="@dimen/y345"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/x100"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_all_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/all_member"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_math"
+        android:layout_width="@dimen/x555"
+        android:layout_height="@dimen/y354"
+        android:layout_alignLeft="@id/all_member_lay"
+        android:layout_below="@id/all_member_lay"
+        android:layout_marginTop="@dimen/y35"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_math"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mem_math_no"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_math_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/half_transparent_50"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="数学"
+                android:textColor="@color/half_white"
+                android:textSize="@dimen/x36"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_physics"
+        android:layout_width="@dimen/x555"
+        android:layout_height="@dimen/y354"
+        android:layout_below="@id/all_member_lay"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginRight="@dimen/x32"
+        android:layout_marginTop="@dimen/y35"
+        android:layout_toRightOf="@id/rl_math"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_physics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mem_phy_no"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_phy_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/half_transparent_50"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="化学"
+                android:textColor="@color/half_white"
+                android:textSize="@dimen/x36"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chemistry"
+        android:layout_width="@dimen/x555"
+        android:layout_height="@dimen/y354"
+        android:layout_alignRight="@id/all_member_lay"
+        android:layout_below="@id/all_member_lay"
+        android:layout_marginTop="@dimen/y35"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_chemistry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mem_che_no"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_che_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/half_transparent_50"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20"
+                android:text="化学"
+                android:textColor="@color/half_white"
+                android:textSize="@dimen/x36"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</reco.frame.tv.view.TvRelativeLayoutAsGroup>

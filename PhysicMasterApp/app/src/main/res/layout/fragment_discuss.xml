@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/colorTitleBlue">
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+            <ImageView
+                android:id="@+id/iv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/xiaoxi"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_middle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="@dimen/dimen_224"
+            android:text="讨论"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_18"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_gravity="center"
+                android:src="@mipmap/xinzeng"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/messages_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/emptyBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/recycler_view"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/emptyBg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/nim_messages_list_empty_bg"/>
+
+            <TextView
+                android:id="@+id/message_list_empty_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emptyBg1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

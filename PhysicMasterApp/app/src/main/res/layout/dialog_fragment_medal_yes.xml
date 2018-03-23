@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:riv="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:orientation="horizontal">
+
+                <com.physicmaster.widget.RoundImageView
+                    android:id="@+id/iv_users"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:src="@mipmap/wulidashi"
+                    riv:type="circle"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:gravity="center"
+                    android:text="恭喜您获得了"
+                    android:textColor="#F1A63D"
+                    android:textSize="@dimen/size_16"
+                    />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_medal"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_below="@id/ll"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_20"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_medal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="达成目标"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_18"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="如何获得此勋章"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_share"
+            android:background="@drawable/medal_gray_background">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="                     "
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_16"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider_height"
+                android:layout_below="@id/textView"
+                android:background="@color/colorGray"
+                android:visibility="gone"></View>
+
+            <TextView
+                android:id="@id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:text="分享到"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/size_14"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_weiwxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_toLeftOf="@+id/textView"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_weixin"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/weixin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_weixin"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="微信好友"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/size_12"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_12"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_friend"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/friend"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_friend"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="朋友圈"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/size_12"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_qzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_toRightOf="@+id/textView">
+
+                <ImageView
+                    android:id="@+id/iv_qzone"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/qzon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_qzone"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="QQ空间"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/size_12"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+</FrameLayout>

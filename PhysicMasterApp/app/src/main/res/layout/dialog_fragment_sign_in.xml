@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locus="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent"
+    android:orientation="vertical"
+    tools:context="com.physicmaster.modules.mine.activity.SignInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@mipmap/sign_text"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.physicmaster.widget.LocusView
+            android:id="@+id/lv_locus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/sign_in_bg"
+            locus:boxHeight="30dp"
+            locus:boxWidth="40dp"
+            locus:pathInsideWidth="10dp"
+            locus:pathOutsideWidth="25dp"
+            locus:pointSize="20dp"
+            locus:portraitPadding="7dp"
+            locus:portraitPaddingBottom="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+10积分"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_25"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.5"
+            android:text="早起签到：6:00~8:00\n积分奖励翻倍，并有机会获得金币奖励！"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_14"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/blue_btn_bg1"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_5"
+                android:text="加载中"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_18"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_sign_after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btn_sign"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/blue_btn_bg1"
+                android:padding="@dimen/dimen_5"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/tv_gold_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:drawableLeft="@mipmap/gold_coin"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorrank"
+                    android:textSize="@dimen/size_14"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_sign_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_toRightOf="@id/tv_gold_coin"
+                    android:gravity="center_vertical"
+                    android:text="补签"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_14"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:gravity="center_horizontal"
+            android:text="特定天数后清空签到信息"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_14"
+            />
+    </LinearLayout>
+</LinearLayout>

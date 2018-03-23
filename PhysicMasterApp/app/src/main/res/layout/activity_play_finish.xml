@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:drawableLeft="@mipmap/tuichu"
+        android:drawablePadding="@dimen/dimen_6"
+        android:text="退出"
+        android:textColor="@color/colorLineGray"
+        android:textSize="@dimen/size_16"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_80"
+        android:layout_marginTop="@dimen/dimen_20"
+        >
+        <!--android:background="@mipmap/beijingxingxing"-->
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="视频完成"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_24"/>
+
+        <com.physicmaster.widget.FinishView
+            android:id="@+id/iv_finish"
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_140"
+            android:layout_below="@+id/tv_finish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_finish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:background="@drawable/blue_circle_bg"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_18"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:text="+20"
+                android:textColor="@color/colorTitleBlue"
+                android:textSize="@dimen/size_18"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ll_task"
+            android:layout_below="@id/ll_integral"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_integral"
+                android:layout_marginTop="@dimen/dimen_26"
+                android:background="@drawable/dialogue_bg"
+                android:padding="10dp"
+                android:text="继续课程，\n获取更多奖励！"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_dialogue"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_weight="1"
+                android:background="@drawable/blue_tv_bg"
+                android:gravity="center"
+                android:text="4'22''"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+            <TextView
+                android:id="@+id/tv_excersise"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_weight="1"
+                android:background="@drawable/grey_tv_bg"
+                android:gravity="center"
+                android:text="4题"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_16"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_goon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@+id/ll_task"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/blue_btn_bg"
+            android:text="休息一下"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

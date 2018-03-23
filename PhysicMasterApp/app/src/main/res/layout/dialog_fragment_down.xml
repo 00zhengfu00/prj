@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:padding="@dimen/dimen_10">
+
+
+    <LinearLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/dialog_margin"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="下载提示:"
+            android:textColor="@color/colorBindGray"
+            android:textSize="@dimen/size_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="下载本章"
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="全部课程视频"
+            android:textColor="@color/colorLineGray"
+            android:textSize="@dimen/size_20"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@drawable/blue_btn_background"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_20"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:background="@drawable/blue_background1"
+            android:text="取消"
+            android:textColor="@color/colorTitleBlue"
+            android:textSize="@dimen/size_20"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/close_btn_margin"
+        android:layout_marginTop="@dimen/dimen_minus_10"
+        android:src="@mipmap/close"/>
+
+
+</FrameLayout>

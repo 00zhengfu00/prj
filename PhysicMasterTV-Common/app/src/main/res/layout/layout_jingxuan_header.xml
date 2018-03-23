@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/y562"
+              android:background="@color/transparent"
+              android:focusable="true"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/x406"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x106"
+        android:background="@color/half_white_20">
+
+        <RelativeLayout
+            android:id="@+id/rl_unlogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="@dimen/x330"
+                android:layout_height="@dimen/y88"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y120"
+                android:background="@drawable/selector_common_btn_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusUp="@null"
+                android:text="登录同步会员信息"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/x30"
+                />
+
+            <TextView
+                android:id="@+id/tv_vip"
+                android:layout_width="@dimen/x330"
+                android:layout_height="@dimen/y88"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/y120"
+                android:background="@drawable/selector_common_btn_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="开通VIP"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/x30"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_logined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y50"
+                android:text="会员享更多学习机会"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x30"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/x160"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x36"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="@dimen/x71"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y26"
+                android:text="用户名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x36"
+                />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="@dimen/x320"
+                android:layout_height="@dimen/y88"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y26"
+                android:background="@drawable/selector_common_btn_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="开通会员"
+                android:textColor="@color/text_color_bg"
+                android:textSize="@dimen/x30"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/x892"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x22">
+
+        <com.lswuyou.tv.pm.video.VideoView
+            android:id="@+id/videoView_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y562"
+            android:background="@drawable/bg_focused"
+            android:focusable="true"
+            android:nextFocusRight="@+id/tv_recommend_1"/>
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y562"
+            android:background="@drawable/bg_focused"
+            android:focusable="true"
+            android:nextFocusRight="@+id/tv_recommend_1"
+            android:padding="@dimen/x3"
+            android:scaleType="fitXY"
+            android:src="@mipmap/all_member"
+            />
+    </FrameLayout>
+
+    <!--<ListView
+        android:id="@+id/lv_videos"
+        android:layout_width="@dimen/x388"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    </ListView>-->
+    <LinearLayout
+        android:layout_width="@dimen/x400"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_recommend_1"
+            android:layout_width="@dimen/x388"
+            android:layout_height="@dimen/y112"
+            android:background="@drawable/bg_textview_recommend"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="获取中……"
+            android:textColor="@color/text_color_bg"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:id="@+id/tv_recommend_2"
+            android:layout_width="@dimen/x388"
+            android:layout_height="@dimen/y112"
+            android:background="@drawable/bg_textview_recommend"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="获取中……"
+            android:textColor="@color/text_color_bg"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:id="@+id/tv_recommend_3"
+            android:layout_width="@dimen/x388"
+            android:layout_height="@dimen/y112"
+            android:background="@drawable/bg_textview_recommend"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="获取中……"
+            android:textColor="@color/text_color_bg"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:id="@+id/tv_recommend_4"
+            android:layout_width="@dimen/x388"
+            android:layout_height="@dimen/y112"
+            android:background="@drawable/bg_textview_recommend"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="获取中……"
+            android:textColor="@color/text_color_bg"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:id="@+id/tv_get_new"
+            android:layout_width="@dimen/x388"
+            android:layout_height="@dimen/y110"
+            android:background="@drawable/bg_textview_recommend"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="换一批"
+            android:textColor="@color/text_color_bg"
+            android:textSize="@dimen/x30"/>
+    </LinearLayout>
+</LinearLayout>

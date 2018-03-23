@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/x870"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alert_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/x40"
+        android:gravity="center_horizontal"
+        android:text="您确定要退出吗？"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x54"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y50"
+        android:layout_marginTop="@dimen/y110"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="@dimen/x144"
+            android:layout_height="@dimen/x144"
+            android:background="@drawable/selector_btn_rectangle2"
+            android:text="是"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x48"
+            />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="@dimen/x144"
+            android:layout_height="@dimen/x144"
+            android:layout_marginLeft="@dimen/x282"
+            android:background="@drawable/selector_btn_rectangle2"
+            android:text="否"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x48"
+            />
+    </LinearLayout>
+</LinearLayout>
