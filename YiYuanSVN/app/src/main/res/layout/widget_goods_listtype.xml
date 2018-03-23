@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/shape_item_style_border_light_divider_no_effect"
+    android:orientation="horizontal"
+    android:paddingBottom="0.5dip"
+    android:paddingTop="0.5dip" >
+
+    <TextView
+        android:id="@+id/hotCate"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_common_effect_beta"
+        android:gravity="center"
+        android:text="人气"
+        android:textColor="@color/button_red"
+        android:textSize="12.0dip" />
+
+    <LinearLayout
+        android:id="@+id/scheduleCate"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_common_effect_beta"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/newCate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/text_default_color"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceCate"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_common_effect_beta"
+        android:gravity="center"
+        android:text="价格"
+        android:textColor="@color/text_default_color"
+        android:textSize="12.0dip" />
+
+    <LinearLayout
+        android:id="@+id/reqMan"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_common_effect_beta"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/req_man_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="剩余次数"
+            android:textColor="@color/text_default_color"
+            android:textSize="12.0dip" />
+
+        <ImageView
+            android:id="@+id/reqManCateType"
+            android:layout_width="5.5dip"
+            android:layout_height="9.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@mipmap/schedule_ob" />
+    </LinearLayout>
+
+</LinearLayout>

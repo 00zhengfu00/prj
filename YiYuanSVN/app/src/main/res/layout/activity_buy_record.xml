@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iask.yiyuanlegou1.home.person.record.BuyRecordActivity">
+
+    <include layout="@layout/head_layout"/>
+
+    <com.iask.yiyuanlegou1.widget.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/background_tab"
+        ptr:pstsDividerColor="@color/transparent"
+        ptr:pstsIndicatorColor="@color/pink"
+        ptr:pstsIndicatorHeight="2dp"
+        ptr:pstsUnderlineHeight="1px"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

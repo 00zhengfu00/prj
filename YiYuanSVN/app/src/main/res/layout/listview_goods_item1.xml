@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_global_color"
+              android:gravity="center_vertical"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1px"
+        android:background="@drawable/selector_common_click_whitebg_light_effect"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/img_view_parent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ItemImgSrc"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:padding="22.0dip"
+                />
+
+            <ImageView
+                android:id="@+id/zone_10_tag"
+                android:layout_width="26.0dip"
+                android:layout_height="26.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:src="@mipmap/zone_10"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="商品名称"
+                android:textColor="@color/light_black"
+                android:textSize="12.299988dip"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="4.0dip">
+
+                    <ProgressBar
+                        android:id="@+id/goodsProgress"
+                        style="@style/progressBarStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="5.5dip"
+                        android:layout_marginTop="2.0dip"
+                        android:max="100"
+                        android:progress="70"/>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/progress_rate_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="总需:"
+                            android:textColor="@color/grey"
+                            android:textSize="10.199982dip"/>
+
+                        <TextView
+                            android:id="@+id/total_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/progress_rate_label"
+                            android:text="0"
+                            android:textColor="#2389FB"
+                            android:textSize="10.199982dip"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剩余:"
+                                android:textColor="@color/grey"
+                                android:textSize="10.199982dip"/>
+
+                            <TextView
+                                android:id="@+id/surplus_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#2389FB"
+                                android:textSize="10.199982dip"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_to_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button_nobg"
+                    android:padding="3.0dip"
+                    android:layout_marginBottom="5dp"
+                    android:text="加入清单"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/pink"
+                    android:textSize="12.0dip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

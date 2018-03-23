@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/base_listview_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_global_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/my_head_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="头像"
+                    android:textSize="14.0dip"/>
+
+                <ImageView
+                    android:id="@+id/iv_more_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20.0dip"
+                    android:src="@mipmap/more"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/iv_more_1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/default_icon"
+                    app:riv_corner_radius="30dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="ID"
+                    android:textSize="14.0dip"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14.0dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_nick_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textSize="14.0dip"/>
+
+                <ImageView
+                    android:id="@+id/iv_more_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20.0dip"
+                    android:src="@mipmap/more"/>
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_more_2"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14.0dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_mail_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="邮箱"
+                    android:textSize="14.0dip"/>
+
+                <ImageView
+                    android:id="@+id/iv_more_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20.0dip"
+                    android:src="@mipmap/more"/>
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_more_3"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14.0dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_mobile_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="手机"
+                    android:textSize="14.0dip"/>
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14.0dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_address_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="地址管理"
+                    android:textSize="14.0dip"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20.0dip"
+                    android:src="@mipmap/more"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_modifypw_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/shape_item_style_no_topborder"
+                android:clickable="true"
+                android:paddingLeft="20.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="修改密码"
+                    android:textSize="14.0dip"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20.0dip"
+                    android:src="@mipmap/more"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="43.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/selector_red_btn_effect"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="17.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

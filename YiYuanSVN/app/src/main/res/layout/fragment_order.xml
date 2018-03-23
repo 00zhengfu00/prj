@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/head_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/list_empty_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_tips_img"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:src="@mipmap/car_empty"/>
+
+        <TextView
+            android:id="@+id/empty_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="咦？怎么是空的~"
+            android:textSize="13.0dip"/>
+
+        <Button
+            android:id="@+id/empty_tips_btn"
+            android:layout_width="110.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:text="马上去夺宝"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/not_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/refresh_root"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/listview_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                </LinearLayout>
+            </ScrollView>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/edit_view"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="46.0dip"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@drawable/shape_item_style_no_bottomborder"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="15.0dip"-->
+        <!--android:paddingRight="20.0dip"-->
+        <!--android:visibility="gone">-->
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/all_cb"-->
+        <!--android:layout_width="23.0dip"-->
+        <!--android:layout_height="23.0dip"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="5.0dip"-->
+        <!--android:background="@drawable/selector_checkbox"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="-3.0dip"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/checked_count_label"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_toRightOf="@+id/all_cb"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="全部选择"-->
+        <!--android:textSize="14.0dip"/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/del_btn"-->
+        <!--android:layout_width="92.0dip"-->
+        <!--android:layout_height="34.0dip"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@drawable/selector_red_btn_effect"-->
+        <!--android:text="删除"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16.0dip"/>-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/settle_view"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/shape_item_style_no_bottomborder"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="20.0dip">
+
+            <TextView
+                android:id="@+id/order_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="共0件商品,总计："
+                android:textSize="14.0dip"/>
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/order_price_label"
+                android:gravity="center_vertical"
+                android:text="0元"
+                android:textColor="@color/red"
+                android:textSize="14.0dip"/>
+
+            <Button
+                android:id="@+id/settle_btn"
+                android:layout_width="92.0dip"
+                android:layout_height="34.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_red_btn_effect"
+                android:text="去结算"
+                android:textColor="@color/white"
+                android:textSize="16.0dip"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

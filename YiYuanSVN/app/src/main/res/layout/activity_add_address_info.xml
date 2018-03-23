@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iask.yiyuanlegou1.home.person.address.AddAddressInfoActivity">
+
+    <include layout="@layout/head_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_item_style_no_topborder"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="收货人"
+            android:textColor="@color/text_default_color"
+            android:textSize="14.0dip"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="如：张三"
+            android:textColor="@color/text_default_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_item_style_no_topborder"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="手机号码"
+            android:textColor="@color/text_default_color"
+            android:textSize="14.0dip"/>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="如：1888888888"
+            android:textColor="@color/text_default_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_item_style_no_topborder"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="省份城市"
+            android:textColor="@color/text_default_color"
+            android:textSize="14.0dip"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="请选择"
+            android:textColor="@color/hint_color"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_item_style_no_topborder"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="详细地址"
+            android:textColor="@color/text_default_color"
+            android:textSize="14.0dip"/>
+
+        <EditText
+            android:id="@+id/et_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_default_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/shape_item_style_no_topborder"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="设为默认地址"
+            android:textColor="@color/text_default_color"
+            android:textSize="14.0dip"/>
+
+        <CheckBox
+            android:id="@+id/set_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="43.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/selector_red_btn_effect"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="17.0dip"/>
+</LinearLayout>

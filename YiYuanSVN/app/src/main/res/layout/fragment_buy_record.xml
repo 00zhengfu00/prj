@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.iask.yiyuanlegou1.home.person.record.BuyRecordFragment">
+
+    <LinearLayout
+        android:id="@+id/network_erro_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginTop="-40.0dip"
+            android:src="@mipmap/no_network"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="网络异常"
+            android:textSize="13.0dip"/>
+
+        <Button
+            android:id="@+id/to_retry"
+            android:layout_width="95.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:text="重新加载"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_empty_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_tips_img"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:src="@mipmap/empty_list_default"/>
+
+        <TextView
+            android:id="@+id/empty_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="暂无记录"
+            android:textSize="13.0dip"/>
+
+        <Button
+            android:id="@+id/empty_tips_btn"
+            android:layout_width="95.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:text="马上爱购"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/load_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="38.0dip"
+            android:layout_height="38.0dip"
+            android:layout_marginTop="-35.0dip"
+            android:indeterminateDrawable="@drawable/anim_loading_content"
+            android:indeterminateDuration="1000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:text="正在加载中"
+            android:textSize="12.0dip"/>
+    </LinearLayout>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/refresh_view_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

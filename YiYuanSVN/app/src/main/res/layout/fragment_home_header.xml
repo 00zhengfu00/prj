@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head_view_wrap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_global_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/upholder_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:text="通知：加载中"
+            android:textSize="13.0dip"
+            android:visibility="gone"/>
+
+        <com.iask.yiyuanlegou1.widget.ImageCycleView
+            android:id="@+id/fragment_cycle_viewpager_content"
+            android:layout_width="match_parent"
+            android:layout_height="180dip"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="85.0dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_category"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38.0dip"
+                    android:layout_height="38.0dip"
+                    android:src="@mipmap/menu_category"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="分类"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_order_share"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:src="@mipmap/menu_show"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="晒单"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_award"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="38.0dip"
+                    android:layout_height="38.0dip"
+                    android:src="@mipmap/menu_reward"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="免费夺宝"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_recharge"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38.0dip"
+                    android:layout_height="38.0dip"
+                    android:src="@mipmap/menu_recharge"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="充值"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_QA"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38.0dip"
+                    android:layout_height="38.0dip"
+                    android:src="@mipmap/menu_question"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="常见问题"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_qq"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="37.0dip"
+                    android:layout_height="37.0dip"
+                    android:src="@mipmap/contact"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.5dip"
+                    android:text="联系客服"
+                    android:textSize="11.5dip"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@drawable/shape_item_style_no_bottomborder_no_effect"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:src="@mipmap/message_horn"/>
+
+            <ViewFlipper
+                android:id="@+id/win_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:paddingLeft="4.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信息加载中.."
+                    android:textSize="12.0dip"/>
+            </ViewFlipper>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ngood_more"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:background="@drawable/shape_item_style_border_light_divider_no_effect"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="0.5dip"
+            android:paddingTop="0.5dip"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="16.0dip"
+                android:text="热门推荐"
+                android:textColor="@color/gray"
+                android:textSize="12.0dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="12.0dip"
+                android:text="全部>"
+                android:textColor="@color/gray"
+                android:textSize="12.0dip"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.iask.yiyuanlegou1.widget.HorizontalListView
+            android:id="@+id/product_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dip"
+            android:background="@color/white"
+            android:visibility="gone"
+            app1:dividerWidth="1dp">
+        </com.iask.yiyuanlegou1.widget.HorizontalListView>
+
+        <LinearLayout
+            android:id="@+id/ngoods_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dip"
+            android:background="@drawable/shape_item_style_border_light_divider_no_effect"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/latest_announce"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:background="@drawable/shape_item_style_border_light_divider_no_effect"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="0.5dip"
+                android:paddingTop="0.5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16.0dip"
+                    android:text="最新揭晓"
+                    android:textColor="@color/gray"
+                    android:textSize="12.0dip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="全部>"
+                    android:textColor="@color/gray"
+                    android:textSize="12.0dip"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ngoods01"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img01"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="100.0dip"
+                    android:layout_gravity="center"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ngoods02"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img02"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="100.0dip"
+                    android:layout_gravity="center"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ngoods03"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent03"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img03"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt03"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ngoods1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="100.0dip"
+                    android:layout_gravity="center"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ngoods2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="100.0dip"
+                    android:layout_gravity="center"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ngoods3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/img_view_parent3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ngoods_img3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="14.0dip"
+                            android:scaleType="centerCrop"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ngoods_txt3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:singleLine="true"
+                        android:text="商品名称"
+                        android:textSize="11.599976dip"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/widget_goods_listtype"/>
+    </LinearLayout>
+</LinearLayout>

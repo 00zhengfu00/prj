@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.iask.yiyuanlegou1"
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 101
+        versionName "4.0.1"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("yiyuanaigou.jks")
+            storePassword "yiyuanaigou"
+            keyAlias "yiyuanaigou"
+            keyPassword "yiyuanaigou"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(':library')
+    compile project(':iapppay_res')
+    compile project(':openid_plugin_res')
+    compile files('libs/bouncycastle.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/glide-3.6.1.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile files('libs/libammsdk.jar')
+    compile files('libs/open_sdk_r5043.jar')
+    compile files('libs/aliyun-oss-sdk-android-2.2.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+}

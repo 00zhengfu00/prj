@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/shape_buy_record_item_style_border"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/doing_and_soon_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="8.0dip"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="18.0dip"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/img_view_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pic_url"
+                    android:layout_width="75.0dip"
+                    android:layout_height="75.0dip"
+                    android:padding="7.0dip"
+                    />
+
+                <ImageView
+                    android:id="@+id/zone_10_tag"
+                    android:layout_width="26.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:src="@mipmap/zone_10"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="商品名称"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:id="@+id/is_soon_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_qihao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="期号"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我已参与："
+                            android:textColor="@color/darkgray"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_join_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/pink"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人次"
+                            android:textColor="@color/darkgray"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_check_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="查看详情"
+                            android:textColor="@color/colorPrimary"
+                            android:visibility="gone"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/is_doing_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip">
+
+                <TextView
+                    android:id="@+id/total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="总需：7988"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="10.0dip"/>
+
+                <TextView
+                    android:id="@+id/surplus_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="剩余：2988"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="10.0dip"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_rate"
+                style="@style/progressBarStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="4.5dip"
+                android:layout_marginTop="7.0dip"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:progress="70"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/append_buy"
+            android:layout_width="80dp"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:focusable="false"
+            android:text="追加"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/published_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="5.0dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip">
+
+                <TextView
+                    android:id="@+id/tv_winner_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="获奖者："
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_winner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_winner_tag"
+                    android:text="张三"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_joinnum_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="人次"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_joinnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_joinnum_tag"
+                    android:text="50"
+                    android:textColor="@color/pink"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buy_again"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:focusable="false"
+            android:text="再次购买"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/publishing_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="5.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="即将揭晓，请稍后……"
+            android:textColor="@color/pink"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/buy_again_2"
+            android:layout_width="80dp"
+            android:layout_height="30.0dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/selector_red_btn_effect"
+            android:focusable="false"
+            android:text="再次购买"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

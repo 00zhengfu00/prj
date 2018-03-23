@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tab_tv"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableTop="@drawable/publish_select_style"
+          android:gravity="center_horizontal"
+          android:paddingBottom="5dp"
+          android:paddingTop="5dp"
+          android:text="@string/timing"
+          android:textColor="@color/tab_item_text_color_selector"
+          android:textSize="12sp"/>

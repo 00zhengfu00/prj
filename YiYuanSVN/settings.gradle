@@ -1,0 +1,2 @@
+include ':app', ':iapppay_res', ':openid_plugin_res'
+include ':library'

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F8F7EF"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择参与人次"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_gooddetail_close_button"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffcccccc"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/light_grey_rectangle_bg"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_number_picker_minus"/>
+
+        <TextView
+            android:id="@+id/number_pick_divide"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/minus"
+            android:background="#ffcccccc"/>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/number_pick_divide"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/number_pick_divide2"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/input"
+            android:background="#ffcccccc"/>
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/number_pick_divide2"
+            android:background="@color/transparent"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_number_picker_add"/>
+
+        <TextView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/plus"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/btn_price_10"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_price_btn_bg"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/price_btn_text_color_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_price_20"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_price_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/price_btn_text_color_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_price_50"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_price_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/price_btn_text_color_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_price_100"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_price_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/price_btn_text_color_selector"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/pink"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人次"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="，总需"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/pink"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_red_btn_effect"
+        android:text="确定"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_global_color"
+    android:orientation="vertical"
+    tools:context="com.iask.yiyuanlegou1.home.person.share.ShareOrderActivity">
+
+    <include layout="@layout/head_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入标题"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_default_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="请输入内容（最多不超过500字）"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/text_default_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="上传图片"
+                android:textColor="@color/text_default_color"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_add_picture"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp">
+
+                <Button
+                    android:id="@+id/btn_add_picture"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/add_picture">
+                </Button>
+
+                <com.iask.yiyuanlegou1.widget.HorizontalListView
+                    android:id="@+id/horizontal_listview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    app1:dividerWidth="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_publish"
+                android:layout_width="fill_parent"
+                android:layout_height="43.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/selector_red_btn_effect"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="17.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

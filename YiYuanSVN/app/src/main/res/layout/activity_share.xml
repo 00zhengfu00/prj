@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/base_listview_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_global_color"
+    android:orientation="vertical">
+    <include layout="@layout/head_layout"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="500.0dip">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/refresh_root"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listview_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+        <ProgressBar
+            android:id="@+id/load_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tab_tv"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/shopping_select_style"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/shopping"
+        android:textColor="@color/tab_item_text_color_selector"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/product_num"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/tab_tv"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/red_dot"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        />
+</RelativeLayout>
+
